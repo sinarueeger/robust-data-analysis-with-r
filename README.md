@@ -8,7 +8,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - what does best pracices encompass? grammar, folder structure, ...
 - possibilities in R (video, animation, presentation, website, write to excel, ...)
 - R studio vs R
-- Rpackage, make file, drake, R markdown, knitr
+- Rpackage, make file, drake, R markdown, knitr, research compendium
 - making presentations
 - git
 - gist.github.com
