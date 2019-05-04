@@ -1,2 +1,21 @@
-# best-practices-in-R
-Lecture and workshop for Open Science Summer School 2019 @ EPFL
+# Best Practices (and beyond) in R
+
+This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
+
+## Content
+
+- what does _best practices_ mean? like best practices in the lab. works without, but safer. 
+- what does best pracices encompass? grammar, folder structure, ...
+- possibilities in R (video, animation, presentation, website, write to excel, ...)
+- R studio vs R
+- Rpackage, make file, drake, R markdown, knitr
+- making presentations
+- git
+- gist.github.com
+- ecosystem: Rstudio, Ropensci, cran, satRdays, RUG, R-Ladies
+
+## Workshop
+
+1. look at good examples
+1. reformat an R script (together with git)
+1. use git (PR to conference bingo)
