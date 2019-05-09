@@ -21,3 +21,6 @@ This repository contains the slides and workshop material for the lecture on _Be
 1. look at good examples
 1. reformat an R script (together with git): look at it with fresh eyes
 1. use git (PR to conference bingo)
+
+- https://ropensci.shinyapps.io/contributr/
+- french slack: - https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM
