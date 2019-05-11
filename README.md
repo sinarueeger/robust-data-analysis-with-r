@@ -15,6 +15,8 @@ This repository contains the slides and workshop material for the lecture on _Be
 - gist.github.com
 - ecosystem: Rstudio, Ropensci, cran, satRdays, RUG, R-Ladies
 - code of conduct
+- Fun examples: https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
+- Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 
 ## Workshop
 
