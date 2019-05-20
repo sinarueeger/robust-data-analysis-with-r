@@ -17,6 +17,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - code of conduct
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - rstudio: https://github.com/karthik/rstudio2019
+- reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
