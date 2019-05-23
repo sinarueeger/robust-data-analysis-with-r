@@ -19,6 +19,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - rstudio: https://github.com/karthik/rstudio2019
 - reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
 - packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
+- packages: https://masalmon.eu/2017/12/11/goodrpackages/
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
