@@ -18,6 +18,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - rstudio: https://github.com/karthik/rstudio2019
 - reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
+- packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
