@@ -20,10 +20,13 @@ This repository contains the slides and workshop material for the lecture on _Be
 - reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
 - packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
 - packages: https://masalmon.eu/2017/12/11/goodrpackages/
+- SPSS to R: https://twitter.com/phillynerd/status/1130633179134607360?s=09
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
 - https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
+- sports science: https://jacquietran.github.io/2019_may_rladies_akl/R/#1
+- ggplot2: https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
 
 ## Workshop
 
