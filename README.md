@@ -22,6 +22,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - packages: https://masalmon.eu/2017/12/11/goodrpackages/
 - APIs: opensnp (rsnps)
 - SPSS to R: https://twitter.com/phillynerd/status/1130633179134607360?s=09
+- binder: https://twitter.com/r_solymosi/status/1134009035152400385
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
