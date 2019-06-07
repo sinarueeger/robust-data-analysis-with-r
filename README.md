@@ -23,6 +23,8 @@ This repository contains the slides and workshop material for the lecture on _Be
 - APIs: opensnp (rsnps), https://rviews.rstudio.com/2018/07/23/rest-apis-and-plumber/
 - SPSS to R: https://twitter.com/phillynerd/status/1130633179134607360?s=09
 - binder: https://twitter.com/r_solymosi/status/1134009035152400385
+- git: https://twitter.com/sharon000/status/1135893106862280704
+- principles: http://teachtogether.tech/
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
