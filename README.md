@@ -26,6 +26,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - git: https://twitter.com/sharon000/status/1135893106862280704
 - principles: http://teachtogether.tech/
 - reprex
+- rstudio overview: https://twitter.com/RLadiesNCL/status/1138812826917724160
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
