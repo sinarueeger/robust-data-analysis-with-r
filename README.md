@@ -27,6 +27,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - principles: http://teachtogether.tech/
 - reprex
 - rstudio overview: https://twitter.com/RLadiesNCL/status/1138812826917724160
+- project TIER: https://discuss.ropensci.org/t/teaching-with-the-tier-protocol-and-replication-assignments-using-r/1732
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
