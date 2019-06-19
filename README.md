@@ -2,6 +2,11 @@
 
 This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
 
+
+## How to teach
+- [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
+- [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
+
 ## Content
 
 - why use R? (solve a problem: automatic, precise, repeatable, scaleable. reproducbile)
@@ -28,6 +33,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - reprex
 - rstudio overview: https://twitter.com/RLadiesNCL/status/1138812826917724160
 - project TIER: https://discuss.ropensci.org/t/teaching-with-the-tier-protocol-and-replication-assignments-using-r/1732
+- replicate study: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
 
 ## Fun examples
 - https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
