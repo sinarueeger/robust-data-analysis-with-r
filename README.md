@@ -40,13 +40,19 @@ This repository contains the slides and workshop material for the lecture on _Be
 - https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
 - sports science: https://jacquietran.github.io/2019_may_rladies_akl/R/#1
 - ggplot2: https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
-
+- research compendium: 
+    - https://github.com/seabbs/DirectEffBCGPolicyChange
+    - https://github.com/venexia/MR-antihypertensives-AD
+    - https://github.com/saralpulit/fatdistnGWAS
+    
 ## Workshop
 
 1. look at good examples
 1. reformat an R script (together with git): look at it with fresh eyes
 1. use git (PR to conference bingo)
 1. package with corporate colors EPFL: https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf
+
+- 
 
 - https://ropensci.shinyapps.io/contributr/
 - french slack: - https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM
