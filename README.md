@@ -58,3 +58,18 @@ This repository contains the slides and workshop material for the lecture on _Be
 
 - https://ropensci.shinyapps.io/contributr/
 - french slack: - https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM
+
+
+
+## Goals
+<!--- identify desired results (1.)---> 
+
+- 
+
+## Acceptable evidence
+<!--- acceptable evidence (1.)--->
+
+
+## References
+
+1. [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
