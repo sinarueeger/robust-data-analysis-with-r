@@ -10,6 +10,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 
 ## Content
 
+- https://nanx.me/ggsci/
 - why use R? (solve a problem: automatic, precise, repeatable, scaleable. reproducbile)
 - what does _best practices_ mean? like best practices in the lab. works without, but safer. 
 - what does best pracices encompass? grammar, folder structure, ...
