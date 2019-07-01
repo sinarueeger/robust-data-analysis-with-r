@@ -63,6 +63,8 @@ Basically, you could use any language that satisfies all the criteria that we ah
 
 But R is tailored to statistical data analysis. It has been developed to do statistical data analysis, and moreover to let peers have insight into data.
 
+Effortless data analysis and sharing of results.
+
 While at the beginning 20 years ago it was mainly plotting and modelling, now it is large scale, accessible, ...  
 
 It can 
