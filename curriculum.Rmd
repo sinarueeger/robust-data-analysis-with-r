@@ -177,9 +177,14 @@ How much documentation do you need?
 
 Example: look at an old script and reformat.
 
+### Colors
+- https://nanx.me/ggsci/
+
+
 ### Data import
 
 janitor
+skimr
 readr
 data.table
 

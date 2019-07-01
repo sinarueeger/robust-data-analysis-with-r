@@ -7,7 +7,6 @@ This repository contains the slides and workshop material for the lecture on _Be
 - [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
 - [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
 - ask Anna Krystalli to check curriculum
-
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 
 ## Content
