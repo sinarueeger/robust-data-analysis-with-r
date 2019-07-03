@@ -2,6 +2,11 @@
 
 This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
 
+## Notes
+
+- https://carpentries.org/blog/2019/06/reproducible-science-r/
+- case_when
+- use paper and pen
 
 ## How to teach
 - [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
