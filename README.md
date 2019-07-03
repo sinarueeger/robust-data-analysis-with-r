@@ -7,6 +7,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - https://carpentries.org/blog/2019/06/reproducible-science-r/
 - case_when
 - use paper and pen
+- podcasts (staying up to date)
 
 ## How to teach
 - [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
