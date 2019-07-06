@@ -14,6 +14,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
 - ask Anna Krystalli to check curriculum
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
+- https://github.com/rstudio/parsons
 
 ## Content
 - rstudio: https://github.com/karthik/rstudio2019
