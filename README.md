@@ -4,7 +4,6 @@ This repository contains the slides and workshop material for the lecture on _Be
 
 ## Notes
 
-- https://carpentries.org/blog/2019/06/reproducible-science-r/
 - case_when
 - use paper and pen
 - podcasts (staying up to date)
@@ -16,6 +15,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - https://github.com/rstudio/parsons
 - https://carpentries.org/blog/2019/06/reproducible-science-r/
+
 
 ## Content
 - rstudio: https://github.com/karthik/rstudio2019
@@ -36,6 +36,8 @@ This repository contains the slides and workshop material for the lecture on _Be
 - code download button: https://twitter.com/apreshill/status/1108925218850893832
 - nice colorpalettes: https://nanx.me/ggsci/
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
+- democratisation of tools: tamara munzer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
+- sketching: nadieh bremer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
 
 ## Goals
 <!--- identify desired results (1.)---> 
