@@ -27,7 +27,8 @@ This repository contains the slides and workshop material for the lecture on _Be
 - project TIER: https://discuss.ropensci.org/t/teaching-with-the-tier-protocol-and-replication-assignments-using-r/1732
 - replicate study: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
 - https://rfortherestofus.com/2019/06/a-guide-to-r-for-excel-users/
-
+- https://outsiderdata.netlify.com/post/why-i-migrated-from-excel-to-r/
+- listen to podcast or watch videos: https://www.rstats.nyc/2019/nyr/
 
 
 
