@@ -15,6 +15,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - ask Anna Krystalli to check curriculum
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - https://github.com/rstudio/parsons
+- https://carpentries.org/blog/2019/06/reproducible-science-r/
 
 ## Content
 - rstudio: https://github.com/karthik/rstudio2019
@@ -30,8 +31,11 @@ This repository contains the slides and workshop material for the lecture on _Be
 - https://rfortherestofus.com/2019/06/a-guide-to-r-for-excel-users/
 - https://outsiderdata.netlify.com/post/why-i-migrated-from-excel-to-r/
 - listen to podcast or watch videos: https://www.rstats.nyc/2019/nyr/
-
-
+- more about ropensci: https://mablab.org/post/ropensci/
+- resource for Rmarkdown: https://rmd4sci.njtierney.com/
+- code download button: https://twitter.com/apreshill/status/1108925218850893832
+- nice colorpalettes: https://nanx.me/ggsci/
+- rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
 
 ## Goals
 <!--- identify desired results (1.)---> 
