@@ -39,6 +39,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - democratisation of tools: tamara munzer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
 - sketching: nadieh bremer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
 - R tips: https://guide.esciencecenter.nl/best_practices/language_guides/r.html
+- blogpost example: https://github.com/mine-cetinkaya-rundel/user2019-schedule
 
 https://www.nature.com/articles/d41586-019-02046-0
 > These include continuous integration systems (such as TravisCI), version control (Git) and unit testing. “Continuous integration tells you, every time you change your code, if it still works or if you broke it,” as long as you write the correct tests for it to run, says Mueller; version control is a system of recording changes to source code so that you can revert to any previous version if necessary; and unit testing tests each individual component of the software to ensure that it is sound. 
