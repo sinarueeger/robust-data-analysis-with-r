@@ -16,7 +16,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - https://github.com/rstudio/parsons
 - https://carpentries.org/blog/2019/06/reproducible-science-r/
 - illustrations from http://jules32.github.io/
-
+- start with sharing slides / gist.github (from julie lowndes keynote)
 
 ## Content
 - rstudio: https://github.com/karthik/rstudio2019
