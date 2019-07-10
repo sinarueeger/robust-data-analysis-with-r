@@ -15,6 +15,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - https://github.com/rstudio/parsons
 - https://carpentries.org/blog/2019/06/reproducible-science-r/
+- illustrations from http://jules32.github.io/
 
 
 ## Content
