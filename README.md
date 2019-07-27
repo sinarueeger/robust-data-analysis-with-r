@@ -18,6 +18,7 @@ This repository contains the slides and workshop material for the lecture on _Be
 - illustrations from http://jules32.github.io/
 - start with sharing slides / gist.github (from julie lowndes keynote)
 - tidytuesday, advent of code / tidies of march (irene steves)
+- https://github.com/EvaMaeRey/ggplot_flipbook
 
 ## Content
 - rstudio: https://github.com/karthik/rstudio2019
@@ -50,6 +51,9 @@ This repository contains the slides and workshop material for the lecture on _Be
 - games to procrastinate: https://github.com/RLesur/Rcade
 - twitter account: https://twitter.com/rfortherest
 - https://www.samabbott.co.uk/
+- community: https://twitter.com/WeAreRLadies/status/1154698236583698432
+- color package: https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
+- API: https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9
 
 https://www.nature.com/articles/d41586-019-02046-0
 > These include continuous integration systems (such as TravisCI), version control (Git) and unit testing. “Continuous integration tells you, every time you change your code, if it still works or if you broke it,” as long as you write the correct tests for it to run, says Mueller; version control is a system of recording changes to source code so that you can revert to any previous version if necessary; and unit testing tests each individual component of the software to ensure that it is sound. 
