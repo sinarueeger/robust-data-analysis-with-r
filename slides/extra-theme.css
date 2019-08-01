@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Arapeys);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+.superlarge { 
+  font-size: 330%;
+  font-family: 'Arapey';
+}
+.large { 
+  font-size: 150%;
+  font-family: 'Arapey';
+}
+
+
+.pull-left-small {
+  float: left;
+  width: 30%;
+}
+.pull-right-large {
+  float: right;
+  width: 60%;
+}
+
+a, a > code {
+ text-decoration: underline; /* turns off background coloring of links */
+}
+
+
+
+h2, h3 {
+  line-height: 1.5em;
+}
+
+
+/*.title-slide h1 {
+  color: #F7F8FA;
+}
+.title-slide h2, .title-slide h3 {
+  color: #e7e8e2; 
+}*/
+
+div.my-footer {
+    background-color: #272822;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 10pt;
+    color: #F7F8FA;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}

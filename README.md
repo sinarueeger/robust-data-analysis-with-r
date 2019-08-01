@@ -1,4 +1,4 @@
-# Best Practices (and beyond) in R
+# Workshop: Robust data analysis: an introduction to R
 
 This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
 
@@ -68,6 +68,7 @@ https://www.nature.com/articles/d41586-019-02046-0
 - How do these steps relate to R
 - Existance of best practices
 - how to learn R
+
 
 ## Acceptable evidence
 <!--- acceptable evidence (1.)--->

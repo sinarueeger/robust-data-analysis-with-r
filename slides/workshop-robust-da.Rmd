@@ -1,0 +1,558 @@
+---
+title: ".large[Robust data analysis]"
+subtitle: "An introduction to R"
+author: "Sina Rüeger"
+date: "2019-09-05"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "extra-theme.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"                  # 12
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      highlightSpans: true
+      titleSlideClass: [center, middle, inverse]
+    self_contained: true
+---
+
+
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+mono_light(
+  base_color = "black",
+  header_font_google = google_font("Arapey"), ## Oswald
+  text_font_google   = google_font("Karla", "400", "700i"),  ## Roboto
+  code_font_google   = google_font("Inconsolata")
+  )
+```
+
+
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.kable.NA = '')
+library(knitr)
+library(kableExtra)
+library(magrittr)
+library(stringr)
+library(ggplot2)
+
+library(dplyr)
+theme_set(hrbrthemes::theme_ipsum(subtitle_size = 14, caption_size = 9, axis_title_size = 12)) ## make sure to 
+
+```
+
+<!---------------------- SLIDE info ------------------------------>
+
+<!--- adding a footer https://github.com/yihui/xaringan/wiki/Footer-and-header-lines ------>
+---
+class: left, middle
+
+## 1. Download Slides: bit.ly/....
+
+## 2. Go to Github repository: github.com/...
+
+<!---------------------- ToC ------------------------------>
+
+---
+class: left, middle
+
+.pull-left[
+# 1. 
+### What makes a Data Analysis robust?
+
+<br>
+
+# 3. 
+### Workshop
+
+]
+
+.pull-right[
+# 2. 
+### How can R help with that?
+
+<br>
+
+# 4. 
+### Learning R
+]
+
+
+<!------------------------------------------------------->
+<!---------------------- PART 1 ------------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+# Part 1
+# Data Analysis
+
+
+---
+class: left, middle
+
+# Process to analyse data
+
+- wickham+grolemund: circle (Wickham & Grolemund, 201)
+- Elements & Principles (Hicks & Peng, 2019)
+
+---
+class: left, middle
+
+# Loop
+(wickham + grolemund)
+
+
+---
+class: left, middle
+
+# Elements & Principles
+(hicks + peng)
+
+---
+class: left, middle
+
+# Overlap between both approaches
+
+- tidy data
+- reproducibility
+- flow + exit the flow or repeat the flow, modify
+- share results (which can then be used as an input again)
+
+---
+class: left, middle
+
+# Requirements to a Software
+
+- reproducible
+- used by others
+- continuously development
+- high-level
+- exchange results with others
+
+<!------------------------------------------------------->
+<!--------------- Thought experiment -------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+# Thought experiment
+
+
+---
+class: left, top
+
+## Q1: 
+### What is the most annoying & repetitive task at work? 
+--
+<br>
+## Q2: 
+### How could you automate it? 
+
+---
+class: left, middle
+
+# Automation
+
+Programming is essentially an automation of a process
+- for repeatable tasks (like adding two numbers)
+- scalable (many times repeating )
+- complicated tasks (variable selection)
+- where precision is needed (adding two decimals)
+- reusing of frameworks (long code into functions)
+- reproduce it
+
+A side effect of a certain automation also brings reproducibility. 
+
+
+<!------------------------------------------------------->
+<!---------------------- PART 2 ------------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+# Part 2
+# R
+
+---
+class: left, middle
+
+# Capabilities of R
+
+(show diagram from heidi seibold)
+- It has been developed to do statistical data analysis
+- Data insights
+- simple calculations
+- advanced statistical models
+- statistical data analysis
+- exchange with others
+- [access API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
+- [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3)
+- read in data
+- automise
+- speed up
+- run on a server
+- talk to github
+- enforces standards (because you need to work a certan way with a certain structure)
+
+---
+class: left, middle
+
+### R has three things that I believe makes it special
+
+- APIs
+- RMarkdown (shiny, html, websites, ... )
+- Plotting, anything visual
+
+---
+class: left, middle
+
+# Constantly improving
+
+There are things R is good at and tasks that R is not that good at. And this has changed over time. Because R is an open source project, the language is constantly evolving & improving. 
+
+
+---
+class: left, middle
+
+# Functions and libraries
+
+- Programming typically works like this: you apply a function to an object. 
+
+- You could also say that you apply an action (a verb) to an object (a noun). 
+
+- Excel also has functions: these are the tabs, and the object would be your active sheet. 
+
+- This is an important propertiy, because a chain of such verbs can create a programming script. 
+
+- If you hear the term library or package, then this is simply a collection of functions. In opensource languages, anyone can contribute a package. And we will do this later. 
+
+- Example with plot: function, arguments, pacakage, libraary, objects
+
+
+---
+class: left, middle
+
+.pull-left[
+# R
+
+- core
+- anyone can contribute a package
+- Show print screen / website
+
+]
+
+
+.pull-right[
+# RStudio
+
+- UI
+- works for any platform
+- costs for companies
+- solutions for servers
+- develop a lot of new packages
+- anything between teaching and solutions for production
+- shiny
+- git : https://happygitwithr.com/
+- Where are things in RStudio?: https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1
+
+]
+
+---
+class: left, middle
+
+# Analogy
+
+R helps you with the grammar for your analsysis, but the content you are still responsible.
+
+
+---
+class: left, middle
+
+# Hierarchy of best practices
+
+1. documentation
+1. run all script
+1. version control
+1. unit tests and sanity checks
+1. write functions, package them and tell everyone
+1. continuous integration
+1. makefile (caching)
+
+---
+class: left, middle
+
+# R in the wild
+
+- https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
+- https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
+- sports science: https://jacquietran.github.io/2019_may_rladies_akl/R/#1
+- ggplot2: https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
+- research compendium: 
+    - https://github.com/seabbs/DirectEffBCGPolicyChange
+    - https://github.com/venexia/MR-antihypertensives-AD
+    - https://github.com/saralpulit/fatdistnGWAS
+    - https://www.samabbott.co.uk/
+- video, animation, presentation, website, write to excel
+
+
+
+
+<!------------------------------------------------------->
+<!---------------------- PART 3 ------------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+# Part 4
+# Workshop
+
+---
+class: left, middle
+
+Use paper + pen
+
+
+---
+class: left, middle
+
+
+# 1. Plotting + model
+
+## Task
+Change something on the plot
+
+## Extra
+look into plotly, animation
+
+
+---
+class: left, middle
+
+
+# 2. Make a map
+
+## Task
+Change pin location
+
+## Extra
+make a leaflet with watercolors
+
+
+
+---
+class: left, middle
+
+# 3. Import data
+
+Rexcel
+
+## Task
+import other data
+
+## info
+- datapasta: https://twitter.com/dataandme/status/1148548556850114561
+- fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
+
+
+## extra
+- different r packages to import data: readr, data.table
+- create xls file
+
+
+---
+class: left, middle
+
+
+# 4. Rmarkdown
+export as html, combine 1 + 2 + 3
+use janitor + skimr
+
+## Task
+export as pdf/word/markdown
+
+## Infos
+- https://rmd4sci.njtierney.com/
+- rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
+
+
+## Extra
+
+- Look into xaringan and CSS file
+- code download button: https://twitter.com/apreshill/status/1108925218850893832
+
+
+---
+class: left, middle
+
+# Commenting & Documentation
+
+- How much documentation do you need? 
+  - Think about your future self
+  - Add simple instructions and ask a colleague to do it
+- For structure use simple commands (align, lintr)
+- A good exercise: look at an old script and reformat.
+- [Reprohack!](https://sheffield-university.shinyapps.io/ReproHack_CCMcr/)
+
+
+
+
+
+---
+class: left, middle
+
+# 5. Create an R package
+
+create a package with corporate colors EPFL: https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf
+
+- https://nanx.me/ggsci/
+- color package: https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
+
+## Task
+
+Add an extra color 
+
+## Info
+- packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
+- packages: https://masalmon.eu/2017/12/11/goodrpackages/
+
+## Extra 
+Add your own function
+
+
+
+---
+class: left, middle
+
+# 6. Extra stuff
+
+- Shiny
+- collaborative writing
+- Git & R
+
+
+---
+class: left, middle
+
+# Extra: Git & R
+
+You use git already: congratulations. 
+
+You want to use git but you are scared: 
+- use the interface
+- use gist.github.com (great for blogposts and small scripts)
+- start with sharing slides / gist.github (from julie lowndes keynote)
+- happygit with R
+- https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1
+- Playground: https://learngitbranching.js.org/
+
+
+
+
+<!------------------------------------------------------->
+<!---------------------- PART 4 ------------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+
+# Part 4
+# Learning R
+
+
+---
+class: left, middle
+
+# Strategies
+
+- Learn isolated / digestable pieces
+- surroud yourself with the language (fun examples + podcasts)
+- use paper + pen
+- tidytuesday, advent of code / tidies of march (irene steves)
+- listen to podcast or watch videos: https://www.rstats.nyc/2019/nyr/
+
+---
+class: left, middle
+
+# Embrace imperfection
+
+Programming is 
+- an iterative process
+- and there is never only one solution
+
+Do:
+- Pair programming
+- Code review
+- Refactoring scripts of others
+
+
+---
+class: left, middle
+
+# Asking others for help
+
+- reprex
+- SO, R-help, Rstuido help
+- twitter
+
+
+---
+class: left, middle
+
+# Become part of the community
+
+- blogposts (rweekly!)
+- R user group (RUG, R-Ladies)
+- list: https://jumpingrivers.github.io/meetingsR/r-user-groups.html (if you know a meetup, make a PR)
+- CoC
+- R-Ladies
+- French [slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) + [online ressources](https://github.com/frrrenchies/frrrenchies)
+- other languages
+- R for DS (slack, tidytuesday)
+- ropensci community calls / shinyapp (https://ropensci.shinyapps.io/contributr/)
+- engage on twitter ([R for the rest of us](https://twitter.com/rfortherest) + [weareRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432) + [Mara Averick](https://twitter.com/dataandme) + [maelle Salmon](https://twitter.com/ma_salmon))
+
+Make an example: 
+
+- RUG in GENEVA, R lunches
+- R Ladies remote (journal club)
+
+
+
+
+
+
+<!------------------------------------------------------->
+<!---------------------- ANNEX -------------------------->
+<!------------------------------------------------------->
+---
+class: left, middle, inverse
+
+
+# Links
+
+---
+class: left, middle
+
+# More info
+
+- 
+
+---
+class: left, middle
+
+# Inspiration
+
+- https://twitter.com/phillynerd/status/1130633179134607360?s=09
+- [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
+- [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
+- Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
+- https://github.com/rstudio/parsons
+- https://carpentries.org/blog/2019/06/reproducible-science-r/
+- illustrations from http://jules32.github.io/
+- [ggplot_flipbook](https://github.com/EvaMaeRey/ggplot_flipbook)
+- [demoR](https://github.com/kbodwin/demoR)
+- reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
