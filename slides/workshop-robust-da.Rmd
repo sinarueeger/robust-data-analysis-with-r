@@ -190,7 +190,7 @@ class: left, middle
 - statistical data analysis
 - exchange with others
 - [access API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
-- [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3)
+- [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
 - read in data
 - automise
 - speed up
@@ -539,7 +539,8 @@ class: left, middle
 
 # More info
 
-- 
+- https://learningstatisticswithr.com/
+- https://r4ds.had.co.nz/
 
 ---
 class: left, middle

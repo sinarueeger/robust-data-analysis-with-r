@@ -19,7 +19,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Title: Workshop: Robust data analysis: an introduction to R
 
+## Material
 
+- Slides: 
+
+- Workshop: 
 
 
 
