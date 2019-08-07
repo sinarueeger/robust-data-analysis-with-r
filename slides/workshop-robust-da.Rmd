@@ -325,8 +325,9 @@ class: left, middle
 ## Task
 Change something on the plot
 
-## Extra
-look into plotly, animation
+
+## Good to know
+plotly, animation
 
 
 ---
@@ -337,9 +338,9 @@ class: left, middle
 
 ## Task
 Change pin location
-
-## Extra
 make a leaflet with watercolors
+
+## Good to know
 
 
 
@@ -358,16 +359,15 @@ import other data
 - fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
 
-## extra
+## good to know
 - different r packages to import data: readr, data.table
-- create xls file
 
 
 ---
 class: left, middle
 
 
-# 4. Rmarkdown
+# 4. Report with Rmarkdown
 export as html, combine 1 + 2 + 3
 use janitor + skimr
 

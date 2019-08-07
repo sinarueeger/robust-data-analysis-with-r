@@ -58,6 +58,16 @@ qp %>% ggsave(.,
               height = 6)
 
 
+
+## Task -------------------------------------------------
+
+## - drugs displayed
+## - limit age range
+## - add line
+## - add color
+## - change pdf > png
+## 
+
 ## Extra ------------------------------------------------
 qp + theme_minimal()
 qp + hrbrthemes::theme_ipsum()
