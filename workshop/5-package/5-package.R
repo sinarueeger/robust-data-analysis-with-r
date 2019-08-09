@@ -3,8 +3,10 @@
 library(usethis)
 
 ## 1. create the package skeleton
-create_package("~/tmp/epflcorpid")
+create_package("~/tmp/EPFLcorpid")
 ## https://www.epfl.ch/campus/services/communication/en/visual-identity/logotype/
+
+
 
 ## 2. use git
 usethis::use_git()
@@ -29,11 +31,28 @@ devtools::install()
 usethis::use_readme_rmd()
 ## knit + commit + push
 
-## add R file
+## 9. add R file
 usethis::use_r("epfl_colors.R")
 
-## usetestthat
-usethis::use_testthat
+## 10. function
+## see epfl_colors.R
+
+## 11. run documentation
+
+
+## 12. change description
+
+## 13. usetestthat
+usethis::use_testthat()
+usethis::use_test("epfl_colors")
+
+## 14. rinse + repeat
+
+## 15 change readme file
+
+## push to https://github.com/sinarueeger/EPFLcorpid_template
+
+
 
 ## Rinse and repeat
 #load
