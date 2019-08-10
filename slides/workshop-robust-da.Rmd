@@ -307,7 +307,7 @@ class: left, middle
 ---
 class: left, middle, inverse
 
-# Part 4
+# Part 3
 # Workshop
 
 ---
@@ -368,8 +368,6 @@ class: left, middle
 
 
 # 4. Report with Rmarkdown
-export as html, combine 1 + 2 + 3
-use janitor + skimr
 
 ## Task
 export as pdf/word/markdown
@@ -462,48 +460,94 @@ class: left, middle, inverse
 # Part 4
 # Learning R
 
-
----
-class: left, middle
-
-# Strategies
-
-- Learn isolated / digestable pieces
-- surroud yourself with the language (fun examples + podcasts)
-- use paper + pen
-- tidytuesday, advent of code / tidies of march (irene steves)
-- listen to podcast or watch videos: https://www.rstats.nyc/2019/nyr/
-
+<!----------------------------------------------->
 ---
 class: left, middle
 
 # Embrace imperfection
 
-Programming is 
-- an iterative process
-- and there is never only one solution
+---
+class: left, middle
 
-Do:
+
+## Programming is 
+
+### an iterative process
+
+### and there is never only one solution
+
+---
+class: left, middle
+
+## Exploit imperfection
+
+- Look at each others code
+
+- Refactor your code
+
+- Review each others code
+
 - Pair programming
-- Code review
-- Refactoring scripts of others
+
+
+<!----------------------------------------------->
+---
+class: left, middle
+
+# How to ask for help
 
 
 ---
 class: left, middle
 
-# Asking others for help
+## 1. Look online
 
-- reprex
-- SO, R-help, Rstuido help
-- twitter
+- [Stack Overflow](https://stackoverflow.com/) (SO)
+- [RStudio Community](https://community.rstudio.com/)
 
 
+---
+class: left, middle
+
+## 2. Create a reproducible example
+
+1. create a reproducbile example using a small R available dataset (e.g. iris)
+1. `install.packages("reprex")`
+1. select code and run reprex
+
+<!---- this will often already guide you to the solution -------> 
+
+---
+class: left, middle
+
+## 3. Ask on SO, twitter, RStudio help
+
+C+P r bit into one of the follwing streams:
+
+- Ask within a community (R-Ladies, R4DS)
+
+- https://community.rstudio.com/
+
+- https://stackoverflow.com/
+
+- Twitter using the `#rstats` hashtag: 
+
+<!-------
+More: https://masalmon.eu/2018/07/22/wheretogethelp/
+- If its a bug: file an issue on github
+
+Why not writing directly to the maintainer? Because online helps
+----->
+
+
+
+
+<!----------------------------------------------->
 ---
 class: left, middle
 
 # Become part of the community
-
+<!------------
 - blogposts (rweekly!)
 - R user group (RUG, R-Ladies)
 - list: https://jumpingrivers.github.io/meetingsR/r-user-groups.html (if you know a meetup, make a PR)
@@ -514,16 +558,123 @@ class: left, middle
 - R for DS (slack, tidytuesday)
 - ropensci community calls / shinyapp (https://ropensci.shinyapps.io/contributr/)
 - engage on twitter ([R for the rest of us](https://twitter.com/rfortherest) + [weareRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432) + [Mara Averick](https://twitter.com/dataandme) + [maelle Salmon](https://twitter.com/ma_salmon))
+----->
 
-Make an example: 
+---
+class: left, middle
 
-- RUG in GENEVA, R lunches
-- R Ladies remote (journal club)
-
-
-
+## R-Ladies 
 
 
+---
+class: left, middle
+
+## Code of Conduct
+
+
+---
+class: left, middle
+
+## Join an online community
+
+- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
+
+- R-ladies Slack: https://www.rfordatasci.com/
+
+- French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online ressources](https://github.com/frrrenchies/frrrenchies))
+
+---
+class: left, middle
+
+## Join an R meetup
+
+- In the lemanic region: [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/), [RUG](https://www.meetup.com/Geneve-R-User-Group), [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/), [adminR](https://twitter.com/RLadiesRemote)
+
+- [R Ladies Remote](https://twitter.com/RLadiesRemote) (journal club)
+
+- Full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://gqueiroz.shinyapps.io/rshinylady/).
+
+
+
+---
+class: left, middle
+
+## Engage on Twitter
+
+- [Mara Averick](https://twitter.com/dataandme)
+- [Maëlle Salmon](https://twitter.com/ma_salmon)
+- [R for the rest of us](https://twitter.com/rfortherest)
+- [WeAreRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432)
+
+
+---
+class: left, middle
+
+## [rOpenSci](https://ropensci.org)
+
+- Attend a community call ([archive](https://ropensci.org/commcalls/)).
+
+- Contribute via the shinyapp (https://ropensci.shinyapps.io/contributr/)
+
+---
+class: left, middle
+
+## Read blogposts
+
+- Weekly supply of blogposts here: https://rweekly.org/
+
+- write a blogpost (gist.github.com!)
+
+
+<!----------------------------------------------->
+
+---
+class: left, middle
+
+# Learning strategies
+<!-------
+- Learn with isolated & digestable examples
+- Surroud yourself with the language: embed R into your life
+- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
+- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
+- Make use of pen + paper
+-------->
+
+---
+class: left, middle
+
+## Learn with isolated & digestable examples
+
+---
+class: left, middle
+
+## Surround yourself with the language: embed R into your life
+
+---
+class: left, middle
+
+## Look for a steady stream of data or exercises
+
+- [tidytuesday](https://github.com/rfordatascience/tidytuesday)
+
+- Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
+
+---
+class: left, middle
+
+## Watch recordings
+
+- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
+- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
+- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
+- rOpenSci community call [archive](https://ropensci.org/commcalls/)
+
+<!------- or attend a conference, screen casts --------->
+
+---
+class: left, middle
+
+## Make use of pen + paper
 
 <!------------------------------------------------------->
 <!---------------------- ANNEX -------------------------->

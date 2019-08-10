@@ -1,28 +1,56 @@
 ---
-  title: "Untitled"
-output: html_document
+title: "Tick report"
+author: Sina
+date: "2019-02-07 (updated: `r Sys.Date()`)" 
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    number_sections: true
+    highlight: tango
+
 ---
-  
-  ```{r setup, include=FALSE}
+
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Import data
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Data preparation
+- use janitor + skimr
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-  
-  ```{r cars}
+
+# Descriptive analysis
+
+
+# Map
+
+```{r cars, echo=FALSE}
 summary(cars)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-  
-  ```{r pressure, echo=FALSE}
+```{r pressure, echo=FALSE}
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Exercise
+
+- export as pdf/word/markdown
+- 
+
+## Extra
+
+- Look into xaringan and CSS file
+- code download button: https://twitter.com/apreshill/status/1108925218850893832
+
+
+# More infos
+
+- https://rmd4sci.njtierney.com/
+- rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
+
