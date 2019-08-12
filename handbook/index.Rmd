@@ -16,6 +16,6 @@ description: "Just some infos"
 
 This is the course material to the workshop _Robust data analysis: an introduction to R_. 
 
-You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-with-r/slides.html) and the workshop is on this [repository](https://github.com/sinarueeger/robust-data-analysis-with-r).
+You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-with-r/slides.html) and the workshop in this [repository](https://github.com/sinarueeger/robust-data-analysis-with-r).
 
 
