@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Robust data analysis: an introduction to R</title>
+  <title>Chapter 2 Introduction of R | Robust data analysis: an introduction to R</title>
   <meta name="description" content="Just some infos" />
   <meta name="generator" content="bookdown 0.12.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Robust data analysis: an introduction to R" />
+  <meta property="og:title" content="Chapter 2 Introduction of R | Robust data analysis: an introduction to R" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://sinarueeger.github.io/robust-data-analysis-with-r/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sinarueeger/robust-data-analysis-with-r" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Robust data analysis: an introduction to R" />
+  <meta name="twitter:title" content="Chapter 2 Introduction of R | Robust data analysis: an introduction to R" />
   
   <meta name="twitter:description" content="Just some infos" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="data-analysis.html"/>
+<link rel="prev" href="data-analysis.html"/>
+<link rel="next" href="workshop.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -167,24 +167,112 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Robust data analysis: an introduction to R</h1>
-<p class="author"><em>Sina Rüeger</em></p>
-<p class="date"><em>2019-08-12</em></p>
+<div id="introduction-of-r" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Introduction of R</h1>
+<div id="capabilities-of-r" class="section level2">
+<h2><span class="header-section-number">2.1</span> Capabilities of R</h2>
+<p>(show diagram from heidi seibold)
+- It has been developed to do statistical data analysis
+- Data insights
+- simple calculations
+- advanced statistical models
+- statistical data analysis
+- exchange with others
+- <a href="https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9">access API</a> (<em>So the API is a layer of code that sits between the database and most database users.</em>)
+- <a href="https://medium.com/tmobile-tech/r-can-api-c184951a24a3">produce an API</a> (also <a href="https://twitter.com/sharlagelfand/status/1157794847438364679">these resouces (h/t Sharla Gelfand)</a>)
+- read in data
+- automise
+- speed up
+- run on a server
+- talk to github
+- enforces standards (because you need to work a certan way with a certain structure)</p>
+<div id="r-has-three-things-that-i-believe-makes-it-special" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> R has three things that I believe makes it special</h3>
+<ul>
+<li>APIs</li>
+<li>RMarkdown (shiny, html, websites, … )</li>
+<li>Plotting, anything visual</li>
+</ul>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This is the course material to the workshop <em>Robust data analysis: an introduction to R</em>.</p>
-<p>You find the slides <a href="https://sinarueeger.github.io/robust-data-analysis-with-r/slides.html">here</a> and the workshop in this <a href="https://github.com/sinarueeger/robust-data-analysis-with-r">repository</a>.</p>
+</div>
+<div id="constantly-improving" class="section level2">
+<h2><span class="header-section-number">2.2</span> Constantly improving</h2>
+<p>There are things R is good at and tasks that R is not that good at. And this has changed over time. Because R is an open source project, the language is constantly evolving &amp; improving.</p>
+</div>
+<div id="technical-bits-functions-and-libraries" class="section level2">
+<h2><span class="header-section-number">2.3</span> Technical bits: Functions and libraries</h2>
+<ul>
+<li><p>Programming typically works like this: you apply a function to an object.</p></li>
+<li><p>You could also say that you apply an action (a verb) to an object (a noun).</p></li>
+<li><p>Excel also has functions: these are the tabs, and the object would be your active sheet.</p></li>
+<li><p>This is an important propertiy, because a chain of such verbs can create a programming script.</p></li>
+<li><p>If you hear the term library or package, then this is simply a collection of functions. In opensource languages, anyone can contribute a package. And we will do this later.</p></li>
+<li><p>Example with plot: function, arguments, pacakage, libraary, objects</p></li>
+</ul>
+</div>
+<div id="r-vs.-rstudio" class="section level2">
+<h2><span class="header-section-number">2.4</span> R vs. RStudio</h2>
+<div id="r" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> R</h3>
+<ul>
+<li>core</li>
+<li>anyone can contribute a package</li>
+<li>Show print screen / website</li>
+</ul>
+</div>
+<div id="rstudio" class="section level3">
+<h3><span class="header-section-number">2.4.2</span> RStudio</h3>
+<ul>
+<li>UI</li>
+<li>works for any platform</li>
+<li>costs for companies</li>
+<li>solutions for servers</li>
+<li>develop a lot of new packages</li>
+<li>anything between teaching and solutions for production</li>
+<li>shiny</li>
+<li>git : <a href="https://happygitwithr.com/" class="uri">https://happygitwithr.com/</a></li>
+<li>Where are things in RStudio?: <a href="https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1" class="uri">https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1</a></li>
+</ul>
+</div>
+</div>
+<div id="hierarchy-of-best-practices" class="section level2">
+<h2><span class="header-section-number">2.5</span> Hierarchy of best practices</h2>
+<ol style="list-style-type: decimal">
+<li>documentation</li>
+<li>run all script</li>
+<li>version control</li>
+<li>unit tests and sanity checks</li>
+<li>write functions, package them and tell everyone</li>
+<li>continuous integration</li>
+<li>makefile (caching)</li>
+</ol>
+</div>
+<div id="r-in-the-wild" class="section level2">
+<h2><span class="header-section-number">2.6</span> R in the wild</h2>
+<ul>
+<li><a href="https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/" class="uri">https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/</a></li>
+<li><a href="https://twitter.com/AmeliaMN/status/1126891572807729152?s=09" class="uri">https://twitter.com/AmeliaMN/status/1126891572807729152?s=09</a></li>
+<li>sports science: <a href="https://jacquietran.github.io/2019_may_rladies_akl/R/#1" class="uri">https://jacquietran.github.io/2019_may_rladies_akl/R/#1</a></li>
+<li>ggplot2: <a href="https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/" class="uri">https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/</a></li>
+<li>research compendium:
+<ul>
+<li><a href="https://github.com/seabbs/DirectEffBCGPolicyChange" class="uri">https://github.com/seabbs/DirectEffBCGPolicyChange</a></li>
+<li><a href="https://github.com/venexia/MR-antihypertensives-AD" class="uri">https://github.com/venexia/MR-antihypertensives-AD</a></li>
+<li><a href="https://github.com/saralpulit/fatdistnGWAS" class="uri">https://github.com/saralpulit/fatdistnGWAS</a></li>
+<li><a href="https://www.samabbott.co.uk/" class="uri">https://www.samabbott.co.uk/</a></li>
+</ul></li>
+<li>video, animation, presentation, website, write to excel</li>
+</ul>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="data-analysis.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-analysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="workshop.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

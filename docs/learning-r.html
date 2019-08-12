@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Robust data analysis: an introduction to R</title>
+  <title>Chapter 4 Learning R | Robust data analysis: an introduction to R</title>
   <meta name="description" content="Just some infos" />
   <meta name="generator" content="bookdown 0.12.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Robust data analysis: an introduction to R" />
+  <meta property="og:title" content="Chapter 4 Learning R | Robust data analysis: an introduction to R" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://sinarueeger.github.io/robust-data-analysis-with-r/" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="sinarueeger/robust-data-analysis-with-r" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Robust data analysis: an introduction to R" />
+  <meta name="twitter:title" content="Chapter 4 Learning R | Robust data analysis: an introduction to R" />
   
   <meta name="twitter:description" content="Just some infos" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="data-analysis.html"/>
+<link rel="prev" href="workshop.html"/>
+<link rel="next" href="appendix.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -167,24 +167,153 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Robust data analysis: an introduction to R</h1>
-<p class="author"><em>Sina Rüeger</em></p>
-<p class="date"><em>2019-08-12</em></p>
+<div id="learning-r" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Learning R</h1>
+<div id="embrace-imperfection" class="section level2">
+<h2><span class="header-section-number">4.1</span> Embrace imperfection</h2>
+<p>Programming is
+1. an iterative process
+2. and there is never only one solution</p>
+<div id="exploit-imperfection" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Exploit imperfection</h3>
+<ul>
+<li><p>Look at each others code</p></li>
+<li><p>Refactor your code</p></li>
+<li><p>Review each others code</p></li>
+<li><p>Pair programming</p></li>
+</ul>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This is the course material to the workshop <em>Robust data analysis: an introduction to R</em>.</p>
-<p>You find the slides <a href="https://sinarueeger.github.io/robust-data-analysis-with-r/slides.html">here</a> and the workshop in this <a href="https://github.com/sinarueeger/robust-data-analysis-with-r">repository</a>.</p>
+</div>
+<div id="how-to-ask-for-help" class="section level2">
+<h2><span class="header-section-number">4.2</span> How to ask for help</h2>
+<div id="look-online" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> 1. Look online</h3>
+<ul>
+<li><a href="https://stackoverflow.com/">Stack Overflow</a> (SO)</li>
+<li><a href="https://community.rstudio.com/">RStudio Community</a></li>
+</ul>
+</div>
+<div id="create-a-reproducible-example" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> 2. Create a reproducible example</h3>
+<ol style="list-style-type: decimal">
+<li>create a reproducbile example using a small R available dataset (e.g. iris)</li>
+<li><code>install.packages("reprex")</code></li>
+<li>select code and run reprex</li>
+</ol>
+<p><img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/reprex.png" alt="sdf" />
+<a href="https://github.com/jules32/useR-2019-keynote/tree/gh-pages/img" class="uri">https://github.com/jules32/useR-2019-keynote/tree/gh-pages/img</a></p>
+<!---- this will often already guide you to the solution ------->
+</div>
+<div id="ask-on-so-twitter-rstudio-help" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> 3. Ask on SO, twitter, RStudio help</h3>
+<p>C+P r bit into one of the follwing streams:</p>
+<ul>
+<li><p>Ask within a community (R-Ladies, R4DS)</p></li>
+<li><p><a href="https://community.rstudio.com/" class="uri">https://community.rstudio.com/</a></p></li>
+<li><p><a href="https://stackoverflow.com/" class="uri">https://stackoverflow.com/</a></p></li>
+<li><p>Twitter using the <code>#rstats</code> hashtag:</p></li>
+</ul>
+<!-------
+More: https://masalmon.eu/2018/07/22/wheretogethelp/
+- If its a bug: file an issue on github
 
+Why not writing directly to the maintainer? Because online helps
+----->
+</div>
+</div>
+<div id="become-part-of-the-community" class="section level2">
+<h2><span class="header-section-number">4.3</span> Become part of the community</h2>
+<div id="r-ladies" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> R-Ladies</h3>
+</div>
+<div id="code-of-conduct" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Code of Conduct</h3>
+</div>
+<div id="join-an-online-community" class="section level3">
+<h3><span class="header-section-number">4.3.3</span> Join an online community</h3>
+<ul>
+<li><p>R for Data Science online learning community: <a href="https://www.rfordatasci.com/" class="uri">https://www.rfordatasci.com/</a> (slack, tidytuesday)</p></li>
+<li><p>R-ladies Slack: <a href="https://www.rfordatasci.com/" class="uri">https://www.rfordatasci.com/</a></p></li>
+<li><p>French-speaking <a href="https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM">r-grrr Slack</a> (+ <a href="https://github.com/frrrenchies/frrrenchies">online ressources</a>)</p></li>
+</ul>
+</div>
+<div id="join-an-r-meetup" class="section level3">
+<h3><span class="header-section-number">4.3.4</span> Join an R meetup</h3>
+<ul>
+<li><p>In the lemanic region: <a href="http://use-r-carlvogt.github.io/prochains-lunchs/">R-Ladies</a>, <a href="https://www.meetup.com/Geneve-R-User-Group">RUG</a>, <a href="http://use-r-carlvogt.github.io/prochains-lunchs/">R lunches</a>, <a href="https://twitter.com/RLadiesRemote">adminR</a></p></li>
+<li><p><a href="https://twitter.com/RLadiesRemote">R Ladies Remote</a> (journal club)</p></li>
+<li><p>Full list of RUG’s <a href="https://jumpingrivers.github.io/meetingsR/r-user-groups.html">here</a> and for R-Ladies <a href="https://gqueiroz.shinyapps.io/rshinylady/">here</a>.</p></li>
+</ul>
+</div>
+<div id="engage-on-twitter" class="section level3">
+<h3><span class="header-section-number">4.3.5</span> Engage on Twitter</h3>
+<ul>
+<li><a href="https://twitter.com/dataandme">Mara Averick</a></li>
+<li><a href="https://twitter.com/ma_salmon">Maëlle Salmon</a></li>
+<li><a href="https://twitter.com/rfortherest">R for the rest of us</a></li>
+<li><a href="https://twitter.com/WeAreRLadies/status/1154698236583698432">WeAreRLadies</a></li>
+</ul>
+</div>
+<div id="ropensci" class="section level3">
+<h3><span class="header-section-number">4.3.6</span> <a href="https://ropensci.org">rOpenSci</a></h3>
+<ul>
+<li><p>Attend a community call (<a href="https://ropensci.org/commcalls/">archive</a>).</p></li>
+<li><p>Contribute via the shinyapp (<a href="https://ropensci.shinyapps.io/contributr/" class="uri">https://ropensci.shinyapps.io/contributr/</a>)</p></li>
+</ul>
+</div>
+<div id="read-blogposts" class="section level3">
+<h3><span class="header-section-number">4.3.7</span> Read blogposts</h3>
+<ul>
+<li><p>Weekly supply of blogposts here: <a href="https://rweekly.org/" class="uri">https://rweekly.org/</a></p></li>
+<li><p>write a blogpost (gist.github.com!)</p></li>
+</ul>
+</div>
+</div>
+<div id="learning-strategies" class="section level2">
+<h2><span class="header-section-number">4.4</span> Learning strategies</h2>
+<!-------
+- Learn with isolated & digestable examples
+- Surroud yourself with the language: embed R into your life
+- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
+- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
+- Make use of pen + paper
+-------->
+<div id="learn-with-isolated-digestable-examples" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Learn with isolated &amp; digestable examples</h3>
+</div>
+<div id="surround-yourself-with-the-language-embed-r-into-your-life" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Surround yourself with the language: embed R into your life</h3>
+</div>
+<div id="look-for-a-steady-stream-of-data-or-exercises" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Look for a steady stream of data or exercises</h3>
+<ul>
+<li><p><a href="https://github.com/rfordatascience/tidytuesday">tidytuesday</a></p></li>
+<li><p>Watch out for code puzzles: advent of code / tidies of march by <a href="https://irene.rbind.io/post/summer-rstudio/">Irene Steves</a></p></li>
+</ul>
+</div>
+<div id="watch-recordings" class="section level3">
+<h3><span class="header-section-number">4.4.4</span> Watch recordings</h3>
+<ul>
+<li>New York R conference <a href="https://www.rstats.nyc/2019/nyr/">recordings</a></li>
+<li>R conference <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg">recordings</a></li>
+<li>RStudio conference <a href="https://resources.rstudio.com/rstudio-conf-2019">recordings</a></li>
+<li>rOpenSci community call <a href="https://ropensci.org/commcalls/">archive</a></li>
+</ul>
+<!------- or attend a conference, screen casts --------->
+</div>
+<div id="make-use-of-pen-paper" class="section level3">
+<h3><span class="header-section-number">4.4.5</span> Make use of pen + paper</h3>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="data-analysis.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="workshop.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendix.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
