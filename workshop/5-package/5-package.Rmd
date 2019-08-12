@@ -1,0 +1,216 @@
+---
+title: "Create a package"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Preparation
+
+1. Create a [github account](https://happygitwithr.com/rstudio-git-github.html)
+1. Connect [RStudio to git and github](https://happygitwithr.com/rstudio-git-github.html)
+1. Install the `usethis` and the `devtools` package:
+  - `install.packages("devtools")`
+  - `install.packages("usethis")`
+
+## Create the package skeleton
+
+Run the following command in a R console:
+
+`usethis::create_package("~/tmp/EPFLcorpid")`
+
+This will open a new RStudio window. Head over there. 
+
+Then make sure the package repository will use git by typing: 
+
+```
+usethis::use_git()
+```
+
+Add a license:
+
+```
+usethis::use_mit_license()
+```
+
+Run a first check:
+
+```
+devtools::check()
+```
+
+Then commit all files with git (usually the top-right corner):
+
+
+Set up git + github:
+```
+usethis::use_github()
+```
+This will also update the `DESCRIPTION` file.
+
+Install the package:
+```
+devtools::install()
+```
+
+Add a rmarkdown `README` file that contains some information about how to install your package:
+
+```
+usethis::use_readme_rmd()
+```
+
+Knit the package, commit it and push all files. 
+
+---
+## Add content
+
+### R Code
+Add an R-file with the following command:
+```
+usethis::use_r("epfl_colors.R")
+```
+
+For now we will add a function that looks like [this one](https://github.com/sinarueeger/EPFLcorpid_template/blob/master/R/epfl_colors.R).
+
+```{r eval = FALSE}
+
+epfl_colors <- function(name = NULL, message = FALSE)
+{
+
+  #color_mat <- tibble::tribble(
+  #  ~epfl_color_name, ~human_color_name, ~hex,
+  #  "groseille", "dark-red", "#B51F1F" ,
+  #  "rouge", "red", "#FF0000"    ,
+  #  "canard", "dark-blue", "#007480" ,
+  #  "leman", "blue", "#00A79F"   ,
+  #  "ardoise", "dark-gray", "#413D3A"  ,
+  #  "perle", "gray", "#CAC7C7"
+  #)
+
+  color_mat <- structure(
+    list(
+      epfl_color_name = c("groseille", "rouge", "canard", "leman", "ardoise", "perle"),
+      human_color_name = c("dark-red", "red", "dark-blue", "blue", "dark-gray", "gray"),
+      hex = c("#B51F1F", "#FF0000", "#007480", "#00A79F", "#413D3A", "#CAC7C7")),
+    row.names = c(NA, -6L), class = c("tbl_df", "tbl", "data.frame"))
+
+  ## repeat lines that are blue for greed
+  color_mat_green <- color_mat[grep("blue", color_mat$human_color_name), ]
+  color_mat_green$human_color_name <- gsub("blue", "green", color_mat_green$human_color_name)
+
+  color_mat <- rbind(color_mat, color_mat_green)
+
+  color_mat_long <- stats::reshape(as.data.frame(color_mat), varying = list(1:2), direction = "long")[, c("epfl_color_name", "hex")]
+
+
+  if (message) message("EPFL corp id:\n\nUsing colors appropriately is one of the easiest ways to ensure that our documents reflect a coherent visual image or story from EPFL.\n\nAlways balance colors with generous white spaces.
+")
+
+  if(is.null(name))
+  {
+    return(color_mat)
+  } else {
+
+    if(any(color_mat_long$epfl_color_name %in% name))
+    {
+      out <- sapply(name, function(x) color_mat_long[color_mat_long$epfl_color_name == x, "hex"])
+    }else {
+      stop("The color you choose is not an EPFL color.")
+    }
+
+    return(out)
+
+  }
+
+
+}
+
+
+```
+
+### Add documentation
+
+```{r eval = FALSE}
+#' Get hex color ids for EPFL corporate colors
+#'
+#' @param name vector containing the color names (see below). If no name is supplied, then the whole color dataframe with two
+#' color names and the hex code is returned.
+#' @param message logical, displays the note from EPFL corporate identity.
+#'
+#' @details Color names are: \code{"dark-red"}, \code{"red"},
+#' \code{"dark-blue"}, \code{"blue"},  \code{"dark-green"}, \code{"green"},
+#' \code{"dark-gray"}, \code{"gray"}, or the the official names \code{"groseille"},
+#' \code{"rouge"}, \code{"canard"}, \code{"leman"}, \code{"ardoise"},
+#' \code{"perle"}.
+#'
+#' @references Source: \href{https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf}{EPFL Brand Guidelines}
+#'
+#' @return Named character vector or dataframe.
+#' @export
+#'
+#' @examples
+#' epfl_colors()
+#' epfl_colors("blue")
+#' epfl_colors("green")
+#' epfl_colors("green", message = TRUE)
+#'
+
+```
+Run the documentation with `Ctrl + Shift + D`
+
+### Update description
+
+1. `usethis::use_package()`
+
+### Rinse and repeat
+
+The steps are always: 
+
+- Load `Ctrl + Shift + L` (`devtools::load()`)
+- Build `Ctrl + Shift + B` (`devtools::install()`)
+- Document `Ctrl + Shift + D` (`devtools::document()`)
+- Check `Ctrl + Shift + E` (`devtools::check()`)
+
+### Pimp the README file
+
+1. Add a purpose + example
+1. Render the file
+
+
+### Push to your github repository
+
+
+## Extra stuff
+
+
+### Add unit tests
+
+1. `usethis::use_testthat()`
+1. `usethis::use_test("epfl_colors")`
+
+### Continuous integration
+
+`usethis::use_travis()`
+
+### Add vignette
+
+`usethis::use_vignette()`
+
+### Create a webpage
+
+`pkgdown::build_site()`
+
+### Submitting to CRAN
+
+Read [here](http://r-pkgs.had.co.nz/release.html)
+
+
+--- 
+## Clean up if this was only a demo
+
+```{r, eval = FALSE}
+install.packages("fs")
+fs::dir_delete("~/tmp/mypackage")
+```

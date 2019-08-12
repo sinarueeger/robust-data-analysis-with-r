@@ -1,0 +1,7 @@
+book_filename: "robust-data-analysis-with-r"
+chapter_name: "Chapter "
+repo: https://github.com/sinarueeger/robust-data-analysis-with-r
+output_dir: "../docs"
+rmd_files: ["index.Rmd", "01-robust-data-analysis.Rmd", "02-introduction-to-R.Rmd", "03-workshop.Rmd", "04-learning-R.Rmd"]
+clean: [packages.bib, bookdown.bbl]
+new_session: yes
