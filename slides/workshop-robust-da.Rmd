@@ -268,6 +268,10 @@ class: left, middle
 
 R helps you with the grammar for your analsysis, but the content you are still responsible.
 
+```{r demor, include = FALSE}
+library(demoR)
+## this is just a reminder to use this package
+```
 
 ---
 class: left, middle
@@ -515,6 +519,10 @@ class: left, middle
 1. `install.packages("reprex")`
 1. select code and run reprex
 
+![sdf](https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/reprex.png)
+https://github.com/jules32/useR-2019-keynote/tree/gh-pages/img
+
+
 <!---- this will often already guide you to the solution -------> 
 
 ---
@@ -699,7 +707,7 @@ class: left, middle
 # Inspiration
 
 - https://twitter.com/phillynerd/status/1130633179134607360?s=09
-- [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
+- [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson (also https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006023)
 - [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
 - Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
 - https://github.com/rstudio/parsons
