@@ -1,7 +1,7 @@
 --- 
 title: "Robust data analysis: an introduction to R"
 author: "Sina Rüeger"
-date: "2019-08-12"
+date: "2019-08-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -18,4 +18,12 @@ This is the course material to the workshop _Robust data analysis: an introducti
 
 You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-with-r/slides.html) and the workshop in this [repository](https://github.com/sinarueeger/robust-data-analysis-with-r).
 
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" height="400" alt="Cover image" />
+<p class="caption">Artwork by<a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a></p>
+</div>
+
+## License {-}
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
 

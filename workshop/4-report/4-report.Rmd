@@ -19,6 +19,58 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Import data
 
+```{r}
+
+## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-04-02
+bike_traffic <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-02/bike_traffic.csv")
+
+## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-14
+nobel_winners <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv")
+
+## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11
+meteorites <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv")
+
+library(ggplot2)
+ggplot(data = meteorites) + geom_point(aes(long, lat))
+
+
+
+## make a map
+
+library(ggplot2)
+library(dplyr)
+require(maps)
+require(viridis)
+theme_set(
+  theme_void()
+  )
+
+## basic
+world_map <- map_data("world")
+ggplot() +
+  geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
+  geom_point(data = meteorites, aes(long, lat), color="red", alpha=0.5)
+
+## color as year
+world_map <- map_data("world")
+ggplot() +
+  geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
+  geom_point(data = meteorites, aes(long, lat, color = year), alpha=0.5)
+
+
+## make an annimation
+library(gganimate)
+world_map <- map_data("world")
+ggplot(data = meteorites) +
+  geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
+  geom_point(data = meteorites, aes(long, lat), color="red", alpha=0.5) + 
+  transition_manual(year)  +
+  labs(title = "Date: {frame}") +
+  NULL
+
+
+```
+
 # Data preparation
 - use janitor + skimr
 
