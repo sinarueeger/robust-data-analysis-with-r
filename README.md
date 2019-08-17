@@ -2,11 +2,10 @@
 
 This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
 
-## Deploy 
+- [Slides](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) 
+- [Handbook](https://sinarueeger.github.io/robust-data-analysis-with-r/)
+- [Workshop](https://github.com/sinarueeger/robust-data-analysis-with-r/workshop).
 
-- https://community.rstudio.com/t/hosting-bookdown-in-github/20427/4
-- https://benmarwick.github.io/bookdown-ort/
-- link on website
 
 ## Notes
 
