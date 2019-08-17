@@ -3,6 +3,7 @@ title: ".large[Robust data analysis]"
 subtitle: "An introduction to R"
 author: "Sina Rüeger"
 date: "2019-09-05"
+output_dir: "../docs"
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "extra-theme.css"]
