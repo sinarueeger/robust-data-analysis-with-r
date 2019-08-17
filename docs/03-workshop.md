@@ -70,6 +70,8 @@ create a package with corporate colors EPFL: https://www.epfl.ch/campus/services
 
 - https://nanx.me/ggsci/
 - color package: https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
+- https://www.garrickadenbuie.com/blog/custom-discrete-color-scales-for-ggplot2/
+
 
 ### Task
 

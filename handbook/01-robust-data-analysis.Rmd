@@ -1,42 +1,49 @@
-# Data Analysis
+# Robust Data Analysis
 
 What is data anlysis and what makes it robust?
 
+## Data Analysis
 
-## Process to analyse data
+_Data analysis_ is a term that turns raw data into knowledge. This involves data wrangling, statistical analysis, and turning the results into something that is readable. 
 
-- wickham+grolemund: circle (Wickham & Grolemund, 201)
-- Elements & Principles (Hicks & Peng, 2019)
+[Grolemund & Wickham, 2017](https://r4ds.had.co.nz/workflow-basics.html) presented this as a diagram
 
+<div class="figure">
+<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" width="669" alt="R 4 DS image" />
+<p class="caption">From <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science by Grolemund & Wickham, 2017.</a></p>
+</div>
 
-### Loop
-(wickham + grolemund)
+- Wrangling is linear
+- Understanding is an iterative process
+- Portable box
 
+There are other ways to see _data analysis_, for example [Elements & Principles (Hicks & Peng, 2019)](https://arxiv.org/abs/1903.07639), that lays out the elements that build a data analysis, and the principles in assembling them. 
 
-### Elements & Principles
-(hicks + peng)
+Both ways of looking at data analysis, involve
 
-
-### Overlap between both approaches
-
-- tidy data
+- tidying data
 - reproducibility
-- flow + exit the flow or repeat the flow, modify
-- share results (which can then be used as an input again)
+- entrance + flow + exit the flow or repeat the flow, modify
+- sharing the results (which can then be used as an input again)
 
 
-## Requirements to a Software
 
-- reproducible
-- used by others
-- continuously development
-- high-level
-- exchange results with others
+## Requirements to Software (robustness)
+
+From this, we can think about the requirements we have to a software. 
+
+It should :
+- enhance reproducibility (closed loop, box)
+- be used by others (otherwise, sharing code is difficult)
+- be continuously developed & improved (new data formats, new communication formats)
+- easy to use (high-level language)
+- make it easy to exchange results with others
 
 
-## Automation
+## Programming = Automation
 
 Programming is essentially an automation of a process
+
 - for repeatable tasks (like adding two numbers)
 - scalable (many times repeating )
 - complicated tasks (variable selection)

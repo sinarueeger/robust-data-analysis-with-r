@@ -1,29 +1,43 @@
 # Introduction of R
 
+[R](https://www.r-project.org/) was developed for statistical data analysis. Or more precisely: The R Project for Statistical Computing.
+
+It is a free software and anyone can contribute to the software by creating a _package_. 
+
+Just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x)
+
+While it was developed to do mainly statistical computations (e.g. regression models) and data visualisation, it has now a lot of additional features that are somehow related to statistics, but could stand on its own. 
+
+Comes with *basic*/*default* packages, but there are over 13'000 R-packages that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github.
+
+
+
 ## Capabilities of R
 
-(show diagram from heidi seibold)
-- It has been developed to do statistical data analysis
-- Data insights
-- simple calculations
-- advanced statistical models
-- statistical data analysis
-- exchange with others
-- [access API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
-- [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
-- read in data
-- automise
-- speed up
+
+<div class="figure">
+<img src="img/heidibaya.png" width="300" alt="altruistic" />
+<p class="caption">Extract from presentation by <a href="https://docs.google.com/presentation/d/1VK1hngMZSY3FT2SrDd4_AHiB28CHrsuSsaFr7r3SAL8/edit#slide=id.p">Heidi Seibold</a></p>
+</div>
+
+
+Beyond being a calculator and being able to estimate statistical models, R can help us to organise the data analysis workflow better. 
+
+- **Communication of results** 
+  - through literate programming: `RMarkdown` (blogdown, bookdown, this!)
+  - through a web application: `shiny`
+- **Data visualisation**: `gganimate`, `ggplot2`, `ggmap`
+- **APIs**
+  - [access an API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
+  - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
+
+- Importing different types of data that is not txt
+- automise computation
+- speed up computation
 - run on a server
-- talk to github
+- talk to git
 - enforces standards (because you need to work a certan way with a certain structure)
 
-
-### R has three things that I believe makes it special
-
-- APIs
-- RMarkdown (shiny, html, websites, ... )
-- Plotting, anything visual
 
 ## Constantly improving
 
@@ -48,47 +62,93 @@ There are things R is good at and tasks that R is not that good at. And this has
 
 ### R
 
+- https://www.r-project.org/
+
 - core
 - anyone can contribute a package
 - Show print screen / website
+- Download here: https://stat.ethz.ch/CRAN/
 
+
+
+<div class="figure">
+<img src="img/r-project.png" width="300" alt="rproject" />
+<p class="caption">Website of <a href="https://www.r-project.org/">R Project</a></p>
+</div>
+
+<div class="figure">
+<img src="img/r-project-screenshot.png" width="300" alt="rproject" />
+<p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
+</div>
 
 ### RStudio
 
-- UI
-- works for any platform
-- costs for companies
-- solutions for servers
-- develop a lot of new packages
+
+<div class="figure">
+<img src="img/rstudio.png" width="300" alt="rproject" />
+<p class="caption">Website of <a href="https://www.rstudio.com/">RStudio</a></p>
+</div>
+
+<div class="figure">
+<img src="img/rstudio-screenshot.png" width="300" alt="rproject" />
+<p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
+</div>
+
+- User Interface for R
+- Works for any computer system (MacOSx, Linux, Windows)
+- [Desktop version is free](https://www.rstudio.com/products/rstudio/#Desktop)) if you are an individual user
+- develop a lot of new packages, e.g. [shiny](https://www.rstudio.com/products/shiny/)
 - anything between teaching and solutions for production
-- shiny
-- git : https://happygitwithr.com/
 - Where are things in RStudio?: https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1
+- Download here: https://www.rstudio.com/products/rstudio/download/
 
 
 ## Hierarchy of best practices
 
-1. documentation
-1. run all script
-1. version control
-1. unit tests and sanity checks
-1. write functions, package them and tell everyone
-1. continuous integration
-1. makefile (caching)
-
+1. documentation (`lintr`)
+1. run all script (`usethis`)
+1. version control (`gitr`)
+1. unit tests and sanity checks (`testthat`, `assertr`)
+1. write functions, package them and tell everyone (`devtools`, `blogdown`)
+1. continuous integration (`devtools`, `blogdown`)
+1. makefile (caching) (`drake`)
+1. binder (`holepunch`)
 
 ## R in the wild
 
-- https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
-- https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
-- sports science: https://jacquietran.github.io/2019_may_rladies_akl/R/#1
-- ggplot2: https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
-- research compendium: 
-    - https://github.com/seabbs/DirectEffBCGPolicyChange
-    - https://github.com/venexia/MR-antihypertensives-AD
-    - https://github.com/saralpulit/fatdistnGWAS
-    - https://www.samabbott.co.uk/
+- Fun stuff in R: [Thread on Twitter by Amelia McNamara](https://twitter.com/AmeliaMN/status/1126891572807729152?s=09)
+- Data Journalism: [Roger Federer @ SRF](https://www.srf.ch/static/srf-data/data/2018/federer/#/en)
+- The evolution of a ggplot: [Blogpost by Cederic Scherer](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/)
+- Research compendium: 
+    - [DirectEffBCGPolicyChange by Sam Abbott](https://github.com/seabbs/DirectEffBCGPolicyChange)
+    - [Mendelian Randomisation in AD](https://github.com/venexia/MR-antihypertensives-AD)
+    - [Fat distribution GWAS](https://github.com/saralpulit/fatdistnGWAS)
+    
+- Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
+- Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
 - video, animation, presentation, website, write to excel
+- ...
 
+
+## Getting started
+
+1. **Install** R :
+  - On a computer: via [RStudio](https://www.rstudio.com/products/rstudio/download/) or [R project](https://stat.ethz.ch/CRAN/).
+
+  - Or (easier) use R in browser: [rdrr.io/snippets/](https://rdrr.io/snippets/) (no login required) or [Studio Cloud](https://rstudio.cloud/) (login with google or githu baccount).
+
+1. ⁉️ Come up with a **question** you want to answer. 
+
+1. Get your hands on **data** 🔀 Take part in [TidyTuesday](https://github.com/rfordatascience/tidytuesday). 
+
+
+
+
+
+## More
+
+- Some [history of R](https://statfr.blogspot.com/2018/08/r-generation-story-of-statistical.html)
+- [How to install R and RStudio](https://courses.edx.org/courses/UTAustinX/UT.7.01x/3T2014/56c5437b88fa43cf828bff5371c6a924/)
+- To use git, github and RStudio, checkout [Happy git with R](https://happygitwithr.com/).
 
 

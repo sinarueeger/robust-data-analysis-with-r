@@ -94,10 +94,23 @@ class: left, middle, inverse
 ---
 class: left, middle
 
-# Process to analyse data
+# Data Analysis Workflow
 
-- wickham+grolemund: circle (Wickham & Grolemund, 201)
-- Elements & Principles (Hicks & Peng, 2019)
+<div class="figure">
+<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" width="669" alt="R 4 DS image" />
+<p class="caption">From <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science by Grolemund & Wickham, 2017.</a></p>
+</div>
+
+---
+class: center, middle
+
+# Emojification of Data Analysis Workflow
+
+
+## `r emo::ji("thinking")` `r icon::fa_arrow_right(colour = "gray")` `r icon::fa_table(colour = "black")` `r icon::fa_arrow_right(color = "gray")` `r icon::fa_laptop(colour = "#377eb8")` `r icon::fa_arrows_alt(color = "gray")` `r icon::fa_r_project(colour = "#377eb8")` `r icon::fa_arrow_right(colour = "gray")` `r icon::fa_chart_line(color = "#f03b20")` `r icon::fa_arrow_right(colour = "gray")` `r icon::fa_lightbulb(color = "#31a354")` `r icon::fa_arrow_right(colour = "gray")` `r icon::fa_map_signs(color = "#d95f0e")`
+<!--- question > getting data > analysing / distill knowledge > do soemthing with that -->
+
+`Question > Data > Analyse data with a tool > Distill knowlege from data > Feel enlightened :-) > Take decisions`
 
 ---
 class: left, middle
@@ -120,21 +133,22 @@ class: left, middle
 
 # Overlap between both approaches
 
-- tidy data
+- tidying data
 - reproducibility
-- flow + exit the flow or repeat the flow, modify
-- share results (which can then be used as an input again)
+- entrance + flow + exit the flow or repeat the flow, modify
+- sharing the results (which can then be used as an input again)
 
 ---
 class: left, middle
 
-# Requirements to a Software
+# Requirements to Software
 
-- reproducible
-- used by others
-- continuously development
-- high-level
-- exchange results with others
+
+- enhance reproducibility 
+- be used by others
+- be continuously developed & improved
+- ease of use
+- making it easy to exchange results with others
 
 <!------------------------------------------------------->
 <!--------------- Thought experiment -------------------->
@@ -183,38 +197,59 @@ class: left, middle, inverse
 ---
 class: left, middle
 
+- is "a programming language for statistical computing"
+
+- is free
+
+- has a webpage: https://www.r-project.org/
+
+- just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x)
+
+- comes with *basic*/*default* packages, but there are over 13'000 R-packages `r emo::ji("open_mouth")` that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github
+
+
+
+---
+class: inverse, center, middle
+
+# What is R used for?
+
+---
+class: middle
+
+# Quite a few things
+
+- In general lots of (but not all) data science, data analysis & stats stuff
+
+- Me: genomics, biostatistics
+
+- To make presentations (this one)
+
+---
+class: left, middle
+
 # Capabilities of R
 
-(show diagram from heidi seibold)
-- It has been developed to do statistical data analysis
-- Data insights
-- simple calculations
-- advanced statistical models
-- statistical data analysis
-- exchange with others
-- [access API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
-- [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
-- read in data
-- automise
-- speed up
-- run on a server
-- talk to github
-- enforces standards (because you need to work a certan way with a certain structure)
+
+Beyond being a calculator and being able to estimate statistical models, R can help us to organise the data analysis workflow better. 
+
+- **Communication of results** 
+  - through literate programming: `RMarkdown` (blogdown, bookdown, this!)
+  - through a web application: `shiny`
+- **Data visualisation**: `gganimate`, `ggplot2`, `ggmap`
+- **APIs**
+  - [access an API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
+  - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png)
 
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png" width="300" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
 
----
-class: left, middle
-
-### R has three things that I believe makes it special
-
-- APIs
-- RMarkdown (shiny, html, websites, ... )
-- Plotting, anything visual
 
 ---
 class: left, middle
@@ -239,7 +274,7 @@ class: left, middle
 
 - If you hear the term library or package, then this is simply a collection of functions. In opensource languages, anyone can contribute a package. And we will do this later. 
 
-- Example with plot: function, arguments, pacakage, libraary, objects
+- Example with plot: function, arguments, package/library, objects
 
 
 ---
@@ -247,26 +282,27 @@ class: left, middle
 
 .pull-left[
 # R
+- Core development of R
+- Anyone can contribute with a package
 
-- core
-- anyone can contribute a package
-- Show print screen / website
+<div class="figure">
+<img src="img/r-project-screenshot.png" width="300" alt="rproject" />
+<p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
+</div>
 
 ]
 
 
 .pull-right[
 # RStudio
+- User interface to R
+- Works for any platform
+- Free for individual users
 
-- UI
-- works for any platform
-- costs for companies
-- solutions for servers
-- develop a lot of new packages
-- anything between teaching and solutions for production
-- shiny
-- git : https://happygitwithr.com/
-- Where are things in RStudio?: https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1
+<div class="figure">
+<img src="img/rstudio-screenshot.png" width="300" alt="rproject" />
+<p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
+</div>
 
 ]
 
@@ -275,7 +311,7 @@ class: left, middle
 
 # Analogy
 
-R helps you with the grammar for your analsysis, but the content you are still responsible.
+R helps you with the grammar for your analysis, but the content you are still responsible.
 
 ```{r demor, include = FALSE}
 library(demoR)
@@ -287,35 +323,100 @@ class: left, middle
 
 # Hierarchy of best practices
 
-1. documentation
-1. run all script
-1. version control
-1. unit tests and sanity checks
-1. write functions, package them and tell everyone
-1. continuous integration
-1. makefile (caching)
+1. documentation (`lintr`)
+1. run all script (`usethis`)
+1. version control (`gitr`)
+1. unit tests and sanity checks (`testthat`, `assertr`)
+1. write functions, package them and tell everyone (`devtools`, `blogdown`)
+1. continuous integration (`devtools`, `blogdown`)
+1. makefile (caching) (`drake`)
+1. binder (`holepunch`)
 
 ---
 class: left, middle
 
 # R in the wild
 
-- https://www.hvitfeldt.me/blog/circle-love-making-hearts-with-circles/
-- https://twitter.com/AmeliaMN/status/1126891572807729152?s=09
-- sports science: https://jacquietran.github.io/2019_may_rladies_akl/R/#1
-- ggplot2: https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/
-- research compendium: 
-    - https://github.com/seabbs/DirectEffBCGPolicyChange
-    - https://github.com/venexia/MR-antihypertensives-AD
-    - https://github.com/saralpulit/fatdistnGWAS
-    - https://www.samabbott.co.uk/
-- video, animation, presentation, website, write to excel
+---
+class: left, middle
+
+## Research compendium
+
+- [DirectEffBCGPolicyChange by Sam Abbott](https://github.com/seabbs/DirectEffBCGPolicyChange)
+
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png)
-Artwork by [Alison Horst]() and [Dr. Julia Lowndes](@jules32) - director of Openscapes. Illustration after wickham + grolemund. Download [here](https://github.com/allisonhorst/stats-illustrations/tree/master/openscapes).
+## Data journalism
+
+<a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">
+<img border="0" alt="SRF" src="img/datajournalism.png" width="800">
+</a>
+
+
+[Source: SRF](https://www.srf.ch/static/srf-data/data/2018/federer/#/en)
+
+---
+
+## Data journalism
+
+<a href="https://srfdata.github.io/2018-01-roger-federer/#load_data">
+<img border="0" alt="SRF" src="img/datajournalism_code.png" width="800">
+</a>
+
+[Source: SRF](https://srfdata.github.io/2018-01-roger-federer/)
+
+
+
+---
+
+## Web application with Shiny
+
+<a href="https://kevinrue.shinyapps.io/isee-shiny-contest/">
+<img border="0" alt="SRF" src="https://d33wubrfki0l68.cloudfront.net/8e0d1f45ed43ea538143b4b3cc7ea1cd7ad17e69/33284/images/2019-04-05-isee.png" width="800">
+</a>
+
+[Source: Winner of the Shiny Contest 2019](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/
+)
+
+
+
+
+
+---
+
+## Animations
+
+<a href="https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif">
+<img src="https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif" width="400">
+</a>
+
+[Source: Github @gadenbuie](https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs)
+
+---
+
+## Fun things: Memes and GIFs
+
+<a href="http://djnavarro.net/post/2018-05-03-valid-social-commentary/">
+<img src="http://djnavarro.net/post/2018-05-03-valid-social-commentary_files/figure-html/unnamed-chunk-2-1.png" width="600">
+</a>
+
+[Source: Danielle Navaro](http://djnavarro.net/post/2018-05-03-valid-social-commentary/)
+
+
+
+
+---
+class: left, middle
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" height="400" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+</div>
+
+
+
 
 
 <!------------------------------------------------------->
