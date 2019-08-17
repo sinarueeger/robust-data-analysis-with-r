@@ -50,9 +50,11 @@ theme_set(hrbrthemes::theme_ipsum(subtitle_size = 14, caption_size = 9, axis_tit
 ---
 class: left, middle
 
-## 1. Download Slides: bit.ly/....
+## Slides:  https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html
 
-## 2. Go to Github repository: github.com/...
+## Handbook: https://sinarueeger.github.io/robust-data-analysis-with-r/
+
+## Github repository: github.com/sinarueeger/robust-data-analysis-with-r/workshop
 
 <!---------------------- ToC ------------------------------>
 
