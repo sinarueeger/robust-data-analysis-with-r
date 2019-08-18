@@ -22,11 +22,15 @@
 
 a, a > code {
  text-decoration: underline; /* turns off background coloring of links */
+ line-height: 1.5em;
+}
+
+body {
+  line-height: 2.5em;
 }
 
 
-
-h2, h3 {
+h1, h2, h3 {
   line-height: 1.5em;
 }
 

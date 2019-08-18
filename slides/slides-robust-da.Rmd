@@ -15,6 +15,7 @@ output:
       countIncrementalSlides: false
       highlightSpans: true
       titleSlideClass: [center, middle, inverse]
+      ratio: '16:9' 
     self_contained: true
 ---
 
@@ -26,7 +27,8 @@ mono_light(
   base_color = "black",
   header_font_google = google_font("Arapey"), ## Oswald
   text_font_google   = google_font("Karla", "400", "700i"),  ## Roboto
-  code_font_google   = google_font("Inconsolata")
+  code_font_google   = google_font("Inconsolata"),#,
+  text_font_size = "30px"
   )
 ```
 
@@ -51,11 +53,14 @@ theme_set(hrbrthemes::theme_ipsum(subtitle_size = 14, caption_size = 9, axis_tit
 ---
 class: left, middle
 
-## Slides:  https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html
+## **Slides**
+### https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html
 
-## Handbook: https://sinarueeger.github.io/robust-data-analysis-with-r/
+## **Handbook**
+### https://sinarueeger.github.io/robust-data-analysis-with-r/
 
-## Github repository: github.com/sinarueeger/robust-data-analysis-with-r/workshop
+## **Github repository**
+### https://github.com/sinarueeger/robust-data-analysis-with-r/workshop
 
 <!---------------------- ToC ------------------------------>
 
@@ -63,23 +68,23 @@ class: left, middle
 class: left, middle
 
 .pull-left[
-# 1. 
+# **1.**
 ### What makes a Data Analysis robust?
 
 <br>
 
-# 3. 
+# **3.** 
 ### Workshop
 
 ]
 
 .pull-right[
-# 2. 
+# **2.** 
 ### How can R help with that?
 
 <br>
 
-# 4. 
+# **4.** 
 ### Learning R
 ]
 
@@ -91,7 +96,7 @@ class: left, middle
 class: left, middle, inverse
 
 # Part 1
-# Data Analysis
+# **Data Analysis**
 
 
 ---
@@ -198,19 +203,15 @@ class: left, middle, inverse
 class: left, middle, inverse
 
 # Part 2
-# R
+# **R**
 
 ---
 class: left, middle
 
 - is "a programming language for statistical computing"
-
 - is free
-
 - has a webpage: https://www.r-project.org/
-
 - just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x)
-
 - comes with *basic*/*default* packages, but there are over 13'000 R-packages `r emo::ji("open_mouth")` that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github
 
 
@@ -226,9 +227,7 @@ class: middle
 # Quite a few things
 
 - In general lots of (but not all) data science, data analysis & stats stuff
-
 - Me: genomics, biostatistics
-
 - To make presentations (this one)
 
 ---
@@ -271,15 +270,10 @@ class: left, middle
 # Functions and libraries
 
 - Programming typically works like this: you apply a function to an object. 
-
 - You could also say that you apply an action (a verb) to an object (a noun). 
-
 - Excel also has functions: these are the tabs, and the object would be your active sheet. 
-
 - This is an important propertiy, because a chain of such verbs can create a programming script. 
-
 - If you hear the term library or package, then this is simply a collection of functions. In opensource languages, anyone can contribute a package. And we will do this later. 
-
 - Example with plot: function, arguments, package/library, objects
 
 
@@ -434,14 +428,16 @@ class: left, middle, inverse
 class: left, middle, inverse
 
 # Part 3
-# Workshop
+# **Workshop**
 
 
 ---
 class: left, middle
 
 .pull-left[
-# Allie Burns
+# Allison Burns
+
+Doctoral Student in Gräff Group
 
 
 ]
@@ -697,7 +693,7 @@ class: left, middle, inverse
 
 
 # Part 4
-# Learning R
+# **Learning R**
 
 <!----------------------------------------------->
 ---
@@ -721,11 +717,8 @@ class: left, middle
 ## Exploit imperfection
 
 - Look at each others code
-
 - Refactor your code
-
 - Review each others code
-
 - Pair programming
 
 
@@ -774,11 +767,8 @@ class: left, middle
 C+P r bit into one of the follwing streams:
 
 - Ask within a community (R-Ladies, R4DS)
-
 - https://community.rstudio.com/
-
 - https://stackoverflow.com/
-
 - Twitter using the `#rstats` hashtag: 
 
 <!-------
@@ -838,9 +828,7 @@ class: left, middle
 ## Join an online community
 
 - R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
-
 - R-ladies Slack: https://www.rfordatasci.com/
-
 - French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online ressources](https://github.com/frrrenchies/frrrenchies))
 
 ---
@@ -849,9 +837,7 @@ class: left, middle
 ## Join an R meetup
 
 - In the lemanic region: [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/), [RUG](https://www.meetup.com/Geneve-R-User-Group), [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/), [adminR](https://twitter.com/RLadiesRemote)
-
 - [R Ladies Remote](https://twitter.com/RLadiesRemote) (journal club)
-
 - Full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://gqueiroz.shinyapps.io/rshinylady/).
 
 
@@ -893,7 +879,6 @@ class: left, middle
 ## Read blogposts
 
 - Weekly supply of blogposts here: https://rweekly.org/
-
 - write a blogpost (gist.github.com!)
 
 
@@ -926,8 +911,7 @@ class: left, middle
 
 ## Look for a steady stream of data or exercises
 
-- [tidytuesday](https://github.com/rfordatascience/tidytuesday)
-
+- [tidytuesday](https://github.com/rfordatascience/tidytuesday)s
 - Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
 
 ---
