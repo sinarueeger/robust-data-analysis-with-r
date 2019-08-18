@@ -567,7 +567,7 @@ class: left, middle, inverse
 ---
 class: left, middle
 
-# Tidy Data
+# Tidy + Transform Data
 
 ---
 class: left, middle

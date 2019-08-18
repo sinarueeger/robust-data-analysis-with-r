@@ -27,7 +27,6 @@ Don't hesitate to use paper + pen
 
 
 ## Import data
-# Import Data
 
 ---
 class: left, middle
@@ -46,13 +45,23 @@ class: left, middle
 - datapasta: https://twitter.com/dataandme/status/1148548556850114561
 - fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
-## Tidy Data
+# Tidy + Transform Data
 
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png" height="500" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
+
+
+### What is tidy data? 
+
+https://r4ds.had.co.nz/tidy-data.html
+There are three interrelated rules which make a dataset tidy:
+
+  - Each variable must have its own column.
+  - Each observation must have its own row.
+  - Each value must have its own cell.
 
 
 ### Task

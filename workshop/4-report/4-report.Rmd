@@ -1,7 +1,7 @@
 ---
-title: "Tick report"
-author: Sina
-date: "2019-02-07 (updated: `r Sys.Date()`)" 
+title: "Meteorite report"
+author: <Your Name>
+date: "2019-09-07 (updated: `r Sys.Date()`)" 
 output: 
   html_document:
     toc: true
@@ -24,22 +24,68 @@ Put it in context with the data analysis workflow.
 
 
 ```{r}
+download.file(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv", 
+  "~/tmp/meteorites.csv")
 
-## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-04-02
-bike_traffic <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-04-02/bike_traffic.csv")
+dat_raw <- readr::read_csv("~/tmp/meteorites.csv")
 
-## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-05-14
-nobel_winners <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-05-14/nobel_winners.csv")
+```
+# Tidy data
 
-## https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11
-meteorites <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv")
+Done
 
+
+# Transform data
+
+```{r}
+dat <- dat_raw %>% 
+## 1) Remove rows that have year as NA
+  filter(!is.na(year)) %>%
+## 2) remove name_type Relict cases
+  filter(name_type != "Relict") %>%
+## 3) remove mass min
+  filter(mass > 0) %>%
+## 4) remove years with more than 2019
+  filter(year <= 2019) %>%
+## 5) create a variable century
+  mutate(century = cut(year, c(0, 1900, 2019)))
+
+
+```
+
+# Descriptive analysis
+
+```{r}
+skimr::skim(dat) %>% 
+  skimr::kable(format = 'html', booktabs = T) %>% 
+  kableExtra::kable_styling(font_size = 9)
+
+```
+
+
+## Histogram
+
+ggplot(data = dat) + geom_histogram(aes(year))
+
+## Scatterplot
+
+ggplot(data = dat) + geom_point(aes(year, mass))
+
+
+
+## Map
+
+```{r fig.height=7, fig.width=7}
 library(ggplot2)
-ggplot(data = meteorites) + geom_point(aes(long, lat))
+ggplot(data = dat) + geom_point(aes(long, lat))
+
+ggplot(data = dat) + geom_point(aes(long, lat)) + facet_wrap(~ century)
+```
 
 
 
-## make a map
+```{r fig.height=7, fig.width=7}
 
 library(ggplot2)
 library(dplyr)
@@ -54,13 +100,20 @@ world_map <- map_data("world")
 ggplot() +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
   geom_point(data = meteorites, aes(long, lat), color="red", alpha=0.5)
+```
+
+Color as year
+```{r fig.height=7, fig.width=7}
 
 ## color as year
 world_map <- map_data("world")
 ggplot() +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
   geom_point(data = meteorites, aes(long, lat, color = year), alpha=0.5)
+```
 
+Animation
+```{r fig.height=7, fig.width=7}
 
 ## make an annimation
 library(gganimate)
@@ -72,27 +125,18 @@ ggplot(data = meteorites) +
   labs(title = "Date: {frame}") +
   NULL
 
-
 ```
 
-# Data preparation
-- use janitor + skimr
 
 
-# Descriptive analysis
 
+# Model
 
-# Map
+Fit a prediction model that takes year, location and mass into account
 
-```{r cars, echo=FALSE}
-summary(cars)
-```
+# Export
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-## store out
+Store transformed data
 
 ```{r}
 #as xlsx
@@ -103,17 +147,19 @@ plot(pressure)
 #write.xlsx(res_sm, file = glue::glue("{DIR_DESCRIPT}/ms_tables.xlsx"),
 #           sheetName = "Table 2 (results summary)", append = TRUE, showNA=FALSE, row.names = FALSE)
 
+## as text file
+readr::write_table2(dat, path = "~/tmp/meteorites_transformed.csv")
 
-#library( writexl)
-#?write_xlsx
-#tmp <- write_xlsx(list(mysheet = iris))
-#readxl::read_xlsx(tmp)
+## as Excel file
+library( writexl)
+?write_xlsx
+write_xlsx(dat, path = "~/tmp/meteorites_transformed.xlsx")
 
-#as csv
 ```
 
-# Exercise
+# Task
 
+- change title
 - export as pdf/word/markdown
 - 
 
