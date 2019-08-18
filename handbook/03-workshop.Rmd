@@ -3,56 +3,102 @@
 Don't hesitate to use paper + pen
 
 
-## Plotting + model
+## Data visualisation
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
 
 ### Task
-Change something on the plot
 
-
-### Good to know
-plotly, animation
-
-
-## Make a map
-
-### Task
-Change pin location
-make a leaflet with watercolors
+- As a user, what would you like to change? 
+- Changes
+- Add geom
+- Add title
+- Store a PDF
 
 ### Good to know
+- ['{esquisse}'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
+- many other \#dataviz libraries in R: [`{gganimate}`](https://github.com/thomasp85/gganimate), [`{plotly}`](https://plot.ly/r/), [`{vegalite}`](https://github.com/hrbrmstr/vegalite)
+- [R Graph Gallery](https://www.r-graph-gallery.com/)
+- Publication ready plots with [`{cowplot}`](https://github.com/wilkelab/cowplot) and [`{ggpubr}`](https://github.com/kassambara/ggpubr)
+
 
 
 ## Import data
+# Import Data
 
-Rexcel
+---
+class: left, middle
 
 ### Task
-import other data
 
-### info
+- import an xls table
+- import other data
+
+---
+class: left, middle
+
+### Good to know
+
+- different r packages to import data: [`{readr}`](), [`{data.table}`]()
 - datapasta: https://twitter.com/dataandme/status/1148548556850114561
 - fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
+## Tidy Data
 
-### good to know
-- different r packages to import data: readr, data.table
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
+
+### Task
+
+- add a column
+
+### Good to know
+
+- [`{dplyr`}]()
+- [`{janitor`}]() package
 
 
 
 ## Report with Rmarkdown
 
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
 ### Task
 export as pdf/word/markdown
 
-### Infos
+### Good to know
 - https://rmd4sci.njtierney.com/
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
-
-
-### Extra
-
 - Look into xaringan and CSS file
 - code download button: https://twitter.com/apreshill/status/1108925218850893832
+
+
+
+## Extra: Git & R
+
+You use git already: congratulations. 
+
+You want to use git but you are scared: 
+- use the interface
+- use gist.github.com (great for blogposts and small scripts)
+- start with sharing slides / gist.github (from julie lowndes keynote)
+- happygit with R
+- https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1
+- Playground: https://learngitbranching.js.org/
+
+
+
+
 
 ## Commenting & Documentation
 
@@ -75,35 +121,12 @@ create a package with corporate colors EPFL: https://www.epfl.ch/campus/services
 
 ### Task
 
-Add an extra color 
+- Add an extra color 
+- Add your own function
 
-### Info
+
+### Good to know
 - packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
 - packages: https://masalmon.eu/2017/12/11/goodrpackages/
-
-### Extra 
-Add your own function
-
-
-
-## Extra stuff
-
-- Shiny
-- collaborative writing
-- Git & R
-
-
-
-## Extra: Git & R
-
-You use git already: congratulations. 
-
-You want to use git but you are scared: 
-- use the interface
-- use gist.github.com (great for blogposts and small scripts)
-- start with sharing slides / gist.github (from julie lowndes keynote)
-- happygit with R
-- https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1
-- Playground: https://learngitbranching.js.org/
 
 

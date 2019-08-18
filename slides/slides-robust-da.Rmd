@@ -187,6 +187,9 @@ Programming is essentially an automation of a process
 
 A side effect of a certain automation also brings reproducibility. 
 
+---
+class: left, middle, inverse
+
 
 <!------------------------------------------------------->
 <!---------------------- PART 2 ------------------------->
@@ -245,11 +248,11 @@ Beyond being a calculator and being able to estimate statistical models, R can h
   - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
 
 ---
-class: left, middle
+class: center, middle
 
 
 <div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png" width="300" alt="Cover image" />
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png" height="500" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
 
@@ -289,7 +292,7 @@ class: left, middle
 - Anyone can contribute with a package
 
 <div class="figure">
-<img src="img/r-project-screenshot.png" width="300" alt="rproject" />
+<img src="img/r-project-screenshot.png" width="400" alt="rproject" />
 <p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
 </div>
 
@@ -303,7 +306,7 @@ class: left, middle
 - Free for individual users
 
 <div class="figure">
-<img src="img/rstudio-screenshot.png" width="300" alt="rproject" />
+<img src="img/rstudio-screenshot.png" width="400" alt="rproject" />
 <p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
 </div>
 
@@ -414,13 +417,15 @@ class: left, middle
 class: left, middle
 
 <div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" height="400" alt="Cover image" />
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" height="600" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 
 
 
 
+---
+class: left, middle, inverse
 
 <!------------------------------------------------------->
 <!---------------------- PART 3 ------------------------->
@@ -431,113 +436,207 @@ class: left, middle, inverse
 # Part 3
 # Workshop
 
+
+---
+class: left, middle
+
+.pull-left[
+# Allie Burns
+
+
+]
+.pull-right[
+![](https://people.epfl.ch/private/common/photos/links/266506.jpg?ts=1566121627)
+
+]
+
+
 ---
 class: left, middle
 
 Use paper + pen
 
 
+---
+class: left, middle, inverse
+
+---
+class: left, middle
+# Data visualisation
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png)
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
 
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_masterpiece.png)
-
----
-class: left, middle
-
-
-# 1. Plotting + model
 
 ## Task
-Change something on the plot
 
-
-## Good to know
-plotly, animation
-
+- As a user, what would you like to change? 
+- Changes
+- Add geom
+- Add title
+- Store a PDF
 
 ---
 class: left, middle
-
-
-# 2. Make a map
-
-## Task
-Change pin location
-make a leaflet with watercolors
 
 ## Good to know
 
+- ['{esquisse}'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
+- many other \#dataviz libraries in R: [`{gganimate}`](https://github.com/thomasp85/gganimate), [`{plotly}`](https://plot.ly/r/), [`{vegalite}`](https://github.com/hrbrmstr/vegalite)
+- [R Graph Gallery](https://www.r-graph-gallery.com/)
+- Publication ready plots with [`{cowplot}`](https://github.com/wilkelab/cowplot) and [`{ggpubr}`](https://github.com/kassambara/ggpubr)
+
+---
+class: left, bottom
+
+.pull-left[
+## ggpubr
+
+Annotate plot with meta data
+
+<div class="figure">
+<img src="https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png" height="400" alt="Cover image" />
+<p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
+</div>
+
+
+]
+
+.pull-right[
+
+Arrange plots
+
+<div class="figure">
+<img src="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange-1.png" height="400" alt="Cover image" />
+<p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
+</div>
+
+]
+
+
 
 ---
 class: left, middle
 
-![](https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/dplyr_mutate.png)
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_masterpiece.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
+---
+class: left, middle, inverse
+
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png)
+# Import Data
 
 ---
 class: left, middle
-
-# 3. Import data
-
-Rexcel
 
 ## Task
-import other data
 
-## info
+- import an xls table
+- import other data
+
+---
+class: left, middle
+
+## Good to know
+
+- different r packages to import data: [`{readr}`](), [`{data.table}`]()
 - datapasta: https://twitter.com/dataandme/status/1148548556850114561
 - fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
 
-## good to know
-- different r packages to import data: readr, data.table
-
-
-
+---
+class: left, middle, inverse
 
 
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_rockstar.png)
-
-
----
-class: left, middle
-
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png)
-
+# Tidy Data
 
 ---
 class: left, middle
 
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
 
-# 4. Report with Rmarkdown
+
+---
+class: left, middle
 
 ## Task
-export as pdf/word/markdown
 
-## Infos
-- https://rmd4sci.njtierney.com/
+- add a column
+
+---
+class: left, middle
+
+## Good to know
+
+- [`{dplyr`}]()
+- [`{janitor`}]() package
+
+---
+class: left, middle, inverse
+
+---
+class: left, middle
+
+# Report with RMarkdown
+
+---
+class: left, middle
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
+
+
+
+
+---
+class: left, middle
+
+# Task
+- add a part
+- export as pdf/word/markdown
+
+
+---
+class: left, middle
+
+## Good to know
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
-
-
-## Extra
-
-- Look into xaringan and CSS file
+- more about RMarkdown here: https://rmd4sci.njtierney.com/
+- Look into xaringan and CSS file, more by [Alison Hill](https://arm.rbind.io/slides/xaringan.html)
 - code download button: https://twitter.com/apreshill/status/1108925218850893832
+
+
+---
+class: left, middle
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_rockstar.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
 
 
 ---
@@ -554,39 +653,19 @@ class: left, middle
 
 
 
+---
+class: left, middle, inverse
 
 
 ---
 class: left, middle
 
-# 5. Create an R package
+<div class="figure">
+<img src="https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
+" height="500" alt="Cover image" />
+<p class="caption">Source <a href="https://happygitwithr.com/">Happy Git with R by Jenny Bryan</a></p>
+</div>
 
-create a package with corporate colors EPFL: https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf
-
-- https://nanx.me/ggsci/
-- color package: https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
-
-## Task
-
-Add an extra color 
-
-## Info
-- packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
-- packages: https://masalmon.eu/2017/12/11/goodrpackages/
-
-## Extra 
-Add your own function
-
-
-
----
-class: left, middle
-
-# 6. Extra stuff
-
-- Shiny
-- collaborative writing
-- Git & R
 
 
 ---
@@ -594,18 +673,21 @@ class: left, middle
 
 # Extra: Git & R
 
+
 You use git already: congratulations. 
 
 You want to use git but you are scared: 
-- use the interface
+- use the interface in RStudio: _Happy Git with R_
 - use gist.github.com (great for blogposts and small scripts)
 - start with sharing slides / gist.github (from julie lowndes keynote)
-- happygit with R
+- 
 - https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1
 - Playground: https://learngitbranching.js.org/
 
 
 
+---
+class: left, middle, inverse
 
 <!------------------------------------------------------->
 <!---------------------- PART 4 ------------------------->
@@ -666,7 +748,11 @@ class: left, middle
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png)
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
 
 ---
 class: left, middle
@@ -676,9 +762,6 @@ class: left, middle
 1. create a reproducbile example using a small R available dataset (e.g. iris)
 1. `install.packages("reprex")`
 1. select code and run reprex
-
-![sdf](https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/reprex.png)
-https://github.com/jules32/useR-2019-keynote/tree/gh-pages/img
 
 
 <!---- this will often already guide you to the solution -------> 
@@ -731,9 +814,11 @@ class: left, middle
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-teamwork.png)
-Artwork by [Alison Horst]() and [Dr. Julia Lowndes](@jules32) - director of Openscapes. Illustration after wickham + grolemund. Download [here](https://github.com/allisonhorst/stats-illustrations/tree/master/openscapes).
 
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-teamwork.png" height="600" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+</div>
 
 ---
 class: left, middle
@@ -773,7 +858,12 @@ class: left, middle
 ---
 class: left, middle
 
-![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/welcome_to_rstats_twitter.png)
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/welcome_to_rstats_twitter.png" height="600" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
 
 ---
 class: left, middle
@@ -849,7 +939,6 @@ class: left, middle
 - R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
 - RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
 - rOpenSci community call [archive](https://ropensci.org/commcalls/)
-
 <!------- or attend a conference, screen casts --------->
 
 ---
@@ -857,35 +946,12 @@ class: left, middle
 
 ## Make use of pen + paper
 
-<!------------------------------------------------------->
-<!---------------------- ANNEX -------------------------->
-<!------------------------------------------------------->
----
-class: left, middle, inverse
-
-
-# Links
 
 ---
 class: left, middle
 
-# More info
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" height="600" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+</div>
 
-- https://learningstatisticswithr.com/
-- https://r4ds.had.co.nz/
-
----
-class: left, middle
-
-# Inspiration
-
-- https://twitter.com/phillynerd/status/1130633179134607360?s=09
-- [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson (also https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006023)
-- [Curriculum Development](https://twitter.com/dataandme/status/1140390752670965760) by Mine Cetinkaya-Rundel
-- Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
-- https://github.com/rstudio/parsons
-- https://carpentries.org/blog/2019/06/reproducible-science-r/
-- illustrations from http://jules32.github.io/
-- [ggplot_flipbook](https://github.com/EvaMaeRey/ggplot_flipbook)
-- [demoR](https://github.com/kbodwin/demoR)
-- reproducible research: https://annakrystalli.me/talks/r-in-repro-research.html#15
