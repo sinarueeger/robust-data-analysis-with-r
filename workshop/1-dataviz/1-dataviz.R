@@ -1,4 +1,5 @@
-## Aim: create a data visualisation that shows the ... 
+## Aim: Explore the dataset drug_use by visualising 
+##      the different variables using ggplot2 
 
 
 ## Load necessary libraries ----------------------------
@@ -26,29 +27,52 @@ summary(drug_use)
 skimr::skim(drug_use)
 
 ## Option 4
+## (because this is a dataset from the package fivethirtyeight)
 ?drug_use
 
 
 ## Tidying ----------------------------------------------
 drug_freq <- drug_use %>% 
+  
+  ## select only age, n and all variables that end with _use
   select(age, n, ends_with("_use")) %>%
+  
+  ## go from wide to a long format
   pivot_longer(-c(age, n), names_to = "drug", values_to = "freq") %>%
+
+  ## replace all values in the drug column from "_use" to ""
   mutate(drug = gsub("_use", "", drug))
 
+head(drug_use)
+head(drug_freq)
 
 ## Plot the data ----------------------------------------
 ## use: percentage who use ... 
 
-(qp <- ggplot(data = drug_freq %>% 
-                filter(drug %in% c("alcohol", "cocaine", "pain_releiver", "marijuana"))) + 
-  geom_point(aes(age, freq)) + 
-  facet_wrap(~ drug, scales = "free_y") +
-  theme_bw() + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
-  ylim(0, NA) + 
-  ylab("Percentage who use ...")
-)
 
+p1 <- ggplot(data = drug_freq %>%
+               filter(drug %in% c(
+                 "alcohol", "cocaine", "pain_releiver", "marijuana"
+               ))) +
+  geom_point(aes(x = age, y = freq, color = drug))
+
+print(p1)
+
+## Plot the data ----------------------------------------
+## use: percentage who use ...
+
+p2 <- ggplot(data = drug_freq %>%
+               filter(drug %in% c(
+                 "alcohol", "cocaine", "pain_releiver", "marijuana"
+               ))) +
+  geom_point(aes(x = age, y = freq)) +
+  facet_wrap(~ drug, scales = "free_y") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ylim(0, NA) +
+  theme_bw() +
+  ylab("Percentage who use ...")
+
+print(p2)
 
 ## Store the plot into a pdf ----------------------------
 
@@ -61,13 +85,21 @@ qp %>% ggsave(.,
 
 ## Task -------------------------------------------------
 
-## - drugs displayed
+## - add two other drugs to the plot
+## - add the variable n into the plot
 ## - limit age range
-## - add line
-## - add color
+## - add a smoother spline
+## - add color to points
+## - add a title
+## - have drug on the x axis and age as a facetting
 ## - change pdf > png
-## 
+
+
 
 ## Extra ------------------------------------------------
-qp + theme_minimal()
+## add a theme
+qp + ggplot2::theme_minimal()
 qp + hrbrthemes::theme_ipsum()
+
+## change the theme yourself
+ggThemeAssist::ggThemeAssistGadget(qp)

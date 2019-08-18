@@ -20,7 +20,7 @@ You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-wi
 
 
 <div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" height="400" alt="Cover image" />
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 

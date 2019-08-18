@@ -21,11 +21,11 @@ There are other ways to see _data analysis_, for example [Elements & Principles 
 
 Both ways of looking at data analysis, involve
 
-- importing the data into a tool
 - tidying data
 - reproducibility
-- flow + exit the flow or repeat the flow, modify
+- entrance + flow + exit the flow or repeat the flow, modify
 - sharing the results (which can then be used as an input again)
+
 
 
 ## Requirements to Software (robustness)

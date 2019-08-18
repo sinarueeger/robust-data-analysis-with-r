@@ -92,7 +92,25 @@ summary(cars)
 plot(pressure)
 ```
 
+## store out
 
+```{r}
+#as xlsx
+
+#library(xlsx)
+#write.xlsx(data_sm, file = glue::glue("{DIR_DESCRIPT}/ms_tables.xlsx"),
+##           sheetName = "Table 1 (data summary)", append = FALSE, showNA=FALSE, row.names = FALSE) 
+#write.xlsx(res_sm, file = glue::glue("{DIR_DESCRIPT}/ms_tables.xlsx"),
+#           sheetName = "Table 2 (results summary)", append = TRUE, showNA=FALSE, row.names = FALSE)
+
+
+#library( writexl)
+#?write_xlsx
+#tmp <- write_xlsx(list(mysheet = iris))
+#readxl::read_xlsx(tmp)
+
+#as csv
+```
 
 # Exercise
 

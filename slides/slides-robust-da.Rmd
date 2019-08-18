@@ -540,10 +540,15 @@ class: left, middle
 ---
 class: left, middle
 
+![](img/import-data.png)
+
+---
+class: left, middle
+
 ## Task
 
-- import an xls table
-- import other data
+- import `tmp/otherfile.xlsx` table
+- import `tmp/otherfile.txt` data
 
 ---
 class: left, middle
@@ -551,8 +556,8 @@ class: left, middle
 ## Good to know
 
 - different r packages to import data: [`{readr}`](), [`{data.table}`]()
-- datapasta: https://twitter.com/dataandme/status/1148548556850114561
-- fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
+- `{datapasta}`: https://twitter.com/dataandme/status/1148548556850114561
+- `{fabricatr}`: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
 
 ---
