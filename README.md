@@ -1,26 +1,21 @@
-# Workshop: Robust data analysis: an introduction to R
+# Robust data analysis: an introduction to R
 
 This repository contains the slides and workshop material for the lecture on _Best practices in R_ at the Open Science Summer School 2019 at EPFL. 
 
 - [Slides](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) 
 - [Handbook](https://sinarueeger.github.io/robust-data-analysis-with-r/)
-- [Workshop](https://github.com/sinarueeger/robust-data-analysis-with-r/workshop).
+- [Workshop](https://github.com/sinarueeger/robust-data-analysis-with-r/workshop)
 
-
-## Notes
 
 ## Goals
 <!--- identify desired results (1.)---> 
 
-- Understand the benefits of prgramming / R
-- Execute an R script
 - Steps of a data analysis
 - How do these steps relate to R
-- Existance of best practices
-- how to learn R
-
-## Acceptable evidence
-<!--- acceptable evidence (1.)--->
+- Understand the benefits of prgramming / R
+- Execute an R script
+- Existence of best practices
+- How to learn R
 
 ## How to teach
 - [Ten Quick Tips for Delivering a Programming Lesson](http://third-bit.com/2019/06/15/10-quick-tips-for-delivering-a-programming-lesson.html) by Greg Wilson
