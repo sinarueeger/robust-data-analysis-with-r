@@ -4,8 +4,7 @@ This repository contains the slides, handbook, and exercises for the workshop _R
 
 - [Slides](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) 
 - [Handbook](https://sinarueeger.github.io/robust-data-analysis-with-r/)
-- [Workshop](https://github.com/sinarueeger/robust-data-analysis-with-r/workshop)
-
+- Workshop: [scripts](https://github.com/sinarueeger/robust-data-analysis-with-r/tree/master/workshop) + [RStudio Cloud](http://bit.ly/rds-rstudio)
 
 
 ## Goals

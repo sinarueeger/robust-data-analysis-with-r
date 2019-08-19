@@ -15,25 +15,41 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(ggplot2)
+library(dplyr)
+
+library(maps) ## to plot a map
+require(viridis) ## fo
+library(gganimate) ## to animate the map
+
+library( writexl) ## store out xls
+
 ```
 
 
-Put it in context with the data analysis workflow. 
+This report is about **meteorites**, where they fell and when they fell. Data comes from the Meteoritical Society by way of NASA and was contributed to [TidyTuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11) (week 24) by [Malin Axelsson](https://twitter.com/malinfax).
+
+If you want to read more about the classification of meteorites, see [this Wikipedia](https://en.wikipedia.org/wiki/Meteorite_classification) entry. 
+
 
 # Import data
 
+The `meteorites` dataset was downloaded from `https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv` and stored as `meteorites.csv`. 
 
 ```{r}
-download.file(
-  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv", 
-  "~/tmp/meteorites.csv")
+#download.file(
+#  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv#", 
+#  "~/tmp/meteorites.csv")
 
 dat_raw <- readr::read_csv("~/tmp/meteorites.csv")
 
 ```
+
 # Tidy data
 
-Done
+There is no data tidying needed (see [R4DS tidy data](https://r4ds.had.co.nz/tidy-data.html)), because each variable having its own column, each observation its own row, and each value its own cell. 
+
 
 
 # Transform data
@@ -49,8 +65,9 @@ dat <- dat_raw %>%
 ## 4) remove years with more than 2019
   filter(year <= 2019) %>%
 ## 5) create a variable century
-  mutate(century = cut(year, c(0, 1900, 2019)))
-
+  mutate(century = droplevels(cut(year, seq(from = 0, to = 2019, by = 100), right = FALSE, dig.lab = 4))) %>% 
+## 6) create a variable decade
+  mutate(decade = droplevels(cut(year, seq(from = 0, to = 2019, by = 10), right = FALSE, dig.lab = 4)))
 
 ```
 
@@ -58,39 +75,35 @@ dat <- dat_raw %>%
 
 ```{r}
 skimr::skim(dat) %>% 
-  skimr::kable(format = 'html', booktabs = T) %>% 
-  kableExtra::kable_styling(font_size = 9)
+  skimr::kable(format = 'html') 
 
 ```
 
 
 ## Histogram
 
+```{r}
 ggplot(data = dat) + geom_histogram(aes(year))
+```
 
 ## Scatterplot
 
+```{r}
 ggplot(data = dat) + geom_point(aes(year, mass))
-
+```
 
 
 ## Map
 
 ```{r fig.height=7, fig.width=7}
-library(ggplot2)
 ggplot(data = dat) + geom_point(aes(long, lat))
-
 ggplot(data = dat) + geom_point(aes(long, lat)) + facet_wrap(~ century)
 ```
 
 
 
-```{r fig.height=7, fig.width=7}
+```{r fig.height=7, fig.width=7, message=FALSE, warning=FALSE}
 
-library(ggplot2)
-library(dplyr)
-require(maps)
-require(viridis)
 theme_set(
   theme_void()
   )
@@ -99,30 +112,19 @@ theme_set(
 world_map <- map_data("world")
 ggplot() +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
-  geom_point(data = meteorites, aes(long, lat), color="red", alpha=0.5)
+  geom_point(data = dat, aes(long, lat), color="red", alpha=0.5)
 ```
 
-Color as year
-```{r fig.height=7, fig.width=7}
-
-## color as year
-world_map <- map_data("world")
-ggplot() +
-  geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
-  geom_point(data = meteorites, aes(long, lat, color = year), alpha=0.5)
-```
 
 Animation
 ```{r fig.height=7, fig.width=7}
 
-## make an annimation
-library(gganimate)
 world_map <- map_data("world")
-ggplot(data = meteorites) +
+ggplot(data = dat) +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
-  geom_point(data = meteorites, aes(long, lat), color="red", alpha=0.5) + 
-  transition_manual(year)  +
-  labs(title = "Date: {frame}") +
+  geom_point(data = dat, aes(long, lat), color="red", alpha=0.5) +
+  transition_states(decade, transition_length = 10, state_length = 4) + 
+  labs(title = "Decade: {closest_state}") +
   NULL
 
 ```
@@ -139,19 +141,11 @@ Fit a prediction model that takes year, location and mass into account
 Store transformed data
 
 ```{r}
-#as xlsx
-
-#library(xlsx)
-#write.xlsx(data_sm, file = glue::glue("{DIR_DESCRIPT}/ms_tables.xlsx"),
-##           sheetName = "Table 1 (data summary)", append = FALSE, showNA=FALSE, row.names = FALSE) 
-#write.xlsx(res_sm, file = glue::glue("{DIR_DESCRIPT}/ms_tables.xlsx"),
-#           sheetName = "Table 2 (results summary)", append = TRUE, showNA=FALSE, row.names = FALSE)
 
 ## as text file
-readr::write_table2(dat, path = "~/tmp/meteorites_transformed.csv")
+readr::write_delim(dat, path = "~/tmp/meteorites_transformed.csv", sep = " " )
 
 ## as Excel file
-library( writexl)
 ?write_xlsx
 write_xlsx(dat, path = "~/tmp/meteorites_transformed.xlsx")
 
@@ -163,14 +157,11 @@ write_xlsx(dat, path = "~/tmp/meteorites_transformed.xlsx")
 - export as pdf/word/markdown
 - 
 
-## Extra
 
-- Look into xaringan and CSS file
-- code download button: https://twitter.com/apreshill/status/1108925218850893832
+# More infos about RMarkdown
 
-
-# More infos
-
+If you want to learn more about RMarkdown, see 
+- [this cheatsheet](https://resources.rstudio.com/rstudio-cheatsheets/rmarkdown-2-0-cheat-sheet).
 - https://rmd4sci.njtierney.com/
-- rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
+- https://holtzy.github.io/Pimp-my-rmd/
 
