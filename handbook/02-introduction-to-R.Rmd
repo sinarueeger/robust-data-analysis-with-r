@@ -126,6 +126,8 @@ There are things R is good at and tasks that R is not that good at. And this has
     
 - Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
 - Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
+- Replication: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
+
 - video, animation, presentation, website, write to excel
 - ...
 

@@ -348,6 +348,15 @@ class: left, middle
 ---
 class: left, middle
 
+## Blogpost: 
+
+- [analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
+
+
+
+---
+class: left, middle
+
 ## Data journalism
 
 <a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">
