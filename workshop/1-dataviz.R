@@ -83,19 +83,6 @@ qp %>% ggsave(.,
 
 
 
-## Task -------------------------------------------------
-
-## - add two other drugs to the plot
-## - add the variable n into the plot
-## - limit age range
-## - add a smoother spline
-## - add color to points
-## - add a title
-## - have drug on the x axis and age as a facetting
-## - change pdf > png
-
-
-
 ## Extra ------------------------------------------------
 ## add a theme
 qp + ggplot2::theme_minimal()

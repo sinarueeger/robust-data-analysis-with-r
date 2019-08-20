@@ -44,14 +44,7 @@ download.file("https://github.com/mjhendrickson/Tidy-Tuesday/raw/master/Week%200
 download.file("http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel", "~/tmp/otherfile.txt")
 
 
-
-## Task -----------------------------------------------
-## - import otherfile.xlsx
-## - import otherfile.txt
-
-## Extra -----------------------------------------------
-## - write xls file
-## - xlsx package depends on rjava
+## write xlsx file -----------------------------------------------
 
 library( writexl)
 ?write_xlsx
