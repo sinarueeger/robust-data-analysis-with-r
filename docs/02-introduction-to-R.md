@@ -1,5 +1,11 @@
 # Introduction of R
 
+> As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) The idea is to get things out of your head and on to the computer as quickly as possible.
+
+https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/
+
+
+
 [R](https://www.r-project.org/) was developed for statistical data analysis. Or more precisely: The R Project for Statistical Computing.
 
 It is a free software and anyone can contribute to the software by creating a _package_. 
@@ -9,8 +15,6 @@ Just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/do
 While it was developed to do mainly statistical computations (e.g. regression models) and data visualisation, it has now a lot of additional features that are somehow related to statistics, but could stand on its own. 
 
 Comes with *basic*/*default* packages, but there are over 13'000 R-packages that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github.
-
-
 
 ## Capabilities of R
 
@@ -126,6 +130,8 @@ There are things R is good at and tasks that R is not that good at. And this has
     
 - Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
 - Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
+- Replication: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
+
 - video, animation, presentation, website, write to excel
 - ...
 

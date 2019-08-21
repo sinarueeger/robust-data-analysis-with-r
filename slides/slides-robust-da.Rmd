@@ -209,6 +209,16 @@ class: left, middle, inverse
 # Part 2
 # R
 
+
+---
+class: left, middle
+
+> As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) The idea is to get things out of your head and on to the computer as quickly as possible.
+
+https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/
+
+
+
 ---
 class: left, middle
 
@@ -509,6 +519,44 @@ class: left, middle
 ---
 class: left, middle
 
+## Glimpse
+
+.pull-left[
+1. skim
+1. head
+1. summary
+]
+
+.pull-right[
+
+]
+
+---
+class: left, middle
+
+## Plotting
+
+.pull-left[
+1. ggplot
+1. geom_point
+1. ggsave
+1. facet_wrap
+1. ylim
+1. ylab
+1. theme_*
+]
+
+.pull-right[
+a.
+a.
+a. 
+a. 
+a. 
+]
+
+---
+class: left, middle
+
 
 ## Instructions
 - Make prediction
@@ -550,7 +598,7 @@ class: left, bottom
 Annotate plot with meta data
 
 <div class="figure">
-<img src="https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png" height="400" alt="Cover image" />
+<img src="https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png" width="400" alt="Cover image" />
 <p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
 </div>
 
@@ -562,7 +610,7 @@ Annotate plot with meta data
 Arrange plots
 
 <div class="figure">
-<img src="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange-1.png" height="400" alt="Cover image" />
+<img src="https://rpkgs.datanovia.com/ggpubr/reference/ggarrange-1.png" width="400" alt="Cover image" />
 <p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
 </div>
 
@@ -591,9 +639,25 @@ Open `src/2-import-data.R`
 ---
 class: left, middle
 
+
+.pull-left[
+1. read_excel
+1. read_csv
+1. read_delim
+1. clean_names
+1. write_delim
+]
+
+.pull-right[
+
+]
+
+---
+class: left, middle
+
 ## This button is your friend
 
-<img src="img/import-data.png" height="500" alt="Button" />
+<img src="img/import-data.png" width="500" alt="Button" />
 
 
 ---
@@ -625,6 +689,26 @@ class: left, middle
 
 # Tidy + Transform Data
 Open `src/3-tidy-data.R`
+
+---
+class: left, middle
+
+
+.pull-left[
+1. `tabyl(var)`
+1. `filter(var > 2)`
+1. `mutate(var = var_0 + var_1)`
+1. `rename(new_name = old_name)`
+1. `slice(3)`
+1. `group_by(var)`
+1. `summarise(var)`
+1. `select(var)`
+]
+
+.pull-right[
+a. selects rows based on condition
+a. selects column
+]
 
 ---
 class: left, middle
@@ -662,6 +746,37 @@ class: left, middle
 # Report with RMarkdown
 Open `src/4-report.Rmd`
 
+
+---
+class: left, middle
+
+### R chunks
+
+```
+
+```{r, some-options}
+```
+
+```
+
+### Inline R
+` `r ` ` 
+
+
+---
+class: left, middle
+
+.pull-left[
+1. `geom_histogram()`
+1. `geom_line()`
+1. `kable`
+1. ` `r ` `
+1. 
+]
+
+.pull-right[
+a. 
+]
 ---
 class: left, middle
 
@@ -760,7 +875,7 @@ class: left, middle, inverse
 
 
 # Part 4
-# **Learning R**
+# Learning R
 
 <!----------------------------------------------->
 ---
@@ -1002,7 +1117,7 @@ class: left, middle
 class: left, middle
 
 <div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" height="600" alt="Cover image" />
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="600" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 

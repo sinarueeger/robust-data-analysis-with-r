@@ -32,6 +32,7 @@ skimr::skim(drug_use)
 
 
 ## Tidying ----------------------------------------------
+## >>> remove, goes to utils.R
 drug_freq <- drug_use %>% 
   
   ## select only age, n and all variables that end with _use

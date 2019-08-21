@@ -134,3 +134,26 @@ Why not writing directly to the maintainer? Because online helps
 <!------- or attend a conference, screen casts --------->
 
 ### Make use of pen + paper
+
+nadieh bremer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
+democratisation of tools: tamara munzer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
+
+
+
+## More?
+
+### Blog by [Suzan Baert](https://twitter.com/SuzanBaert)
+https://suzan.rbind.io/
+
+### Read Working with R by [Steph Locke](https://twitter.com/TheStephLocke)
+https://itsalocke.com/company/books/
+
+### Online Tutorial _Teacups, Giraffes, & Statistics_ by Hasse Walum & Desirée De Leon
+https://tinystats.github.io/teacups-giraffes-and-statistics/index.html
+
+### Read the [R for Data Science book](https://r4ds.had.co.nz/) by [Garrett Grolemund](https://twitter.com/StatGarrett) and [Hadley Wickham](https://twitter.com/hadleywickham)
+https://r4ds.had.co.nz/
+
+### Excel to R
+- https://rfortherestofus.com/2019/06/a-guide-to-r-for-excel-users/
+- https://outsiderdata.netlify.com/post/why-i-migrated-from-excel-to-r/

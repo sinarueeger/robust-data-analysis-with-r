@@ -23,7 +23,7 @@ library(maps) ## to plot a map
 require(viridis) ## fo
 library(gganimate) ## to animate the map
 
-library( writexl) ## store out xls
+library(writexl) ## store out xls
 
 ```
 

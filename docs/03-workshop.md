@@ -1,22 +1,15 @@
 # Workshop
 
-Don't hesitate to use paper + pen
 
-
+<!-------------------------------->
 ## Data visualisation
+<!-------------------------------->
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png" height="500" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
 
-### Task
-
-- As a user, what would you like to change? 
-- Changes
-- Add geom
-- Add title
-- Store a PDF
 
 ### Good to know
 - ['{esquisse}'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
@@ -26,19 +19,9 @@ Don't hesitate to use paper + pen
 
 
 
+<!-------------------------------->
 ## Import data
-# Import Data
-
----
-class: left, middle
-
-### Task
-
-- import an xls table
-- import other data
-
----
-class: left, middle
+<!-------------------------------->
 
 ### Good to know
 
@@ -46,7 +29,9 @@ class: left, middle
 - datapasta: https://twitter.com/dataandme/status/1148548556850114561
 - fabricatr: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
 
-## Tidy Data
+<!-------------------------------->
+## Tidy + Transform Data
+<!-------------------------------->
 
 
 <div class="figure">
@@ -55,9 +40,15 @@ class: left, middle
 </div>
 
 
-### Task
+### What is tidy data? 
 
-- add a column
+https://r4ds.had.co.nz/tidy-data.html
+There are three interrelated rules which make a dataset tidy:
+
+  - Each variable must have its own column.
+  - Each observation must have its own row.
+  - Each value must have its own cell.
+
 
 ### Good to know
 
@@ -65,16 +56,14 @@ class: left, middle
 - [`{janitor`}]() package
 
 
-
+<!-------------------------------->
 ## Report with Rmarkdown
+<!-------------------------------->
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png" height="500" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
-
-### Task
-export as pdf/word/markdown
 
 ### Good to know
 - https://rmd4sci.njtierney.com/
@@ -83,8 +72,9 @@ export as pdf/word/markdown
 - code download button: https://twitter.com/apreshill/status/1108925218850893832
 
 
-
-## Extra: Git & R
+<!-------------------------------->
+## Git & R
+<!-------------------------------->
 
 You use git already: congratulations. 
 
@@ -99,8 +89,9 @@ You want to use git but you are scared:
 
 
 
-
+<!-------------------------------->
 ## Commenting & Documentation
+<!-------------------------------->
 
 - How much documentation do you need? 
   - Think about your future self
@@ -109,7 +100,7 @@ You want to use git but you are scared:
 - A good exercise: look at an old script and reformat.
 - [Reprohack!](https://sheffield-university.shinyapps.io/ReproHack_CCMcr/)
 
-
+<!----
 ## Create an R package
 
 create a package with corporate colors EPFL: https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf
@@ -129,4 +120,4 @@ create a package with corporate colors EPFL: https://www.epfl.ch/campus/services
 - packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
 - packages: https://masalmon.eu/2017/12/11/goodrpackages/
 
-
+---->
