@@ -19,7 +19,7 @@
 #  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv", 
 #  "~/tmp/meteorites.csv")
 
-dat_raw <- readr::read_csv("~/tmp/meteorites.csv")
+dat_raw <- readr::read_csv("data/meteorites.csv")
 
 ## Quick glance -----------------------------
 

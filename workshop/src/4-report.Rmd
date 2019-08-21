@@ -38,11 +38,8 @@ If you want to read more about the classification of meteorites, see [this Wikip
 The `meteorites` dataset was downloaded from `https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv` and stored as `meteorites.csv`. 
 
 ```{r}
-#download.file(
-#  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv#", 
-#  "~/tmp/meteorites.csv")
 
-dat_raw <- readr::read_csv("~/tmp/meteorites.csv")
+dat_raw <- readr::read_csv("../data/meteorites.csv")
 
 ```
 
@@ -117,7 +114,7 @@ ggplot() +
 
 
 Animation
-```{r fig.height=7, fig.width=7}
+```{r eval=FALSE, fig.height=7, fig.width=7, include=FALSE}
 
 world_map <- map_data("world")
 ggplot(data = dat) +
@@ -143,11 +140,11 @@ Store transformed data
 ```{r}
 
 ## as text file
-readr::write_delim(dat, path = "~/tmp/meteorites_transformed.csv", delim = " " )
+readr::write_delim(dat, path = "../out/meteorites_transformed.csv", delim = " " )
 
 ## as Excel file
 ?write_xlsx
-write_xlsx(dat, path = "~/tmp/meteorites_transformed.xlsx")
+write_xlsx(dat, path = "../out/meteorites_transformed.xlsx")
 
 ```
 

@@ -32,7 +32,6 @@ skimr::skim(drug_use)
 
 
 ## Tidying ----------------------------------------------
-## >>> remove, goes to utils.R
 drug_freq <- drug_use %>% 
   
   ## select only age, n and all variables that end with _use
@@ -44,12 +43,13 @@ drug_freq <- drug_use %>%
   ## replace all values in the drug column from "_use" to ""
   mutate(drug = gsub("_use", "", drug))
 
+## now compare the two of them
 head(drug_use)
 head(drug_freq)
 
+
 ## Plot the data ----------------------------------------
 ## use: percentage who use ... 
-
 
 p1 <- ggplot(data = drug_freq %>%
                filter(drug %in% c(
@@ -58,6 +58,7 @@ p1 <- ggplot(data = drug_freq %>%
   geom_point(aes(x = age, y = freq, color = drug))
 
 print(p1)
+
 
 ## Plot the data ----------------------------------------
 ## use: percentage who use ...
@@ -74,6 +75,7 @@ p2 <- ggplot(data = drug_freq %>%
   ylab("Percentage who use ...")
 
 print(p2)
+
 
 ## Store the plot into a pdf ----------------------------
 
