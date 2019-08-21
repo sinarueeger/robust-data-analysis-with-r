@@ -1,7 +1,7 @@
 ---
 title: ".large[Robust data analysis]"
 subtitle: "An introduction to R"
-author: "Sina Rüeger"
+author: "Sina Rüeger & Allie Burns"
 date: "2019-09-05"
 output_dir: "../docs"
 output:
@@ -463,7 +463,7 @@ class: left, middle, inverse
 class: left, middle
 
 .pull-left[
-# Allison Burns
+# Allie Burns
 
 Doctoral Student in Gräff Group
 
@@ -905,62 +905,52 @@ class: left, middle
 
 
 <!----------------------------------------------->
----
-class: left, middle
-
-# How to ask for help
-
 
 ---
 class: left, middle
 
-## 1. Look online
-
-- [Stack Overflow](https://stackoverflow.com/) (SO)
-- [RStudio Community](https://community.rstudio.com/)
-
-
----
-class: left, middle
-
-<div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" height="500" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
-</div>
-
-
----
-class: left, middle
-
-## 2. Create a reproducible example
-
-1. create a reproducbile example using a small R available dataset (e.g. iris)
-1. `install.packages("reprex")`
-1. select code and run reprex
-
-
-<!---- this will often already guide you to the solution -------> 
-
----
-class: left, middle
-
-## 3. Ask on SO, twitter, RStudio help
-
-C+P r bit into one of the follwing streams:
-
-- Ask within a community (R-Ladies, R4DS)
-- https://community.rstudio.com/
-- https://stackoverflow.com/
-- Twitter using the `#rstats` hashtag: 
-
+# Learning strategies
 <!-------
-More: https://masalmon.eu/2018/07/22/wheretogethelp/
-- If its a bug: file an issue on github
+- Learn with isolated & digestable examples
+- Surroud yourself with the language: embed R into your life
+- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
+- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
+- Make use of pen + paper
+-------->
 
-Why not writing directly to the maintainer? Because online helps
------>
+---
+class: left, middle
 
+## Learn with isolated & digestable examples
 
+---
+class: left, middle
+
+## Surround yourself with the language: embed R into your life
+
+---
+class: left, middle
+
+## Look for a steady stream of data or exercises
+
+- [tidytuesday](https://github.com/rfordatascience/tidytuesday)s
+- Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
+
+---
+class: left, middle
+
+## Watch recordings
+
+- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
+- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
+- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
+- rOpenSci community call [archive](https://ropensci.org/commcalls/)
+<!------- or attend a conference, screen casts --------->
+
+---
+class: left, middle
+
+## Make use of pen + paper
 
 
 <!----------------------------------------------->
@@ -1065,52 +1055,63 @@ class: left, middle
 
 
 <!----------------------------------------------->
+---
+class: left, middle
+
+# How to ask for help
+
 
 ---
 class: left, middle
 
-# Learning strategies
+## 1. Look online
+
+- [Stack Overflow](https://stackoverflow.com/) (SO)
+- [RStudio Community](https://community.rstudio.com/)
+
+
+---
+class: left, middle
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+</div>
+
+
+---
+class: left, middle
+
+## 2. Create a reproducible example
+
+1. create a reproducbile example using a small R available dataset (e.g. iris)
+1. `install.packages("reprex")`
+1. select code and run reprex
+
+
+<!---- this will often already guide you to the solution -------> 
+
+---
+class: left, middle
+
+## 3. Ask on SO, twitter, RStudio help
+
+C+P r bit into one of the follwing streams:
+
+- Ask within a community (R-Ladies, R4DS)
+- https://community.rstudio.com/
+- https://stackoverflow.com/
+- Twitter using the `#rstats` hashtag: 
+
 <!-------
-- Learn with isolated & digestable examples
-- Surroud yourself with the language: embed R into your life
-- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
-- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
-- Make use of pen + paper
--------->
+More: https://masalmon.eu/2018/07/22/wheretogethelp/
+- If its a bug: file an issue on github
 
----
-class: left, middle
+Why not writing directly to the maintainer? Because online helps
+----->
 
-## Learn with isolated & digestable examples
 
----
-class: left, middle
 
-## Surround yourself with the language: embed R into your life
-
----
-class: left, middle
-
-## Look for a steady stream of data or exercises
-
-- [tidytuesday](https://github.com/rfordatascience/tidytuesday)s
-- Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
-
----
-class: left, middle
-
-## Watch recordings
-
-- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
-- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
-- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
-- rOpenSci community call [archive](https://ropensci.org/commcalls/)
-<!------- or attend a conference, screen casts --------->
-
----
-class: left, middle
-
-## Make use of pen + paper
 
 
 ---

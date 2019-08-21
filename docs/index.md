@@ -1,6 +1,6 @@
 --- 
 title: "Robust data analysis: an introduction to R"
-author: "Sina Rüeger"
+author: "[Sina Rüeger](https://twitter.com/sinarueeger) & [Allie Burns](https://twitter.com/imallieburns)"
 date: "2019-08-21"
 site: bookdown::bookdown_site
 documentclass: book
