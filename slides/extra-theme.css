@@ -27,6 +27,17 @@ h1, h2, h3 {
   width: 60%;
 }
 
+
+
+.pull-left-large {
+  float: left;
+  width: 60%;
+}
+.pull-right-small {
+  float: right;
+  width: 40%;
+}
+
 a, a > code {
  text-decoration: underline; /* turns off background coloring of links */
  line-height: 1.5em;

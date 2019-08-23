@@ -59,23 +59,23 @@ class: left, middle
 
 # Where to find us
 
-.pull-left[
+.pull-left-large[
 ## Sina
 
 `r icon::fa_twitter()` @sinarueeger
 
-`r icon::fa_github()`@sinarueeger
+`r icon::fa_github()` @sinarueeger
 
 `r icon::fa_link()` sinarueeger.github.io
 
 ]
 
-.pull-left[
+.pull-right-small[
 ## Allie
 
 `r icon::fa_twitter()` @imallieburns
 
-`r icon::fa_github()` allie-burns
+`r icon::fa_github()` @allie-burns
 
 `r icon::fa_link()` ?
 
@@ -108,23 +108,23 @@ class: left, middle
 
 .pull-left[
 # **1.**
-### What makes a Data Analysis robust?
+### [What makes a Data Analysis robust?](#data-analysis)
 
 <br>
 
 # **3.** 
-### Workshop: Can we use R? 
+### [Workshop: Can we use R?](#workshop) 
 
 ]
 
 .pull-right[
 # **2.** 
-### How can R help with that?
+### [How can R help with that?](#r)
 
 <br>
 
 # **4.** 
-### How can we learn R?
+### [How can we learn R?](#learning-r)
 ]
 
 
@@ -425,7 +425,7 @@ class: left, middle
 ---
 class: left, middle
 
-### Blogpost: [Analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
+## Blogpost: [Analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
 
 <div class="figure">
 <a href="https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/">
@@ -705,17 +705,15 @@ Open `src/2-import-data.R`
 class: left, middle
 
 
-.pull-left[
-1. read_excel
-1. read_csv
-1. read_delim
-1. clean_names
-1. write_delim
-]
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. `read_excel()`   | A. sdfsdf |
+| 2. `read_delim()` | B. sdfsfd  |
+| 3. `clean_names()` |  C. |
+| 4. `read_csv()`  |  D.  |
+| 5. `write_delim()`  |  E. |
 
-.pull-right[
-
-]
+add correct order
 
 ---
 class: left, middle
