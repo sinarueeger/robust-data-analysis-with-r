@@ -1,13 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Arapeys);
 @import url(https://fonts.googleapis.com/css?family=Karla);
+
+h1, h2, h3 {
+  font-family: 'Karla', 'Yanone Kaffeesatz', Helvetica;
+  font-weight: normal;
+  font-style: italic;
+}
 
 .superlarge { 
   font-size: 330%;
-  font-family: 'Arapey';
+  font-family: 'Karla';
+  font-style: italic;
 }
 .large { 
   font-size: 150%;
-  font-family: 'Arapey';
+  font-family: 'Karla';
+  font-style: italic;
 }
 
 
@@ -56,4 +63,17 @@ div.my-footer span {
     position: absolute;
     left: 15px;
     bottom: 2px;
+}
+
+div.figure {
+  float: right;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  font-weight: normal;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+  tont-color; gray;
 }
