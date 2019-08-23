@@ -337,6 +337,20 @@ class: left, middle
 
 ]
 
+
+---
+class: left, middle
+
+# Programming language vs. natural language
+
+
+- Data analysis workflow divides the DA into modules.
+
+- R helps you to express these moduls for your analysis. 
+
+- Similar to natural languages: tool to communicate with others. Programming: communication with computer (+colleagues).
+
+
 <!--------
 ---
 class: left, middle
@@ -351,6 +365,7 @@ library(demoR)
 ```
 ------>
 
+<!------------
 ---
 class: left, middle
 
@@ -364,6 +379,7 @@ class: left, middle
 1. continuous integration (`devtools`, `blogdown`)
 1. makefile (caching) (`drake`)
 1. binder (`holepunch`)
+--->
 
 ---
 class: left, middle
