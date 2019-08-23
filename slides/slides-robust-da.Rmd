@@ -19,12 +19,15 @@ output:
     self_contained: true
 ---
 
-
+<!--------- 
+https://www.helpessentials.com/2017/08/02/sprinkle-some-google-fonts-into-your-projects/
+--------->
 
 ```{r xaringan-themer, include = FALSE}
 library(xaringanthemer)
 mono_light(
-  base_color = "black",
+  base_color = "#2b2d2f",
+  white_color = "#ffffff", 
   header_font_google = google_font("Karla", "700i"), ## Oswald
   header_font_url = "https://fonts.googleapis.com/css?family=Karla:400,700,400italic",
   text_font_google   = google_font("Karla", "400", "700i"),  ## Roboto
@@ -47,6 +50,37 @@ library(dplyr)
 theme_set(hrbrthemes::theme_ipsum(subtitle_size = 14, caption_size = 9, axis_title_size = 12)) ## make sure to 
 
 ```
+
+
+<!---------------------- ToC ------------------------------>
+
+---
+class: left, middle
+
+# Where to find us
+
+.pull-left[
+## Sina
+
+`r icon::fa_twitter()` @sinarueeger
+
+`r icon::fa_github()`@sinarueeger
+
+`r icon::fa_link()` sinarueeger.github.io
+
+]
+
+.pull-left[
+## Allie
+
+`r icon::fa_twitter()` @imallieburns
+
+`r icon::fa_github()` allie-burns
+
+`r icon::fa_link()` ?
+
+
+]
 
 <!---------------------- SLIDE info ------------------------------>
 
@@ -247,9 +281,26 @@ class: middle
 
 In general lots of (but not all) data science, data analysis & stats stuff
 
-??? Me: genomics, biostatistics
 
 
+???
+
+_if not asked to lend money_.
+
+--- Mark Twain
+
+---
+
+The holy passion of Friendship is of so sweet and steady
+and loyal and enduring a nature that it will last through
+a whole lifetime...
+
+
+???
+
+_if not asked to lend money_.
+
+--- Mark Twain
 ---
 class: left, middle
 
@@ -351,23 +402,10 @@ class: left, middle
 - Similar to natural languages: tool to communicate with others. Programming: communication with computer (+colleagues).
 
 
-<!--------
+
+
 ---
-class: left, middle
-
-# Analogy
-
-R helps you with the grammar for your analysis, but the content you are still responsible.
-
-```{r demor, include = FALSE}
-library(demoR)
-## this is just a reminder to use this package
-```
------->
-
-<!------------
----
-class: left, middle
+exclude: true
 
 # Hierarchy of best practices
 
@@ -379,7 +417,6 @@ class: left, middle
 1. continuous integration (`devtools`, `blogdown`)
 1. makefile (caching) (`drake`)
 1. binder (`holepunch`)
---->
 
 ---
 class: left, middle
@@ -391,46 +428,49 @@ class: left, middle
 
 ## Research compendium:
 
+<div class="figure">
 <a href="https://github.com/seabbs/DirectEffBCGPolicyChange">
-<img border="0" alt="mouse" src="img/bcg.png" width="800">
+<img border="0" alt="mouse" src="img/bcg.png" width="600">
 </a>
-
-[Source: DirectEffBCGPolicyChange by Sam Abbott](https://github.com/seabbs/DirectEffBCGPolicyChange)
+<p class="caption">Source: <a href="https://github.com/seabbs/DirectEffBCGPolicyChange">DirectEffBCGPolicyChange by Sam Abbott</a></p>
+</div>
 
 
 ---
 class: left, middle
 
-## Blogpost: [Analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
+### Blogpost: [Analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
 
+<div class="figure">
 <a href="https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/">
-<img border="0" alt="mouse" src="img/mouse.png" width="800">
+<img border="0" alt="mouse" src="img/mouse.png" width="400">
 </a>
-
-[Source: Analysing mouse autism data](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/)
-
+<p class="caption">Source: <a href="https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/">Analysing mouse autism data</a></p>
+</div>
 
 ---
 class: left, middle
 
 ## Data journalism
 
+<div class="figure">
 <a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">
-<img border="0" alt="SRF" src="img/datajournalism.png" width="800">
+<img border="0" alt="SRF" src="img/datajournalism.png" width="700">
 </a>
+<p class="caption">Source: <a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">SRF</a></p>
+</div>
 
-
-[Source: SRF](https://www.srf.ch/static/srf-data/data/2018/federer/#/en)
 
 ---
 
 ## Data journalism
 
+<div class="figure">
 <a href="https://srfdata.github.io/2018-01-roger-federer/#load_data">
 <img border="0" alt="SRF" src="img/datajournalism_code.png" width="800">
 </a>
-
-[Source: SRF](https://srfdata.github.io/2018-01-roger-federer/)
+<p class="caption">Source: <a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">SRF</a></p>
+</div>
 
 
 
@@ -438,12 +478,12 @@ class: left, middle
 
 ## Web application with Shiny
 
+<div class="figure">
 <a href="https://kevinrue.shinyapps.io/isee-shiny-contest/">
 <img border="0" alt="SRF" src="https://d33wubrfki0l68.cloudfront.net/8e0d1f45ed43ea538143b4b3cc7ea1cd7ad17e69/33284/images/2019-04-05-isee.png" width="800">
 </a>
-
-[Source: Winner of the Shiny Contest 2019](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/
-)
+<p class="caption">Source: <a href="https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/">Winner of the Shiny Contest 2019</a></p>
+</div>
 
 
 
@@ -453,22 +493,24 @@ class: left, middle
 
 ## Animations
 
+<div class="figure">
 <a href="https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif">
 <img src="https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif" width="400">
 </a>
+<p class="caption">Source: <a href="https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs">Github @gadenbuie</a></p>
+</div>
 
-[Source: Github @gadenbuie](https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs)
 
 ---
 
 ## Fun things: Memes and GIFs
 
+<div class="figure">
 <a href="http://djnavarro.net/post/2018-05-03-valid-social-commentary/">
-<img src="http://djnavarro.net/post/2018-05-03-valid-social-commentary_files/figure-html/unnamed-chunk-2-1.png" width="600">
+<img src="http://djnavarro.net/post/2018-05-03-valid-social-commentary_files/figure-html/unnamed-chunk-2-1.png" width="500">
 </a>
-
-[Source: Danielle Navaro](http://djnavarro.net/post/2018-05-03-valid-social-commentary/)
-
+<p class="caption">Source: <a href="http://djnavarro.net/post/2018-05-03-valid-social-commentary/">Danielle Navaro</a></p>
+</div>
 
 
 
@@ -476,7 +518,7 @@ class: left, middle
 class: left, middle
 
 <div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="600" alt="Cover image" />
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="700" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 
@@ -886,19 +928,21 @@ class: left, middle
 ---
 class: left, middle
 
-# Extra: Git & R
+# Git & R
+--
+1. Use git. 
+--
 
+2. Read [*Happy Git with R*](https://happygitwithr.com/). 
+--
 
-You use git already: congratulations. 
+3. Use the handy *git interface* in RStudio. 
+--
 
-You want to use git but you are scared: 
-- use the interface in RStudio: _Happy Git with R_
-- use gist.github.com (great for blogposts and small scripts)
-- start with sharing slides / gist.github (from julie lowndes keynote)
-- 
-- https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1
-- Playground: https://learngitbranching.js.org/
+4. `r emo::ji("party")`
+--
 
+5. Use [gist.github.com](https://gist.github.com/) to share & store code snippets, notes, thoughts and blogposts. 
 
 
 ---
@@ -913,33 +957,6 @@ class: left, middle, inverse
 
 # Part 4
 # Learning R
-
-<!----------------------------------------------->
----
-class: left, middle
-
-# Embrace imperfection
-
----
-class: left, middle
-
-
-## Programming is 
-
-### an iterative process
-
-### and there is never only one solution
-
----
-class: left, middle
-
-## Exploit imperfection
-
-- Look at each others code
-- Refactor your code
-- Review each others code
-- Pair programming
-
 
 <!----------------------------------------------->
 
@@ -984,17 +1001,48 @@ class: left, middle
 - rOpenSci community call [archive](https://ropensci.org/commcalls/)
 <!------- or attend a conference, screen casts --------->
 
+
 ---
 class: left, middle
 
-## Make use of pen + paper
+## Use of pen + paper
+
+<!----------------------------------------------->
+---
+class: left, middle
+
+# Embrace imperfection
+
+---
+class: left, middle
+
+
+## 1. Programming is an iterative process
+
+## 2. 1 Problem = 1+ solutions
+
+---
+class: left, middle
+
+## Exploit imperfection
+
+- Look at each others code
+
+- Refactor your code
+
+- Review each others code
+
+- Pair programming
+
 
 
 <!----------------------------------------------->
 ---
 class: left, middle
 
-# Become part of the community
+# Welcome to the R family! 
+--
+### Become part of the community
 <!------------
 - blogposts (rweekly!)
 - R user group (RUG, R-Ladies)
@@ -1009,47 +1057,6 @@ class: left, middle
 ----->
 
 
-
----
-class: left, middle
-
-
-<div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-teamwork.png" height="600" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
-</div>
-
----
-class: left, middle
-
-## R-Ladies 
-
-
----
-class: left, middle
-
-## Code of Conduct
-
-
----
-class: left, middle
-
-## Join an online community
-
-- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
-- R-ladies Slack: https://www.rfordatasci.com/
-- French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online ressources](https://github.com/frrrenchies/frrrenchies))
-
----
-class: left, middle
-
-## Join an R meetup
-
-- In the lemanic region: [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/), [RUG](https://www.meetup.com/Geneve-R-User-Group), [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/), [adminR](https://twitter.com/RLadiesRemote)
-- [R Ladies Remote](https://twitter.com/RLadiesRemote) (journal club)
-- Full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://gqueiroz.shinyapps.io/rshinylady/).
-
-
 ---
 class: left, middle
 
@@ -1060,16 +1067,22 @@ class: left, middle
 </div>
 
 
+
 ---
 class: left, middle
 
-## Engage on Twitter
+## R-Ladies 
 
-- [Mara Averick](https://twitter.com/dataandme)
-- [Maëlle Salmon](https://twitter.com/ma_salmon)
-- [R for the rest of us](https://twitter.com/rfortherest)
-- [WeAreRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432)
+??? mention code of conduct
 
+---
+class: left, middle
+
+## Join an online community
+
+- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
+- R-ladies Slack: https://www.rfordatasci.com/
+- French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online resources](https://github.com/frrrenchies/frrrenchies))
 
 
 
@@ -1080,15 +1093,65 @@ class: left, middle
 
 - Attend a community call ([archive](https://ropensci.org/commcalls/)).
 
-- Contribute via the shinyapp (https://ropensci.shinyapps.io/contributr/)
+- Contribute via the [shinyapp](https://ropensci.shinyapps.io/contributr/)
+
+
+---
+class: left, middle
+
+## Join an R meetup
+
+---
+class: left, middle
+
+### Lemanic region: 
+- [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/)
+- [Geneve RUG](https://www.meetup.com/Geneve-R-User-Group)
+- [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/)
+- [adminR](https://twitter.com/RLadiesRemote)
+
+### [R Ladies Remote](https://twitter.com/RLadiesRemote) 
+- Coffee chats
+- Journal club
+
+Full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://gqueiroz.shinyapps.io/rshinylady/).
+
 
 ---
 class: left, middle
 
 ## Read blogposts
 
-- Weekly supply of blogposts here: https://rweekly.org/
-- write a blogpost (gist.github.com!)
+Weekly supply of blogposts here: https://rweekly.org/.
+
+## Write blogposts
+
+Start with gist.github.com, then move to blogdown. 
+
+
+---
+class: left, middle
+
+## Engage on Twitter
+
+Lots of cool #rstats folks on twitter. For example: 
+
+- [Mara Averick](https://twitter.com/dataandme)
+- [Maëlle Salmon](https://twitter.com/ma_salmon)
+- [R for the rest of us](https://twitter.com/rfortherest)
+- [WeAreRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432)
+
+
+
+---
+class: left, middle
+
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-teamwork.png" width="600" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+</div>
+
 
 
 <!----------------------------------------------->
@@ -1148,6 +1211,12 @@ Why not writing directly to the maintainer? Because online helps
 ----->
 
 
+
+<!----------------------------------------------->
+---
+class: center, middle
+
+# .large[Questions?]
 
 
 
