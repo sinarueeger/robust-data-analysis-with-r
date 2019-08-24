@@ -203,11 +203,11 @@ width: 60%;
 }
 .pull-left-large {
 float: left;
-width: 60%;
+width: 55%;
 }
 .pull-right-small {
 float: right;
-width: 40%;
+width: 45%;
 }
 a, a > code {
 text-decoration: underline; 
@@ -275,46 +275,33 @@ https://www.helpessentials.com/2017/08/02/sprinkle-some-google-fonts-into-your-p
 ---
 class: left, middle
 
-# Where to find us
+# Who we are
 
 .pull-left-large[
 ## Sina
 
-<i class="fab  fa-twitter "></i> @sinarueeger
+- **Background** in Data Science and Biostatistics
+- Works with genomic and clinical **data**
 
-<i class="fab  fa-github "></i> @sinarueeger
-
-<i class="fas  fa-link "></i> sinarueeger.github.io
+<i class="fab  fa-twitter "></i> &lt;small&gt;@sinarueeger&lt;/small&gt;&lt;br /&gt;
+<i class="fab  fa-github "></i> &lt;small&gt;@sinarueeger&lt;/small&gt;&lt;br /&gt;
+&lt;!----- <i class="fas  fa-link "></i> &lt;small&gt;sinarueeger.github.io&lt;/small&gt; --------&gt;
 
 ]
 
 .pull-right-small[
 ## Allie
 
-<i class="fab  fa-twitter "></i> @imallieburns
+- **Background** in Biology and Bioinformatics
+- Works with ... **data**
 
-<i class="fab  fa-github "></i> @allie-burns
-
-<i class="fas  fa-link "></i> ?
-
-
-]
-
-
----
-class: left, middle
-
-.pull-left[
-# Allie Burns
-
-Doctoral Student in Gräff Group
+<i class="fab  fa-twitter "></i> &lt;small&gt;@imallieburns&lt;/small&gt;&lt;br /&gt;
+<i class="fab  fa-github "></i> &lt;small&gt;@allie-burns&lt;/small&gt;&lt;br /&gt;
 
 
 ]
-.pull-right[
-![](https://people.epfl.ch/private/common/photos/links/266506.jpg?ts=1566121627)
 
-]
+
 
 
 
@@ -324,17 +311,13 @@ Doctoral Student in Gräff Group
 ---
 class: left, middle
 
-## **Slides**
-### http://bit.ly/rds-slides
+## **Slides** &amp;emsp; &lt;small&gt;http://bit.ly/rds-slides&lt;/small&gt;
 
-## **Handbook**
-### http://bit.ly/rds-handbook
+## **Handbook** &amp;emsp; &lt;small&gt;http://bit.ly/rds-handbook&lt;/small&gt;
 
-## **RStudio Cloud**
-### http://bit.ly/rds-rstudio
+## **RStudio Cloud** &amp;emsp; &lt;small&gt;http://bit.ly/rds-rstudio&lt;/small&gt;
 
-Github repository
-http://bit.ly/rds-repo
+## Github repository &amp;emsp; &lt;small&gt;http://bit.ly/rds-repo&lt;/small&gt;
 
 
 &lt;!---------------------- ToC ------------------------------&gt;
@@ -343,18 +326,18 @@ http://bit.ly/rds-repo
 class: left, middle
 
 .pull-left[
-# **1.**
+# **1. **
 ### [What makes a Data Analysis robust?](#part-1-data-analysis)
 
 &lt;br&gt;
 
-# **3.** 
-### [Workshop: Can we use R?](#part-3-workshop) 
+# **3. ** 
+### [Workshop](#part-3-workshop) 
 
 ]
 
 .pull-right[
-# **2.** 
+# **2. ** 
 ### [How can R help with that?](#part-2-r)
 
 &lt;br&gt;
@@ -399,7 +382,7 @@ class: center, middle
 class: left, middle
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/environmental-data-science-r4ds.png&quot; width=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
+&lt;img src=&quot;https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/environmental-data-science-r4ds.png&quot; width=&quot;700&quot; alt=&quot;Cover image&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt; for &lt;a href=&quot;https://www.openscapes.org/&quot;&gt;openscapes&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -407,11 +390,6 @@ class: left, middle
 
 
 
----
-class: left, middle
-
-# Elements &amp; Principles
-(hicks + peng)
 
 ---
 class: left, middle
@@ -438,8 +416,18 @@ class: left, middle
 ---
 class: left, middle
 
-# What does _robust_ DA mean?
+# What makes a Data Analysis _robust_?
 
+
+
+---
+class: left, middle
+
+# Data Analysis Workflow
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;/div&gt;
 
 &lt;!-------------------------------------------------------&gt;
 &lt;!--------------- Thought experiment --------------------&gt;
@@ -466,12 +454,12 @@ class: left, middle
 # Automation
 
 Programming is essentially an automation of a process
-- for repeatable tasks
+- for common tasks
 - scalable
 - complicated tasks
 - where precision is needed 
-- reusing of frameworks
-- reproduce previous 
+- to reuse frameworks
+- to redo something from the past
 
 Side effect: reproducibility. 
 
@@ -565,7 +553,7 @@ class: left, middle
 # Some terms: Functions
 
 - Programming typically works like this: you apply a function to an object. 
-- You could also say that you apply an action (a verb) to an object (a noun). 
+- You could also say that you apply an **action** (a verb) to an **object** (a noun). 
 - Excel also has functions: these are the tabs, and the object would be your active sheet. 
 - This is an important propertiy, because a chain of such verbs can create a _programming script_. 
 
@@ -596,7 +584,8 @@ class: left, middle
 - Anyone can contribute a package
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;img/r-project-screenshot.png&quot; width=&quot;400&quot; alt=&quot;rproject&quot; /&gt;
+&lt;a href=&quot;https://www.r-project.org/&quot;&gt;
+&lt;img src=&quot;img/r-project-screenshot.png&quot; width=&quot;500&quot; alt=&quot;rproject&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Screenshot from &lt;a href=&quot;https://www.r-project.org/&quot;&gt;R Project Website&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -610,6 +599,7 @@ class: left, middle
 - Free for individual users
 
 &lt;div class=&quot;figure&quot;&gt;
+&lt;a href=&quot;https://www.rstudio.com/&quot;&gt;
 &lt;img src=&quot;img/rstudio-screenshot.png&quot; width=&quot;400&quot; alt=&quot;rproject&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Screenshot of &lt;a href=&quot;https://www.rstudio.com/&quot;&gt;RStudio&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -787,9 +777,11 @@ class: left, middle
 - Make the data analysis-ready
 - Create a report that gives insights into meteorite falls around the world.
 
-??? 
 
-two steps: make changes + add things
+
+???
+
+_two steps: make changes + add things_.
 
 
 ---
@@ -804,10 +796,54 @@ http://bit.ly/rds-workshop-rstudio
 ---
 class: left, middle, inverse
 
+
+# Data visualisation
+
+Open `src/1-dataviz.R`
+
 ---
 class: left, middle
-# Data visualisation
-Open `src/1-dataviz.R`
+
+## Aim
+
+Analyse the use of different drugs in the states with respect to age
+
+
+## Data
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; age &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; n &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; alcohol_use &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; alcohol_freq &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; marijuana_use &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 12 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2798 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 3.9 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 3 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1.1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 13 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2757 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 8.5 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 6 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 3.4 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 14 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2792 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 18.1 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 5 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 8.7 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 ---
 class: left, middle
@@ -961,6 +997,11 @@ class: left, middle
 # Import Data
 Open `src/2-import-data.R`
 
+
+## Aim
+
+Import an Excel and a text-delimited file.
+
 ---
 class: left, middle
 
@@ -1025,6 +1066,53 @@ class: left, middle
 # Tidy + Transform Data
 Open `src/3-tidy-data.R`
 
+---
+class: left, middle
+
+## Aim
+
+Get the metorite fall data analysis-ready. 
+
+## Data
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; name &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; class &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; mass &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; year &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; lat &lt;/th&gt;
+   &lt;th style=&quot;text-align:right;&quot;&gt; long &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Aachen &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; L5 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 21 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1880 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50.77500 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 6.08333 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Aarhus &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; H6 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 720 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1951 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 56.18333 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10.23333 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Abee &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; EH4 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 107000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1952 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 54.21667 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -113.00000 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
 
 ---
 class: left, middle
@@ -1033,16 +1121,11 @@ class: left, middle
 
 | *Functions*  |  *Purpose* |
 |---|---|
-| 1. Contigency table of `var`  | A. `group_by(var)` |
-| 2. Extract all rows that have values &gt; 2 |  B. `summarise(mean(var))`|
-| 3. Create a new variable from `var_0` and `var_1`| C. `select(var)` |
+| 1. Contigency table of `var`  | A.  `slice(3)`  |
+| 2. Extract all rows that have values &gt; 2 |  B. `mutate(var = var_0 + var_1)` |
+| 3. Create a new variable from `var_0` and `var_1`| C.  `tabyl(var)`|
 | 4. Rename a column | D. `filter(var &gt; 2)` |
-| 5. Extract row #3 | E. `group_by(var) %&gt;% summarize(mean(x))` |
-| 6. Group by a variable | F. `rename(new_name = old_name)` |
-| 7. Calculate the mean of a variable | G. `slice(3)` |
-| 8. Select a column | H. `tabyl(var)` |
-| 9. Calculate the mean of `x` for each level in `var` | I. `mutate(var = var_0 + var_1)` |
-
+| 5. Extract row #3 | E.  `rename(new_name = old_name)` |
 
 
 ---
@@ -1052,15 +1135,11 @@ class: left, middle
 
 | *Functions*  |  *Purpose* |
 |---|---|
-| 1. Contigency table of `var`  | H. `tabyl(var)` |
-| 2. Extract all rows that have values &gt; 2 |  D. `filter(var &gt; 2)`|
-| 3. Create a new variable from `var_0` and `var_1`| I. `mutate(var = var_0 + var_1)` |
-| 4. Rename a column | F. `rename(new_name = old_name)` |
-| 5. Extract row #3 | G. `slice(3)` |
-| 6. Group by a variable | A. `group_by(var)` |
-| 7. Calculate the mean of a variable | B. `summarise(mean(var))` |
-| 8. Select a column | C. `select(var)` |
-| 9. Calculate the mean of `x` for each level in `var` | E. `group_by(var) %&gt;% summarize(mean(x))` |
+| 6. Group by a variable | F. `group_by(var) %&gt;% summarize(mean(x))`|
+| 7. Calculate the mean of a variable | G. `group_by(var)`|
+| 8. Select a column | H. `summarise(mean(var))` |
+| 9. Calculate the mean of `x` for each level in `var` | I. `select(var)` |
+
 
 
 ---
@@ -1099,6 +1178,9 @@ class: left, middle
 # Report with RMarkdown
 Open `src/4-report.Rmd`
 
+## Aim
+
+Create a report for the meteorite fall data.
 
 ---
 class: left, middle
@@ -1202,7 +1284,7 @@ class: left, middle
 
 &lt;div class=&quot;figure&quot;&gt;
 &lt;img src=&quot;https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
-&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
+&quot; width=&quot;700&quot; alt=&quot;Cover image&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Source &lt;a href=&quot;https://happygitwithr.com/&quot;&gt;Happy Git with R by Jenny Bryan&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -1212,6 +1294,7 @@ class: left, middle
 class: left, middle
 
 # Git &amp; R
+
 --
 1. Use git. 
 --
@@ -1222,7 +1305,7 @@ class: left, middle
 3. Use the handy *git interface* in RStudio. 
 --
 
-4. 🎂
+4. 🎈
 --
 
 5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
@@ -1324,6 +1407,7 @@ class: left, middle
 class: left, middle
 
 # Welcome to the R family! 
+
 --
 ### Become part of the community
 &lt;!------------
@@ -1356,7 +1440,13 @@ class: left, middle
 
 ## R-Ladies 
 
-??? mention code of conduct
+
+
+
+???
+
+_mention code of conduct_.
+
 
 ---
 class: left, middle

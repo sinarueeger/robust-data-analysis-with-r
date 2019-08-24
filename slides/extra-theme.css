@@ -31,11 +31,11 @@ h1, h2, h3 {
 
 .pull-left-large {
   float: left;
-  width: 60%;
+  width: 55%;
 }
 .pull-right-small {
   float: right;
-  width: 40%;
+  width: 45%;
 }
 
 a, a > code {

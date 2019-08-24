@@ -57,46 +57,33 @@ theme_set(hrbrthemes::theme_ipsum(subtitle_size = 14, caption_size = 9, axis_tit
 ---
 class: left, middle
 
-# Where to find us
+# Who we are
 
 .pull-left-large[
 ## Sina
 
-`r icon::fa_twitter()` @sinarueeger
+- **Background** in Data Science and Biostatistics
+- Works with genomic and clinical **data**
 
-`r icon::fa_github()` @sinarueeger
-
-`r icon::fa_link()` sinarueeger.github.io
+`r icon::fa_twitter()` <small>@sinarueeger</small><br />
+`r icon::fa_github()` <small>@sinarueeger</small><br />
+<!----- `r icon::fa_link()` <small>sinarueeger.github.io</small> -------->
 
 ]
 
 .pull-right-small[
 ## Allie
 
-`r icon::fa_twitter()` @imallieburns
+- **Background** in Biology and Bioinformatics
+- Works with ... **data**
 
-`r icon::fa_github()` @allie-burns
-
-`r icon::fa_link()` ?
-
-
-]
-
-
----
-class: left, middle
-
-.pull-left[
-# Allie Burns
-
-Doctoral Student in Gräff Group
+`r icon::fa_twitter()` <small>@imallieburns</small><br />
+`r icon::fa_github()` <small>@allie-burns</small><br />
 
 
 ]
-.pull-right[
-![](https://people.epfl.ch/private/common/photos/links/266506.jpg?ts=1566121627)
 
-]
+
 
 
 
@@ -106,17 +93,13 @@ Doctoral Student in Gräff Group
 ---
 class: left, middle
 
-## **Slides**
-### http://bit.ly/rds-slides
+## **Slides** &emsp; <small>http://bit.ly/rds-slides</small>
 
-## **Handbook**
-### http://bit.ly/rds-handbook
+## **Handbook** &emsp; <small>http://bit.ly/rds-handbook</small>
 
-## **RStudio Cloud**
-### http://bit.ly/rds-rstudio
+## **RStudio Cloud** &emsp; <small>http://bit.ly/rds-rstudio</small>
 
-Github repository
-http://bit.ly/rds-repo
+## Github repository &emsp; <small>http://bit.ly/rds-repo</small>
 
 
 <!---------------------- ToC ------------------------------>
@@ -125,18 +108,18 @@ http://bit.ly/rds-repo
 class: left, middle
 
 .pull-left[
-# **1.**
+# **1. **
 ### [What makes a Data Analysis robust?](#part-1-data-analysis)
 
 <br>
 
-# **3.** 
-### [Workshop: Can we use R?](#part-3-workshop) 
+# **3. ** 
+### [Workshop](#part-3-workshop) 
 
 ]
 
 .pull-right[
-# **2.** 
+# **2. ** 
 ### [How can R help with that?](#part-2-r)
 
 <br>
@@ -181,7 +164,7 @@ class: center, middle
 class: left, middle
 
 <div class="figure">
-<img src="https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/environmental-data-science-r4ds.png" width="500" alt="Cover image" />
+<img src="https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/environmental-data-science-r4ds.png" width="700" alt="Cover image" />
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 
@@ -189,11 +172,6 @@ class: left, middle
 
 
 
----
-class: left, middle
-
-# Elements & Principles
-(hicks + peng)
 
 ---
 class: left, middle
@@ -220,8 +198,18 @@ class: left, middle
 ---
 class: left, middle
 
-# What does _robust_ DA mean?
+# What makes a Data Analysis _robust_?
 
+
+
+---
+class: left, middle
+
+# Data Analysis Workflow
+
+<div class="figure">
+<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" width="669" alt="R 4 DS image" />
+</div>
 
 <!------------------------------------------------------->
 <!--------------- Thought experiment -------------------->
@@ -248,12 +236,12 @@ class: left, middle
 # Automation
 
 Programming is essentially an automation of a process
-- for repeatable tasks
+- for common tasks
 - scalable
 - complicated tasks
 - where precision is needed 
-- reusing of frameworks
-- reproduce previous 
+- to reuse frameworks
+- to redo something from the past
 
 Side effect: reproducibility. 
 
@@ -347,7 +335,7 @@ class: left, middle
 # Some terms: Functions
 
 - Programming typically works like this: you apply a function to an object. 
-- You could also say that you apply an action (a verb) to an object (a noun). 
+- You could also say that you apply an **action** (a verb) to an **object** (a noun). 
 - Excel also has functions: these are the tabs, and the object would be your active sheet. 
 - This is an important propertiy, because a chain of such verbs can create a _programming script_. 
 
@@ -378,7 +366,8 @@ class: left, middle
 - Anyone can contribute a package
 
 <div class="figure">
-<img src="img/r-project-screenshot.png" width="400" alt="rproject" />
+<a href="https://www.r-project.org/">
+<img src="img/r-project-screenshot.png" width="500" alt="rproject" />
 <p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
 </div>
 
@@ -392,6 +381,7 @@ class: left, middle
 - Free for individual users
 
 <div class="figure">
+<a href="https://www.rstudio.com/">
 <img src="img/rstudio-screenshot.png" width="400" alt="rproject" />
 <p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
 </div>
@@ -569,9 +559,11 @@ class: left, middle
 - Make the data analysis-ready
 - Create a report that gives insights into meteorite falls around the world.
 
-??? 
 
-two steps: make changes + add things
+
+???
+
+_two steps: make changes + add things_.
 
 
 ---
@@ -588,8 +580,24 @@ class: left, middle, inverse
 
 ---
 class: left, middle
+
 # Data visualisation
+
 Open `src/1-dataviz.R`
+
+---
+class: left, middle
+
+## Aim
+
+Analyse the use of different drugs in the states with respect to age
+
+
+## Data
+```{r echo=FALSE}
+library(fivethirtyeight)
+kable(drug_use[1:3, 1:5])
+```
 
 ---
 class: left, middle
@@ -743,6 +751,11 @@ class: left, middle
 # Import Data
 Open `src/2-import-data.R`
 
+
+## Aim
+
+Import an Excel and a text-delimited file.
+
 ---
 class: left, middle
 
@@ -807,6 +820,20 @@ class: left, middle
 # Tidy + Transform Data
 Open `src/3-tidy-data.R`
 
+---
+class: left, middle
+
+## Aim
+
+Get the metorite fall data analysis-ready. 
+
+## Data
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+dat_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv")
+
+kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
+```
+
 
 ---
 class: left, middle
@@ -815,16 +842,11 @@ class: left, middle
 
 | *Functions*  |  *Purpose* |
 |---|---|
-| 1. Contigency table of `var`  | A. `group_by(var)` |
-| 2. Extract all rows that have values > 2 |  B. `summarise(mean(var))`|
-| 3. Create a new variable from `var_0` and `var_1`| C. `select(var)` |
+| 1. Contigency table of `var`  | A.  `slice(3)`  |
+| 2. Extract all rows that have values > 2 |  B. `mutate(var = var_0 + var_1)` |
+| 3. Create a new variable from `var_0` and `var_1`| C.  `tabyl(var)`|
 | 4. Rename a column | D. `filter(var > 2)` |
-| 5. Extract row #3 | E. `group_by(var) %>% summarize(mean(x))` |
-| 6. Group by a variable | F. `rename(new_name = old_name)` |
-| 7. Calculate the mean of a variable | G. `slice(3)` |
-| 8. Select a column | H. `tabyl(var)` |
-| 9. Calculate the mean of `x` for each level in `var` | I. `mutate(var = var_0 + var_1)` |
-
+| 5. Extract row #3 | E.  `rename(new_name = old_name)` |
 
 
 ---
@@ -834,15 +856,11 @@ class: left, middle
 
 | *Functions*  |  *Purpose* |
 |---|---|
-| 1. Contigency table of `var`  | H. `tabyl(var)` |
-| 2. Extract all rows that have values > 2 |  D. `filter(var > 2)`|
-| 3. Create a new variable from `var_0` and `var_1`| I. `mutate(var = var_0 + var_1)` |
-| 4. Rename a column | F. `rename(new_name = old_name)` |
-| 5. Extract row #3 | G. `slice(3)` |
-| 6. Group by a variable | A. `group_by(var)` |
-| 7. Calculate the mean of a variable | B. `summarise(mean(var))` |
-| 8. Select a column | C. `select(var)` |
-| 9. Calculate the mean of `x` for each level in `var` | E. `group_by(var) %>% summarize(mean(x))` |
+| 6. Group by a variable | F. `group_by(var) %>% summarize(mean(x))`|
+| 7. Calculate the mean of a variable | G. `group_by(var)`|
+| 8. Select a column | H. `summarise(mean(var))` |
+| 9. Calculate the mean of `x` for each level in `var` | I. `select(var)` |
+
 
 
 ---
@@ -881,6 +899,9 @@ class: left, middle
 # Report with RMarkdown
 Open `src/4-report.Rmd`
 
+## Aim
+
+Create a report for the meteorite fall data.
 
 ---
 class: left, middle
@@ -985,7 +1006,7 @@ class: left, middle
 
 <div class="figure">
 <img src="https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
-" height="500" alt="Cover image" />
+" width="700" alt="Cover image" />
 <p class="caption">Source <a href="https://happygitwithr.com/">Happy Git with R by Jenny Bryan</a></p>
 </div>
 
@@ -995,6 +1016,7 @@ class: left, middle
 class: left, middle
 
 # Git & R
+
 --
 1. Use git. 
 --
@@ -1107,6 +1129,7 @@ class: left, middle
 class: left, middle
 
 # Welcome to the R family! 
+
 --
 ### Become part of the community
 <!------------
@@ -1139,7 +1162,13 @@ class: left, middle
 
 ## R-Ladies 
 
-??? mention code of conduct
+
+
+
+???
+
+_mention code of conduct_.
+
 
 ---
 class: left, middle
