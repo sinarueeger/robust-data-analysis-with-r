@@ -300,6 +300,24 @@ class: left, middle
 
 ]
 
+
+---
+class: left, middle
+
+.pull-left[
+# Allie Burns
+
+Doctoral Student in Gräff Group
+
+
+]
+.pull-right[
+![](https://people.epfl.ch/private/common/photos/links/266506.jpg?ts=1566121627)
+
+]
+
+
+
 &lt;!---------------------- SLIDE info ------------------------------&gt;
 
 &lt;!--- adding a footer https://github.com/yihui/xaringan/wiki/Footer-and-header-lines ------&gt;
@@ -326,23 +344,23 @@ class: left, middle
 
 .pull-left[
 # **1.**
-### [What makes a Data Analysis robust?](#data-analysis)
+### [What makes a Data Analysis robust?](#part-1-data-analysis)
 
 &lt;br&gt;
 
 # **3.** 
-### [Workshop: Can we use R?](#workshop) 
+### [Workshop: Can we use R?](#part-3-workshop) 
 
 ]
 
 .pull-right[
 # **2.** 
-### [How can R help with that?](#r)
+### [How can R help with that?](#part-2-r)
 
 &lt;br&gt;
 
 # **4.** 
-### [How can we learn R?](#learning-r)
+### [How can we learn R?](#part-4-learning-r)
 ]
 
 
@@ -353,7 +371,7 @@ class: left, middle
 class: left, middle, inverse
 
 # Part 1
-# Data Analysis
+# &lt;a name=&quot;part-1-data-analysis&quot;&gt;&lt;/a&gt;Data Analysis
 
 
 ---
@@ -417,6 +435,12 @@ class: left, middle
 - continuously developed &amp; improved
 - sharing ready results + scripts
 
+---
+class: left, middle
+
+# What does _robust_ DA mean?
+
+
 &lt;!-------------------------------------------------------&gt;
 &lt;!--------------- Thought experiment --------------------&gt;
 &lt;!-------------------------------------------------------&gt;
@@ -462,7 +486,7 @@ class: left, middle, inverse
 class: left, middle, inverse
 
 # Part 2
-# R
+# &lt;a name=&quot;part-2-r&quot;&gt;&lt;/a&gt;R
 
 
 ---
@@ -739,23 +763,18 @@ class: left, middle, inverse
 class: left, middle, inverse
 
 # Part 3
-# Workshop
+# &lt;a name=&quot;part-3-workshop&quot;&gt;&lt;/a&gt;Workshop
 
 
 ---
 class: left, middle
 
-.pull-left[
-# Allie Burns
+# Data Analysis Workflow
 
-Doctoral Student in Gräff Group
-
-
-]
-.pull-right[
-![](https://people.epfl.ch/private/common/photos/links/266506.jpg?ts=1566121627)
-
-]
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 
 
 ---
@@ -804,38 +823,61 @@ class: left, middle
 
 ## Glimpse
 
-.pull-left[
-1. skim
-1. head
-1. summary
-]
 
-.pull-right[
 
-]
+| *Function*      |  `   ` | *Purpose*   |
+| :-----        |    :----:   |          :------ |
+| 1. `skim()`      |         | A. Show the first 6 lines   |
+| 2. `head()`   |          | B. Summarize data with mean, etc.      |
+| 3. `summary()`   |          | C. Displaying summary statistics     |
+
+---
+class: left, middle
+
+## Glimpse
+
+
+| *Function*      |  `   ` | *Purpose*   |
+| :-----        |    :----:   |          :------ |
+| 1. `skim()`      |         |  C. Displaying summary statistics  |
+| 2. `head()`   |          | A. Show the first 6 lines      |
+| 3. `summary()`   |          | B. Summarize data with mean, etc.     |
+
+
 
 ---
 class: left, middle
 
 ## Plotting
 
-.pull-left[
-1. ggplot
-1. geom_point
-1. ggsave
-1. facet_wrap
-1. ylim
-1. ylab
-1. theme_*
-]
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Create a plot   | A. `ylim()` |
+| 2. Create a scatterplot |  B. `theme_set()` |
+| 3. Create panels | C. `ggsave()` |
+| 4. Adjust the y-axis limits |  D.  `geom_point()`  |
+| 5. Change the y-axis labels  |  E. `ggplot()` |
+| 6. Set a theme  |  F. `facet_wrap()` |
+| 7. Save a plot | G.  `ylab()` |
 
-.pull-right[
-a.
-a.
-a. 
-a. 
-a. 
-]
+
+---
+class: left, middle
+
+## Plotting
+
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Create a plot   | E. `ggplot()` |
+| 2. Create a scatterplot |  D. `geom_point()`|
+| 3. Create panels | F. `facet_wrap()` |
+| 4. Adjust the y-axis limits | A. `ylim()`  |
+| 5. Change the y-axis labels  |  G. `ylab()` |
+| 6. Set a theme  |  B. `theme_set()` |
+| 7. Save a plot | C. `ggsave()`  |
+
+
+
 
 ---
 class: left, middle
@@ -925,12 +967,24 @@ class: left, middle
 
 | *Functions*  |  *Purpose* |
 |---|---|
-| 1. `read_excel()`   |  sdfsdf |
-| 2. `read_delim()` | sdfsfd  |
-| 3. `clean_names()` |   |
-| 4. `read_csv()`  |   |
-| 5. `write_delim()`  |   |
+| 1. `read_excel()`   | A. Turn the column names into nice names |
+| 2. `read_delim()` | B. Import a delimited text file  |
+| 3. `clean_names()` |  C. Write a delimited text file |
+| 4. `read_csv()`  |  D.  Import an Excel file |
+| 5. `write_delim()`  |  E. Import a comma delimited text file|
 
+
+---
+class: left, middle
+
+
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. `read_excel()`   | D. Import an Excel file |
+| 2. `read_delim()` | B. Import a delimited text file  |
+| 3. `clean_names()` | A . Turn the column names into nice names |
+| 4. `read_csv()`  |  E. Import a comma delimited text file |
+| 5. `write_delim()`  |  C. Write a delimited text file |
 
 
 ---
@@ -971,25 +1025,43 @@ class: left, middle
 # Tidy + Transform Data
 Open `src/3-tidy-data.R`
 
+
 ---
 class: left, middle
 
+## Data manipulation
 
-.pull-left[
-1. `tabyl(var)`
-1. `filter(var &gt; 2)`
-1. `mutate(var = var_0 + var_1)`
-1. `rename(new_name = old_name)`
-1. `slice(3)`
-1. `group_by(var)`
-1. `summarise(var)`
-1. `select(var)`
-]
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Contigency table of `var`  | A. `group_by(var)` |
+| 2. Extract all rows that have values &gt; 2 |  B. `summarise(mean(var))`|
+| 3. Create a new variable from `var_0` and `var_1`| C. `select(var)` |
+| 4. Rename a column | D. `filter(var &gt; 2)` |
+| 5. Extract row #3 | E. `group_by(var) %&gt;% summarize(mean(x))` |
+| 6. Group by a variable | F. `rename(new_name = old_name)` |
+| 7. Calculate the mean of a variable | G. `slice(3)` |
+| 8. Select a column | H. `tabyl(var)` |
+| 9. Calculate the mean of `x` for each level in `var` | I. `mutate(var = var_0 + var_1)` |
 
-.pull-right[
-a. selects rows based on condition
-a. selects column
-]
+
+
+---
+class: left, middle
+
+## Data manipulation
+
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Contigency table of `var`  | H. `tabyl(var)` |
+| 2. Extract all rows that have values &gt; 2 |  D. `filter(var &gt; 2)`|
+| 3. Create a new variable from `var_0` and `var_1`| I. `mutate(var = var_0 + var_1)` |
+| 4. Rename a column | F. `rename(new_name = old_name)` |
+| 5. Extract row #3 | G. `slice(3)` |
+| 6. Group by a variable | A. `group_by(var)` |
+| 7. Calculate the mean of a variable | B. `summarise(mean(var))` |
+| 8. Select a column | C. `select(var)` |
+| 9. Calculate the mean of `x` for each level in `var` | E. `group_by(var) %&gt;% summarize(mean(x))` |
+
 
 ---
 class: left, middle
@@ -1046,17 +1118,27 @@ class: left, middle
 ---
 class: left, middle
 
-.pull-left[
-1. `geom_histogram()`
-1. `geom_line()`
-1. `kable`
-1. ` `r ` `
-1. 
-]
+## RMarkdown
 
-.pull-right[
-a. 
-]
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Create a table  | A. `geom_line()` |
+| 2. Make a histogram |  B. `kable()`|
+| 3. Make a line plot | C. `geom_histogram()` |
+
+
+---
+class: left, middle
+
+## RMarkdown
+
+| *Functions*  |  *Purpose* |
+|---|---|
+| 1. Create a table  | B. `kable()` |
+| 2. Make a histogram | C. `geom_histogram()`|
+| 3. Make a line plot | A. `geom_line()` |
+
+
 ---
 class: left, middle
 
@@ -1140,7 +1222,7 @@ class: left, middle
 3. Use the handy *git interface* in RStudio. 
 --
 
-4. 🥳
+4. 🎂
 --
 
 5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
@@ -1157,7 +1239,7 @@ class: left, middle, inverse
 
 
 # Part 4
-# Learning R
+# &lt;a name=&quot;part-4-learning-r&quot;&gt;&lt;/a&gt;Learning R
 
 &lt;!-----------------------------------------------&gt;
 
