@@ -49,7 +49,7 @@ body {
 
 
 h1, h2, h3 {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 
@@ -76,15 +76,17 @@ div.my-footer span {
     bottom: 2px;
 }
 
+
+
+
 div.figure {
   float: right;
   width: 100%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
-  font-weight: normal;
+  font-weight: lighter;
   text-indent: 0;
   margin: 0.5em;
   padding: 0.5em;
-  tont-color; gray;
 }
