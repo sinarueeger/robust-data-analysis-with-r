@@ -108,6 +108,15 @@ class: left, middle
 ---
 class: left, middle
 
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="600" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+</div>
+
+
+---
+class: left, middle
+
 .pull-left[
 # **1. **
 ## [Data Analysis](#part-1-data-analysis)
@@ -187,11 +196,11 @@ class: left, middle
 ---
 class: left, middle
 
-# In Reality
+# In reality
 
 
 <div class="figure">
-<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science-annotated.png" width="669" alt="R 4 DS image" />
+<img src="img/dailyworkflow/dailyworkflow.002.jpeg" width="669" alt="R 4 DS image" />
 </div>
 
 
@@ -286,7 +295,7 @@ class: left, middle
 
 
 ---
-class: center, middle
+class: left, middle
 
 # What is R used for?
 
@@ -362,7 +371,7 @@ class: left, middle
 
 - You could also say that you apply an **action** (a verb) to an **object** (a noun). 
 
-- This is an important propertiy, because a chain of such verbs can create a _programming script_. 
+- This is an important property, because a chain of such verbs can create a _programming script_. 
 
 
 ---
@@ -397,7 +406,7 @@ class: left, middle
 
 - Data analysis workflow divides the DA into modules.
 
-- R helps you to express these moduls for your analysis. 
+- R helps you to express these modules for your analysis. 
 
 - Similar to natural languages: tool to communicate with others. Programming: communication with computer (+colleagues).
 
@@ -438,17 +447,15 @@ class: left, middle
 
 # Goal
 
+
 <div class="figure">
-<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" width="300" alt="R 4 DS image" />
-<p class="caption">From <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science by Grolemund & Wickham, 2017.</a></p>
+<img src="img/dailyworkflow/dailyworkflow.001.jpeg" width="300" alt="R 4 DS image" />
 </div>
 
-
-
-- Make a data visualisation
-- Import data into R
-- Make the data analysis-ready
-- Create a report that gives insights into meteorite falls around the world.
+1. Make a data visualisation
+2. Import data into R
+3. Make the data analysis-ready
+4. Create a report that gives insights into meteorite falls around the world.
 
 
 
@@ -462,11 +469,9 @@ class: left, middle
 
 # Get started
 
-Go to RStudio Cloud
+1. Go to RStudio Cloud: http://bit.ly/rds-workshop
 
-http://bit.ly/rds-workshop
-
-Click **Make permanent copy**
+2. Click **Make permanent copy**
 
 
 
@@ -612,14 +617,7 @@ class: left, middle
 </div>
 
 
----
-class: center, middle
 
-
-<div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png" height="500" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a></p>
-</div>
 
 
 ---
@@ -667,8 +665,23 @@ Publication-ready plots
 <p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
 </div>
 
+---
+class: left, middle
+
+## holepunch
+
+binder 
 
 
+
+---
+class: center, middle
+
+
+<div class="figure">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png" height="500" alt="Cover image" />
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a></p>
+</div>
 
 ---
 class: left, middle, inverse
@@ -691,9 +704,9 @@ class: left, middle
 
 # Learning strategies
 <!-------
-- Learn with isolated & digestable examples
+- Learn with isolated & digestible examples
 - Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
-- Surroud yourself with the language: embed R into your life
+- Surround yourself with the language: embed R into your life
 - Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
 - Make use of pen + paper
 -------->
@@ -701,7 +714,7 @@ class: left, middle
 ---
 class: left, middle
 
-## 1. Learn with isolated & digestable examples
+## 1. Learn with isolated & digestible examples
 
 
 ---
@@ -789,7 +802,7 @@ class: left, middle
 
 ## 2. Create a reproducible example
 
-1. create a reproducbile example using a small R available dataset (e.g. iris)
+1. create a reproducible example using a small R available dataset (e.g. iris)
 1. `install.packages("reprex")`
 1. select code and run reprex
 
@@ -801,7 +814,7 @@ class: left, middle
 
 ## 3. Ask on SO, twitter, RStudio help
 
-C+P r bit into one of the follwing streams:
+C+P r bit into one of the following streams:
 
 - Ask within a community (R-Ladies, R4DS)
 - https://community.rstudio.com/
@@ -949,11 +962,4 @@ class: center, middle
 
 
 
----
-class: left, middle
-
-<div class="figure">
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="600" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
-</div>
 
