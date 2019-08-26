@@ -1,7 +1,7 @@
 --- 
 title: "Robust data analysis: an introduction to R"
 author: "[Sina Rüeger](https://twitter.com/sinarueeger) & [Allie Burns](https://twitter.com/imallieburns)"
-date: "2019-08-21"
+date: "2019-08-26"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -14,9 +14,10 @@ description: "Just some infos"
 
 # Preface {-}
 
-This is the course material to the workshop _Robust data analysis: an introduction to R_ at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School at [EPFL](https://www.epfl.ch/en/), Switzerland. 
+This is the course material to the workshop _Robust data analysis: an introduction to R_ at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School 2019 at [EPFL](https://www.epfl.ch/en/), Switzerland. 
 
-You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) and the workshop in this [repository](https://github.com/sinarueeger/robust-data-analysis-with-r).
+You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) and there is a dedicated [RStudio Cloud project](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ) (scripts for the workshop are in this [repository](https://github.com/sinarueeger/robust-data-analysis-with-r/tree/master/workshop)).
+
 
 
 <div class="figure">

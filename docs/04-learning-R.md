@@ -1,10 +1,39 @@
 # Learning R
 
+
+## Learning strategies
+<!-------
+- Learn with isolated & digestable examples
+- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
+- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
+- Make use of pen + paper
+-------->
+
+### Learn with isolated & digestable examples
+
+### Look for a steady stream of data or exercises
+
+- [tidytuesday](https://github.com/rfordatascience/tidytuesday)
+
+- Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
+
+### Watch recordings
+
+- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
+- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
+- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
+- rOpenSci community call [archive](https://ropensci.org/commcalls/)
+
+<!------- or attend a conference, screen casts --------->
+
+
+
+
 ## Embrace imperfection
 
 Programming is
 1. an iterative process
-2. and there is never only one solution
+2. > 1 solutions
 
 ### Exploit imperfection
 
@@ -16,6 +45,10 @@ Programming is
 
 - Pair programming
 
+
+## Cheatsheets
+
+R studio cheatsheets
 
 
 ## How to ask for help
@@ -66,16 +99,21 @@ Why not writing directly to the maintainer? Because online helps
 ### R-Ladies 
 
 
-### Code of Conduct
-
-
 ### Join an online community
 
-- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
+- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday): https://rfordatascience.slack.com/
+
 
 - R-ladies Slack: https://www.rfordatasci.com/
 
 - French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online ressources](https://github.com/frrrenchies/frrrenchies))
+
+### [rOpenSci](https://ropensci.org)
+
+- Attend a community call ([archive](https://ropensci.org/commcalls/)).
+
+- Contribute via the shinyapp (https://ropensci.shinyapps.io/contributr/)
+
 
 ### Join an R meetup
 
@@ -94,11 +132,6 @@ Why not writing directly to the maintainer? Because online helps
 - [WeAreRLadies](https://twitter.com/WeAreRLadies/status/1154698236583698432)
 
 
-### [rOpenSci](https://ropensci.org)
-
-- Attend a community call ([archive](https://ropensci.org/commcalls/)).
-
-- Contribute via the shinyapp (https://ropensci.shinyapps.io/contributr/)
 
 ### Read blogposts
 
@@ -106,54 +139,3 @@ Why not writing directly to the maintainer? Because online helps
 
 - write a blogpost (gist.github.com!)
 
-
-## Learning strategies
-<!-------
-- Learn with isolated & digestable examples
-- Surroud yourself with the language: embed R into your life
-- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
-- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
-- Make use of pen + paper
--------->
-
-### Learn with isolated & digestable examples
-### Surround yourself with the language: embed R into your life
-### Look for a steady stream of data or exercises
-
-- [tidytuesday](https://github.com/rfordatascience/tidytuesday)
-
-- Watch out for code puzzles: advent of code / tidies of march  by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/)
-
-### Watch recordings
-
-- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
-- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
-- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
-- rOpenSci community call [archive](https://ropensci.org/commcalls/)
-
-<!------- or attend a conference, screen casts --------->
-
-### Make use of pen + paper
-
-nadieh bremer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
-democratisation of tools: tamara munzer https://www.youtube.com/watch?v=gM-1H0lsOJA&feature=youtu.be
-
-
-
-## More?
-
-### Blog by [Suzan Baert](https://twitter.com/SuzanBaert)
-https://suzan.rbind.io/
-
-### Read Working with R by [Steph Locke](https://twitter.com/TheStephLocke)
-https://itsalocke.com/company/books/
-
-### Online Tutorial _Teacups, Giraffes, & Statistics_ by Hasse Walum & Desirée De Leon
-https://tinystats.github.io/teacups-giraffes-and-statistics/index.html
-
-### Read the [R for Data Science book](https://r4ds.had.co.nz/) by [Garrett Grolemund](https://twitter.com/StatGarrett) and [Hadley Wickham](https://twitter.com/hadleywickham)
-https://r4ds.had.co.nz/
-
-### Excel to R
-- https://rfortherestofus.com/2019/06/a-guide-to-r-for-excel-users/
-- https://outsiderdata.netlify.com/post/why-i-migrated-from-excel-to-r/

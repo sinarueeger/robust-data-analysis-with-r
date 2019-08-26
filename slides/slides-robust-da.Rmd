@@ -192,6 +192,7 @@ class: left, middle
 - Module dependency
 - Flow: Entrance → Iteration → Exit 
 - Sharing of results
+- Portable box
 
 ---
 class: left, middle
@@ -223,7 +224,7 @@ class: left, middle
 - Easy updating of modules
 - Continuously developed & improved
 - Sharing ready results + scripts
-
+- easy to use (high-level language)
 
 
 <!------------------------------------------------------->
@@ -403,12 +404,9 @@ class: left, middle
 
 # Programming language vs. natural language
 
+- Similar to natural languages: tool to communicate with others. 
 
-- Data analysis workflow divides the DA into modules.
-
-- R helps you to express these modules for your analysis. 
-
-- Similar to natural languages: tool to communicate with others. Programming: communication with computer (+colleagues).
+- Programming: communication with computer (+colleagues).
 
 
 
@@ -905,7 +903,7 @@ class: left, middle
 - [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/)
 - [Geneve RUG](https://www.meetup.com/Geneve-R-User-Group)
 - [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/)
-- [adminR](https://twitter.com/RLadiesRemote)
+- [adminR]()
 
 ### [R Ladies Remote](https://twitter.com/RLadiesRemote) 
 - Coffee chats
