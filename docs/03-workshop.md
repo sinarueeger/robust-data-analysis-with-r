@@ -1,6 +1,9 @@
 # Workshop
 
 
+We are going to use [RStudio Cloud](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ) and you will need either a google or a github account for this. Make sure that you can open the following link: http://bit.ly/rds-rstudio. Loading RStudio Cloud might take a while. Once it appears, click on "Project" and then "Save a permanent copy".
+
+
 <!-------------------------------->
 ## Data visualisation
 <!-------------------------------->
@@ -72,6 +75,7 @@ There are three interrelated rules which make a dataset tidy:
 - code download button: https://twitter.com/apreshill/status/1108925218850893832
 
 
+
 <!-------------------------------->
 ## Git & R
 <!-------------------------------->
@@ -88,36 +92,33 @@ You want to use git but you are scared:
 
 
 
-
-<!-------------------------------->
-## Commenting & Documentation
-<!-------------------------------->
-
-- How much documentation do you need? 
-  - Think about your future self
-  - Add simple instructions and ask a colleague to do it
-- For structure use simple commands (align, lintr)
-- A good exercise: look at an old script and reformat.
-- [Reprohack!](https://sheffield-university.shinyapps.io/ReproHack_CCMcr/)
-
-<!----
-## Create an R package
-
-create a package with corporate colors EPFL: https://www.epfl.ch/campus/services/communication/wp-content/uploads/2019/03/EPFL-brand-guidelines.pdf
-
-- https://nanx.me/ggsci/
-- color package: https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
-- https://www.garrickadenbuie.com/blog/custom-discrete-color-scales-for-ggplot2/
+## Finding neat packages & functions
 
 
-### Task
+1. documentation (`lintr`)
+1. run all script (`usethis`)
+1. version control (`gitr`)
+1. unit tests and sanity checks (`testthat`, `assertr`)
+1. write functions, package them and tell everyone (`devtools`, `blogdown`)
+1. continuous integration (`devtools`, `blogdown`)
+1. makefile (caching) (`drake`)
+1. binder (`holepunch`)
 
-- Add an extra color 
-- Add your own function
 
+## R in the wild
 
-### Good to know
-- packages: https://www.slideshare.net/EmilyRobinson52/everything-you-wanted-to-know-about-making-an-r-package-but-were-afraid-to-ask
-- packages: https://masalmon.eu/2017/12/11/goodrpackages/
+- Fun stuff in R: [Thread on Twitter by Amelia McNamara](https://twitter.com/AmeliaMN/status/1126891572807729152?s=09)
+- Data Journalism: [Roger Federer @ SRF](https://www.srf.ch/static/srf-data/data/2018/federer/#/en)
+- The evolution of a ggplot: [Blogpost by Cederic Scherer](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/)
+- Research compendium: 
+    - [DirectEffBCGPolicyChange by Sam Abbott](https://github.com/seabbs/DirectEffBCGPolicyChange)
+    - [Mendelian Randomisation in AD](https://github.com/venexia/MR-antihypertensives-AD)
+    - [Fat distribution GWAS](https://github.com/saralpulit/fatdistnGWAS)
+    
+- Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
+- Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
+- Replication: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
 
----->
+- video, animation, presentation, website, write to excel
+- ...
+

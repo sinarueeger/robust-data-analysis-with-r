@@ -16,12 +16,11 @@ While it was developed to do mainly statistical computations (e.g. regression mo
 
 Comes with *basic*/*default* packages, but there are over 13'000 R-packages that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github.
 
-## What is R used for?
 
-Lots of (but not all) data science, data analysis & stats stuff
 
 ## Capabilities of R
 
+R is used for a lot of (but not all) data science, data analysis & stats stuff. 
 
 <div class="figure">
 <img src="img/heidibaya.png" width="300" alt="altruistic" />
@@ -42,7 +41,9 @@ Beyond being a calculator and being able to estimate statistical models, R can h
 
 
 
-## Some terminology: Functions, libraries and scripts
+## Functions, libraries and scripts
+
+Some terminology: 
 
 - Programming typically works like this: you apply a function to an object. 
 
@@ -58,7 +59,7 @@ Beyond being a calculator and being able to estimate statistical models, R can h
 
 ## R vs. RStudio
 
-### R
+**R** is ...
 
 - https://www.r-project.org/
 
@@ -79,13 +80,7 @@ Beyond being a calculator and being able to estimate statistical models, R can h
 <p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
 </div>
 
-### RStudio
-
-- IDE (integrated development environment) to R
-- Works for any platform
-- Free for individual users
-
-
+**RStudio** is an IDE (integrated development environment) to R. Works on all three major platforms Windows, MacOS and Linux. It is free for individual users. 
 
 <div class="figure">
 <img src="img/rstudio.png" width="500" alt="rproject" />
@@ -97,16 +92,11 @@ Beyond being a calculator and being able to estimate statistical models, R can h
 <p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
 </div>
 
-- User Interface for R
-- Works for any computer system (MacOSx, Linux, Windows)
 - [Desktop version is free](https://www.rstudio.com/products/rstudio/#Desktop)) if you are an individual user
 - develop a lot of new packages, e.g. [shiny](https://www.rstudio.com/products/shiny/)
 - anything between teaching and solutions for production
 - Where are things in RStudio?: https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1
 - Download here: https://www.rstudio.com/products/rstudio/download/
-
-
-
 
 
 
