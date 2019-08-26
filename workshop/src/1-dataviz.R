@@ -35,13 +35,13 @@ skimr::skim(drug_use)
 drug_freq <- drug_use %>% 
   
   ## select only age, n and all variables that end with _use
-  select(age, n, ends_with("_use")) %>%
+  select(age, n, ends_with("_freq")) %>%
   
   ## go from wide to a long format
   pivot_longer(-c(age, n), names_to = "drug", values_to = "freq") %>%
 
-  ## replace all values in the drug column from "_use" to ""
-  mutate(drug = gsub("_use", "", drug))
+  ## replace all values in the drug column from "_freq" to ""
+  mutate(drug = gsub("_freq", "", drug))
 
 ## now compare the two of them
 head(drug_use)
@@ -51,10 +51,7 @@ head(drug_freq)
 ## Plot the data ----------------------------------------
 ## use: percentage who use ... 
 
-p1 <- ggplot(data = drug_freq %>%
-               filter(drug %in% c(
-                 "alcohol", "cocaine", "pain_releiver", "marijuana"
-               ))) +
+p1 <- ggplot(data = drug_freq) +
   geom_point(aes(x = age, y = freq, color = drug))
 
 print(p1)
@@ -63,10 +60,7 @@ print(p1)
 ## Plot the data ----------------------------------------
 ## use: percentage who use ...
 
-p2 <- ggplot(data = drug_freq %>%
-               filter(drug %in% c(
-                 "alcohol", "cocaine", "pain_releiver", "marijuana"
-               ))) +
+p2 <- ggplot(data = drug_freq) +
   geom_point(aes(x = age, y = freq)) +
   facet_wrap(~ drug, scales = "free_y") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
@@ -79,7 +73,7 @@ print(p2)
 
 ## Store the plot into a pdf ----------------------------
 
-qp %>% ggsave(., 
+p2 %>% ggsave(., 
               filename = "druguse-freq.pdf", 
               width = 6, 
               height = 6)
@@ -88,8 +82,8 @@ qp %>% ggsave(.,
 
 ## Extra ------------------------------------------------
 ## add a theme
-qp + ggplot2::theme_minimal()
-qp + hrbrthemes::theme_ipsum()
+p2 + ggplot2::theme_minimal()
+p2 + hrbrthemes::theme_ipsum()
 
 ## change the theme yourself
-ggThemeAssist::ggThemeAssistGadget(qp)
+ggThemeAssist::ggThemeAssistGadget(p2)
