@@ -1,19 +1,19 @@
 # Robust data analysis: an introduction to R
 
-This repository contains the slides, handbook, and exercises for the workshop _Robust data analysis: an introduction to R_ at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School at [EPFL](https://www.epfl.ch/en/), Switzerland. 
+This repository contains the slides, handbook, and exercises for the workshop _Robust data analysis: an introduction to R_ at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School at [EPFL](https://www.epfl.ch/en/), Switzerland. The workshop aims at people that have rarely/not used R in the past, and that do the majority of their analyses in spreadsheet-like tools like Excel.
 
 - [Slides](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) 
 - [Handbook](https://sinarueeger.github.io/robust-data-analysis-with-r/)
-- Workshop: [scripts](https://github.com/sinarueeger/robust-data-analysis-with-r/tree/master/workshop) + [RStudio Cloud](http://bit.ly/rds-rstudio)
+- Workshop: [Scripts](https://github.com/sinarueeger/robust-data-analysis-with-r/tree/master/workshop) + [RStudio Cloud](http://bit.ly/rds-rstudio)
 
 
 ## Goals
 
 - Steps of a data analysis
 - How do these steps relate to R
-- Understand the benefits of prgramming / R
+- Understand the benefits of programming & R
 - Execute an R script
-- Existence of best practices
+- Know to build an R script
 - How to learn R
 
 ## How to teach
@@ -22,8 +22,7 @@ This repository contains the slides, handbook, and exercises for the workshop _R
 - Illustrations by @allison_horst:  https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/starwars-rey-rstats.png
 - Keynote at #useR2019 + mindset by @juliesquid https://youtu.be/Z8PqwFPqn6Y
 
-
-- Clearify for whom this course is: https://twitter.com/RochelleTerman/status/1126642900006252544
+## Teaching aids
 - [Parsons problems for teaching progamming](https://github.com/rstudio/parsons)
 - Other courses: https://carpentries.org/blog/2019/06/reproducible-science-r/
 - [ggplot flipbook](https://github.com/EvaMaeRey/ggplot_flipbook)
