@@ -217,7 +217,7 @@ body {
 line-height: 2.5em;
 }
 h1, h2, h3 {
-line-height: 1.5em;
+line-height: 1em;
 }
 
 div.my-footer {
@@ -241,12 +241,12 @@ width: 100%;
 text-align: center;
 font-style: italic;
 font-size: smaller;
-font-weight: normal;
+font-weight: lighter;
 text-indent: 0;
 margin: 0.5em;
 padding: 0.5em;
-tont-color; gray;
-}</style>
+}
+</style>
   </head>
   <body>
     <textarea id="source">
@@ -311,13 +311,14 @@ class: left, middle
 ---
 class: left, middle
 
-## **Slides** &amp;emsp; &lt;small&gt;http://bit.ly/rds-slides&lt;/small&gt;
+## Slides
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; http://bit.ly/rds-slides
 
-## **Handbook** &amp;emsp; &lt;small&gt;http://bit.ly/rds-handbook&lt;/small&gt;
+## Handbook
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; http://bit.ly/rds-handbook
 
-## **RStudio Cloud** &amp;emsp; &lt;small&gt;http://bit.ly/rds-rstudio&lt;/small&gt;
-
-## Github repository &amp;emsp; &lt;small&gt;http://bit.ly/rds-repo&lt;/small&gt;
+## RStudio Cloud
+### &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; http://bit.ly/rds-rstudio
 
 
 &lt;!---------------------- ToC ------------------------------&gt;
@@ -327,23 +328,23 @@ class: left, middle
 
 .pull-left[
 # **1. **
-### [What makes a Data Analysis robust?](#part-1-data-analysis)
-
+## [Data Analysis](#part-1-data-analysis)
+&lt;!------- What makes a Data Analysis robust?------&gt;
 &lt;br&gt;
 
 # **3. ** 
-### [Workshop](#part-3-workshop) 
+## [Workshop](#part-3-workshop) 
 
 ]
 
 .pull-right[
 # **2. ** 
-### [How can R help with that?](#part-2-r)
-
+## [R](#part-2-r)
+&lt;!--------How can R help with that?-----------&gt;
 &lt;br&gt;
 
 # **4.** 
-### [How can we learn R?](#part-4-learning-r)
+## [Learning R](#part-4-learning-r)
 ]
 
 
@@ -364,7 +365,7 @@ class: left, middle
 
 &lt;div class=&quot;figure&quot;&gt;
 &lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/p&gt;
+&lt;caption&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/caption&gt;
 &lt;/div&gt;
 
 ---
@@ -395,29 +396,42 @@ class: left, middle
 
 # Principles
 
-- tidying data
-- reproducibility
-- entrance → iterate → exit workflow 
-- sharing of results
+- Tidy data
+- Different modules
+- Module dependency
+- Flow: Entrance → Iteration → Exit 
+- Sharing of results
+
+---
+class: left, middle
+
+# In Reality
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science-annotated.png&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;/div&gt;
+
+
+
+
+???
+
+_Revisiting modules many many times: robust DA when this works at easy_.
+
+
+
 
 ---
 class: left, middle
 
 # Requirements to Software
 
-- easy data manipulation
-- enhance reproducibility 
-- used by others
-- ease of use
-- continuously developed &amp; improved
-- sharing ready results + scripts
-
----
-class: left, middle
-
-# What makes a Data Analysis _robust_?
-
-Revisiting steps easily
+- Used by others
+- Translation of modules to Code
+- Easy updating of modules
+- Continuously developed &amp; improved
+- Sharing ready results + scripts
 
 
 
@@ -425,23 +439,21 @@ Revisiting steps easily
 &lt;!--------------- Thought experiment --------------------&gt;
 &lt;!-------------------------------------------------------&gt;
 ---
-class: left, middle, inverse
+exclude: true
 
 # Thought experiment
 
 
 ---
-class: left, top
+exclude: true
 
 ## Q1: 
 ### What is the most annoying &amp; repetitive task at work? 
---
-&lt;br&gt;
 ## Q2: 
 ### How could you automate it? 
 
 ---
-class: left, middle
+exclude: true
 
 # Automation
 
@@ -474,7 +486,7 @@ class: left, middle
 
 &gt; &lt;p&gt;&lt;small&gt;As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.)&lt;/p&gt;&lt;/small&gt; The idea is to get things out of your head and on to the computer as quickly as possible.
 
-[Interview with Hadley Wickham in 2019](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/)
+[_Interview with Hadley Wickham, Quartz, 2019_](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/)
 
 
 
@@ -501,7 +513,7 @@ class: middle
 
 # Quite a few things
 
-In general lots of (but not all) data science, data analysis &amp; stats stuff
+Lots of (but not all) data science, data analysis &amp; stats stuff
 
 
 
@@ -509,42 +521,72 @@ In general lots of (but not all) data science, data analysis &amp; stats stuff
 
 _sdflkjfdksjdf_.
 
+
+
 ---
 class: left, middle
 
 # Capabilities of R
 
+---
+class: left, middle
 
-Beyond being a calculator and being able to estimate statistical models, R can help us to organise the data analysis workflow better. 
+## Communication of results
+- through literate programming
+- through a web application
 
-- **Communication of results** 
-  - through literate programming: `RMarkdown`
-  - through a web application: `shiny`
-- **Data visualisation**: ggplot2`
-- Access **APIs**
+## Data visualisation
 
+
+## Accessing APIs
+
+
+
+???
+
+_Beyond being a calculator and being able to estimate statistical models, R can help us to organise the data analysis workflow better. _
 
 
 ---
 class: left, middle
+
 
 # R is constantly evolving &amp; improving
 
 
+
+???
+
+_Other biologists_
+
 ---
 class: left, middle
 
-# Some terms: Functions
+# Some terms
+
+- Function
+
+- Library
+
+- Script
+
+
+---
+class: left, middle
+
+## Function
 
 - Programming typically works like this: you apply a function to an object. 
+
 - You could also say that you apply an **action** (a verb) to an **object** (a noun). 
+
 - This is an important propertiy, because a chain of such verbs can create a _programming script_. 
 
 
 ---
 class: left, middle
 
-# Some terms: Libraries
+## Library
 
 - Library or package is a **collection of functions**. 
 
@@ -553,8 +595,7 @@ class: left, middle
 ---
 class: left, middle
 
-# Some terms: programming script
-
+## Script
 
 - Example with plot: function, arguments, package/library, objects
 
@@ -562,32 +603,8 @@ class: left, middle
 ---
 class: left, middle
 
-# R
-- Core development of R
-- Anyone can contribute a package
+# R vs RStudio
 
-&lt;div class=&quot;figure&quot;&gt;
-&lt;a href=&quot;https://www.r-project.org/&quot;&gt;
-&lt;img src=&quot;img/r-project-screenshot.png&quot; width=&quot;500&quot; alt=&quot;rproject&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Screenshot from &lt;a href=&quot;https://www.r-project.org/&quot;&gt;R Project Website&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
----
-class: left, middle
-
-# RStudio
-- IDE (integrated development environment) to R
-- Works for any platform
-- Free for individual users
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;a href=&quot;https://www.rstudio.com/&quot;&gt;
-&lt;img src=&quot;img/rstudio-screenshot.png&quot; width=&quot;400&quot; alt=&quot;rproject&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Screenshot of &lt;a href=&quot;https://www.rstudio.com/&quot;&gt;RStudio&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-]
 
 
 ---
@@ -618,6 +635,105 @@ exclude: true
 1. continuous integration (`devtools`, `blogdown`)
 1. makefile (caching) (`drake`)
 1. binder (`holepunch`)
+
+
+
+---
+class: left, middle, inverse
+
+&lt;!-------------------------------------------------------&gt;
+&lt;!---------------------- PART 3 -------------------------&gt;
+&lt;!-------------------------------------------------------&gt;
+---
+class: left, middle, inverse
+
+# Part 3
+# &lt;a name=&quot;part-3-workshop&quot;&gt;&lt;/a&gt;Workshop
+
+
+---
+class: left, middle
+
+# Goal
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;300&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+- Make a data visualisation
+- Import data into R
+- Make the data analysis-ready
+- Create a report that gives insights into meteorite falls around the world.
+
+
+
+???
+
+_two steps: make changes + add things_.
+
+
+---
+class: left, middle
+
+# Get started
+
+Go to RStudio Cloud
+
+http://bit.ly/rds-workshop
+
+Click **Make permanent copy**
+
+
+
+---
+class: left, middle, inverse
+
+
+
+&lt;!-------------------------------------------------------&gt;
+&lt;!---------------------- PART 3 -------------------------&gt;
+&lt;!-------------------------------------------------------&gt;
+---
+class: left, middle, inverse
+
+# Part 3
+# &lt;a name=&quot;part-3-workshop&quot;&gt;&lt;/a&gt;Workshop Dessert
+
+---
+class: left, middle
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
+&quot; width=&quot;700&quot; alt=&quot;Cover image&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;Source &lt;a href=&quot;https://happygitwithr.com/&quot;&gt;Happy Git with R by Jenny Bryan&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+---
+class: left, middle
+
+# Git &amp; R
+
+--
+1. Use git. 
+--
+
+2. Read [*Happy Git with R*](https://happygitwithr.com/). 
+--
+
+3. Use the handy *git interface* in RStudio. 
+--
+
+4. 🎉
+--
+
+5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
+
+
 
 ---
 class: left, middle
@@ -724,600 +840,13 @@ class: center, middle
 &lt;/div&gt;
 
 
-
-
-
----
-class: left, middle, inverse
-
-&lt;!-------------------------------------------------------&gt;
-&lt;!---------------------- PART 3 -------------------------&gt;
-&lt;!-------------------------------------------------------&gt;
----
-class: left, middle, inverse
-
-# Part 3
-# &lt;a name=&quot;part-3-workshop&quot;&gt;&lt;/a&gt;Workshop
-
-
 ---
 class: left, middle
 
-# Goal
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;300&quot; alt=&quot;R 4 DS image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-- Make a data visualisation
-- Import data into R
-- Make the data analysis-ready
-- Create a report that gives insights into meteorite falls around the world.
-
-
-
-???
-
-_two steps: make changes + add things_.
-
+# Finding neat packages &amp; functions
 
 ---
 class: left, middle
-
-# Get started
-
-Go to RStudio Cloud
-
-http://bit.ly/rds-workshop
-
-Click `Make permanent copy`
-
----
-class: left, middle, inverse
-
----
-class: left, middle
-
-# Data visualisation
-
-Open `src/1-dataviz.R`
-
----
-class: left, middle
-
-## Aim
-
-Analyse the use of different drugs in the states with respect to age
-
-
-## Data
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; age &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; n &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; alcohol_use &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; alcohol_freq &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; marijuana_use &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 12 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 2798 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 3.9 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 3 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 1.1 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 13 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 2757 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 8.5 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 6 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 3.4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 14 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 2792 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 18.1 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 5 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 8.7 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
-class: left, middle
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
----
-class: left, middle
-
-## Glimpse
-
-
-
-| *Function*      |  `   ` | *Purpose*   |
-| :-----        |    :----:   |          :------ |
-| 1. `skim()`      |         | A. Show the first 6 lines   |
-| 2. `head()`   |          | B. Summarize data with mean, etc.      |
-| 3. `summary()`   |          | C. Displaying summary statistics     |
-
----
-class: left, middle
-
-## Glimpse
-
-
-| *Function*      |  `   ` | *Purpose*   |
-| :-----        |    :----:   |          :------ |
-| 1. `skim()`      |         |  C. Displaying summary statistics  |
-| 2. `head()`   |          | A. Show the first 6 lines      |
-| 3. `summary()`   |          | B. Summarize data with mean, etc.     |
-
-
-
----
-class: left, middle
-
-## Plotting
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a plot   | A. `ylim()` |
-| 2. Create a scatterplot |  B. `theme_set()` |
-| 3. Create panels | C. `ggsave()` |
-| 4. Adjust the y-axis limits |  D.  `geom_point()`  |
-| 5. Change the y-axis labels  |  E. `ggplot()` |
-| 6. Set a theme  |  F. `facet_wrap()` |
-| 7. Save a plot | G.  `ylab()` |
-
-
----
-class: left, middle
-
-## Plotting
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a plot   | E. `ggplot()` |
-| 2. Create a scatterplot |  D. `geom_point()`|
-| 3. Create panels | F. `facet_wrap()` |
-| 4. Adjust the y-axis limits | A. `ylim()`  |
-| 5. Change the y-axis labels  |  G. `ylab()` |
-| 6. Set a theme  |  B. `theme_set()` |
-| 7. Save a plot | C. `ggsave()`  |
-
-
-
-
----
-class: left, middle
-
-
-## Instructions
-- Make prediction
-- Execute first bit
-- As a user, what would you like to change? 
-
----
-class: left, middle
-
-
-## Task
-- add two other drugs to the plot
-- limit age range
-- add the variable n into the plot
-- add a smoother spline
-- add color to points
-- add a title
-- have drug on the x axis and age as a facetting
-- change pdf &gt; png
-
-
-
----
-class: left, middle
-
-# Import Data
-Open `src/2-import-data.R`
-
-
-## Aim
-
-Import an Excel and a text-delimited file.
-
----
-class: left, middle
-
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. `read_excel()`   | A. Turn the column names into nice names |
-| 2. `read_delim()` | B. Import a delimited text file  |
-| 3. `clean_names()` |  C. Write a delimited text file |
-| 4. `read_csv()`  |  D.  Import an Excel file |
-| 5. `write_delim()`  |  E. Import a comma delimited text file|
-
-
----
-class: left, middle
-
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. `read_excel()`   | D. Import an Excel file |
-| 2. `read_delim()` | B. Import a delimited text file  |
-| 3. `clean_names()` | A . Turn the column names into nice names |
-| 4. `read_csv()`  |  E. Import a comma delimited text file |
-| 5. `write_delim()`  |  C. Write a delimited text file |
-
-
----
-class: left, middle
-
-## This button is your friend
-
-&lt;img src=&quot;img/import-data.png&quot; width=&quot;500&quot; alt=&quot;Button&quot; /&gt;
-
-
----
-class: left, middle
-
-## Task
-
-- import `tmp/otherfile.xlsx` table
-- import `tmp/otherfile.txt` data
-- write `.xlsx` file
-
-
----
-class: left, middle, inverse
-
-
----
-class: left, middle
-
-# Tidy + Transform Data
-Open `src/3-tidy-data.R`
-
----
-class: left, middle
-
-## Aim
-
-Get the metorite fall data analysis-ready. 
-
-## Data
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; name &lt;/th&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; class &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; mass &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; year &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; lat &lt;/th&gt;
-   &lt;th style=&quot;text-align:right;&quot;&gt; long &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Aachen &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; L5 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 21 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 1880 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 50.77500 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 6.08333 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Aarhus &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; H6 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 720 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 1951 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 56.18333 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 10.23333 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Abee &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; EH4 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 107000 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 1952 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; 54.21667 &lt;/td&gt;
-   &lt;td style=&quot;text-align:right;&quot;&gt; -113.00000 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
----
-class: left, middle
-
-## Data manipulation
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Contigency table of `var`  | A.  `slice(3)`  |
-| 2. Extract all rows that have values &gt; 2 |  B. `mutate(var = var_0 + var_1)` |
-| 3. Create a new variable from `var_0` and `var_1`| C.  `tabyl(var)`|
-| 4. Rename a column | D. `filter(var &gt; 2)` |
-| 5. Extract row #3 | E.  `rename(new_name = old_name)` |
-
-
----
-class: left, middle
-
-## Data manipulation
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 6. Group by a variable | F. `group_by(var) %&gt;% summarize(mean(x))`|
-| 7. Calculate the mean of a variable | G. `group_by(var)`|
-| 8. Select a column | H. `summarise(mean(var))` |
-| 9. Calculate the mean of `x` for each level in `var` | I. `select(var)` |
-
-
-
----
-class: left, middle
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
----
-class: left, middle
-
-## Task
-
-- add a column with `mutate()`
-- rename a column with `rename()`
-- filter rows with `filter()`
-- summarise ... with `group_by` + `summarise`
-
-
----
-class: left, middle, inverse
-
----
-class: left, middle
-
-# Report with RMarkdown
-Open `src/4-report.Rmd`
-
-## Aim
-
-Create a report for the meteorite fall data.
-
----
-class: left, middle
-
-### R chunks
-
-```
-
-
-
-```
-
-### Inline R
-` `r ` ` 
-
-
----
-class: left, middle
-
-## RMarkdown
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a table  | A. `geom_line()` |
-| 2. Make a histogram |  B. `kable()`|
-| 3. Make a line plot | C. `geom_histogram()` |
-
-
----
-class: left, middle
-
-## RMarkdown
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a table  | B. `kable()` |
-| 2. Make a histogram | C. `geom_histogram()`|
-| 3. Make a line plot | A. `geom_line()` |
-
-
----
-class: left, middle
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
-
----
-class: left, middle
-
-# Task
-
-- add your name as the author
-- change the title into something you like
-- export as pdf/word/markdown
-
----
-class: left, middle
-
-## Good to know
-- rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
-- more about RMarkdown here: https://rmd4sci.njtierney.com/
-- Look into xaringan and CSS file, more by [Alison Hill](https://arm.rbind.io/slides/xaringan.html)
-- code download button: https://twitter.com/apreshill/status/1108925218850893832
-
-
----
-class: left, middle
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_rockstar.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
----
-exclude: true
-
-# Commenting &amp; Documentation
-
-- How much documentation do you need? 
-  - Think about your future self
-  - Add simple instructions and ask a colleague to do it
-- For structure use simple commands (align, lintr)
-- A good exercise: look at an old script and reformat.
-- [Reprohack!](https://sheffield-university.shinyapps.io/ReproHack_CCMcr/)
-
-
-
----
-class: left, middle, inverse
-
-
----
-class: left, middle
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
-&quot; width=&quot;700&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Source &lt;a href=&quot;https://happygitwithr.com/&quot;&gt;Happy Git with R by Jenny Bryan&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
-
----
-class: left, middle
-
-# Git &amp; R
-
---
-1. Use git. 
---
-
-2. Read [*Happy Git with R*](https://happygitwithr.com/). 
---
-
-3. Use the handy *git interface* in RStudio. 
---
-
-4. 🎉
---
-
-5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
-
-
----
-class: left, middle, inverse
-
-&lt;!-------------------------------------------------------&gt;
-&lt;!---------------------- PART 4 -------------------------&gt;
-&lt;!-------------------------------------------------------&gt;
----
-class: left, middle, inverse
-
-
-# Part 4
-# &lt;a name=&quot;part-4-learning-r&quot;&gt;&lt;/a&gt;Learning R
-
-&lt;!-----------------------------------------------&gt;
-
----
-class: center, middle
-
-# Learning strategies
-&lt;!-------
-- Learn with isolated &amp; digestable examples
-- Surroud yourself with the language: embed R into your life
-- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
-- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
-- Make use of pen + paper
---------&gt;
-
----
-class: left, middle
-
-## 1. Learn with isolated &amp; digestable examples
-
----
-class: left, middle
-
-## 2. Surround yourself with the language: embed R into your life
-
----
-class: left, middle
-
-## 3. Look for a steady stream of data or exercises
-
-[tidytuesday](https://github.com/rfordatascience/tidytuesday)s
-
----
-class: left, middle
-
-## 4. Watch recordings
-
-- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
-- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
-- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
-- rOpenSci community call [archive](https://ropensci.org/commcalls/)
-&lt;!------- or attend a conference, screen casts ---------&gt;
-
-
----
-class: center, middle
-
-# Use of pen + paper
-
-&lt;!-----------------------------------------------&gt;
----
-class: center, middle
-
-# Embrace imperfection
-
----
-class: left, middle
-
-
-## 1. Programming is an iterative process
-
-## 2. 1 Problem = 1+ solutions
-
----
-class: left, middle
-
-## Exploit imperfection
-
-- Look at &amp; review each others code
-
-- Rewrite your code
-
-- Look at open source code
-
-
-
----
-class: center, middle
-
-# Find neat packages &amp; functions
-
----
-class: center, middle
 
 ## 1. Data import
 
@@ -1335,7 +864,7 @@ class: left, middle
 
 
 ---
-class: center, middle
+class: left, middle
 
 ## 3. Dataviz
 
@@ -1348,45 +877,101 @@ class: center, middle
 ---
 class: left, bottom
 
-.pull-left[
 ## ggpubr
-
-Annotate plot with meta data
+Publication-ready plots
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png&quot; width=&quot;400&quot; alt=&quot;Cover image&quot; /&gt;
+&lt;img src=&quot;https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png&quot; width=&quot;350&quot; alt=&quot;Cover image&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Produced by &lt;a href=&quot;https://github.com/kassambara/ggpubr&quot;&gt;ggpubr package&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
-]
 
-.pull-right[
 
-Arrange plots
+---
+class: left, middle, inverse
 
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://rpkgs.datanovia.com/ggpubr/reference/ggarrange-1.png&quot; width=&quot;400&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Produced by &lt;a href=&quot;https://github.com/kassambara/ggpubr&quot;&gt;ggpubr package&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
 
-]
+&lt;!-------------------------------------------------------&gt;
+&lt;!---------------------- PART 4 -------------------------&gt;
+&lt;!-------------------------------------------------------&gt;
+---
+class: left, middle, inverse
 
+
+# Part 4
+# &lt;a name=&quot;part-4-learning-r&quot;&gt;&lt;/a&gt;Learning R
+
+&lt;!-----------------------------------------------&gt;
+
+---
+class: left, middle
+
+# Learning strategies
+&lt;!-------
+- Learn with isolated &amp; digestable examples
+- Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
+- Surroud yourself with the language: embed R into your life
+- Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
+- Make use of pen + paper
+--------&gt;
+
+---
+class: left, middle
+
+## 1. Learn with isolated &amp; digestable examples
 
 
 ---
 class: left, middle
 
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_masterpiece.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
+## 2. Look for a steady stream of data or exercises
+
+[tidytuesday](https://github.com/rfordatascience/tidytuesday)s
 
 ---
-class: left, middle, inverse
+class: left, middle
+
+## 3. Watch recordings
+
+- New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
+- R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
+- RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)
+- rOpenSci community call [archive](https://ropensci.org/commcalls/)
+&lt;!------- or attend a conference, screen casts ---------&gt;
+
+
+&lt;!-----------------------------------------------&gt;
+---
+class: left, middle
+
+# Embrace imperfection
 
 ---
-class: enteriddle
+class: left, middle
+
+
+### Programming is an iterative process
+
+
+### 1 Problem → 1+ solutions
+
+---
+class: left, middle
+
+## Exploit imperfection
+
+- Look at &amp; review each others code
+
+- Rewrite your code
+
+- Look at open source code
+
+
+&lt;!-----------------------------------------------&gt;
+
+---
+class: left, middle
 
 # Cheatsheets
 
@@ -1394,7 +979,7 @@ class: enteriddle
 
 &lt;!-----------------------------------------------&gt;
 ---
-class: center, middle
+class: left, middle
 
 # How to ask for help
 
@@ -1451,13 +1036,7 @@ Why not writing directly to the maintainer? Because online helps
 
 
 &lt;!-----------------------------------------------&gt;
----
-class: center, middle
 
-# Welcome to the R family! 
-
---
-### Become part of the community
 &lt;!------------
 - blogposts (rweekly!)
 - R user group (RUG, R-Ladies)
@@ -1473,11 +1052,13 @@ class: center, middle
 
 
 ---
-class: left, middle
+class: center, middle
+
+# Become part of the community
 
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/welcome_to_rstats_twitter.png&quot; height=&quot;600&quot; alt=&quot;Cover image&quot; /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/welcome_to_rstats_twitter.png&quot; height=&quot;400&quot; alt=&quot;Cover image&quot; /&gt;
 &lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
@@ -1499,7 +1080,7 @@ _mention code of conduct_.
 ---
 class: left, middle
 
-## Join an online community
+## Online Communities
 
 - R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
 - R-ladies Slack: https://www.rfordatasci.com/
