@@ -1,7 +1,7 @@
 
 # Appendix {-}
 
-## R learning resources
+## More R learning resources {-}
 
 ### Blog by [Suzan Baert](https://twitter.com/SuzanBaert)
 https://suzan.rbind.io/

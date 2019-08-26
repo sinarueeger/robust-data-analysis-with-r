@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Data Analysis | Robust data analysis: an introduction to R</title>
+  <meta name="description" content="Just some infos" />
+  <meta name="generator" content="bookdown 0.12.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Data Analysis | Robust data analysis: an introduction to R" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://sinarueeger.github.io/robust-data-analysis-with-r/" />
+  
+  <meta property="og:description" content="Just some infos" />
+  <meta name="github-repo" content="sinarueeger/robust-data-analysis-with-r" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Data Analysis | Robust data analysis: an introduction to R" />
+  
+  <meta name="twitter:description" content="Just some infos" />
+  
+
+<meta name="author" content="Sina Rüeger &amp; Allie Burns" />
+
+
+<meta name="date" content="2019-08-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="introduction-to-r.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Robust data analysis: an introduction to R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="data-analysis.html"><a href="data-analysis.html"><i class="fa fa-check"></i><b>1</b> Data Analysis</a><ul>
+<li class="chapter" data-level="1.1" data-path="data-analysis.html"><a href="data-analysis.html#data-analysis-in-reality"><i class="fa fa-check"></i><b>1.1</b> Data analysis in reality</a></li>
+<li class="chapter" data-level="1.2" data-path="data-analysis.html"><a href="data-analysis.html#requirements-to-data-analysis-software"><i class="fa fa-check"></i><b>1.2</b> Requirements to data analysis software</a></li>
+<li class="chapter" data-level="1.3" data-path="data-analysis.html"><a href="data-analysis.html#more"><i class="fa fa-check"></i><b>1.3</b> More</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction-to-r.html"><a href="introduction-to-r.html"><i class="fa fa-check"></i><b>2</b> Introduction to R</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction-to-r.html"><a href="introduction-to-r.html#capabilities-of-r"><i class="fa fa-check"></i><b>2.1</b> Capabilities of R</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-to-r.html"><a href="introduction-to-r.html#functions-libraries-and-scripts"><i class="fa fa-check"></i><b>2.2</b> Functions, libraries and scripts</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction-to-r.html"><a href="introduction-to-r.html#r-vs.-rstudio"><i class="fa fa-check"></i><b>2.3</b> R vs. RStudio</a></li>
+<li class="chapter" data-level="2.4" data-path="introduction-to-r.html"><a href="introduction-to-r.html#programming-language-vs.-natural-language"><i class="fa fa-check"></i><b>2.4</b> Programming language vs. natural language</a></li>
+<li class="chapter" data-level="2.5" data-path="introduction-to-r.html"><a href="introduction-to-r.html#more-1"><i class="fa fa-check"></i><b>2.5</b> More</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="workshop.html"><a href="workshop.html"><i class="fa fa-check"></i><b>3</b> Workshop</a><ul>
+<li class="chapter" data-level="3.1" data-path="workshop.html"><a href="workshop.html#data-visualisation"><i class="fa fa-check"></i><b>3.1</b> Data visualisation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="workshop.html"><a href="workshop.html#good-to-know"><i class="fa fa-check"></i><b>3.1.1</b> Good to know</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="workshop.html"><a href="workshop.html#import-data"><i class="fa fa-check"></i><b>3.2</b> Import data</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="workshop.html"><a href="workshop.html#good-to-know-1"><i class="fa fa-check"></i><b>3.2.1</b> Good to know</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="workshop.html"><a href="workshop.html#tidy-transform-data"><i class="fa fa-check"></i><b>3.3</b> Tidy + Transform Data</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="workshop.html"><a href="workshop.html#what-is-tidy-data"><i class="fa fa-check"></i><b>3.3.1</b> What is tidy data?</a></li>
+<li class="chapter" data-level="3.3.2" data-path="workshop.html"><a href="workshop.html#good-to-know-2"><i class="fa fa-check"></i><b>3.3.2</b> Good to know</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="workshop.html"><a href="workshop.html#report-with-rmarkdown"><i class="fa fa-check"></i><b>3.4</b> Report with Rmarkdown</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="workshop.html"><a href="workshop.html#good-to-know-3"><i class="fa fa-check"></i><b>3.4.1</b> Good to know</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="workshop.html"><a href="workshop.html#git-r"><i class="fa fa-check"></i><b>3.5</b> Git &amp; R</a></li>
+<li class="chapter" data-level="3.6" data-path="workshop.html"><a href="workshop.html#finding-neat-packages-functions"><i class="fa fa-check"></i><b>3.6</b> Finding neat packages &amp; functions</a></li>
+<li class="chapter" data-level="3.7" data-path="workshop.html"><a href="workshop.html#r-in-the-wild"><i class="fa fa-check"></i><b>3.7</b> R in the wild</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="learning-r.html"><a href="learning-r.html"><i class="fa fa-check"></i><b>4</b> Learning R</a><ul>
+<li class="chapter" data-level="4.1" data-path="learning-r.html"><a href="learning-r.html#learning-strategies"><i class="fa fa-check"></i><b>4.1</b> Learning strategies</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="learning-r.html"><a href="learning-r.html#learn-with-isolated-digestable-examples"><i class="fa fa-check"></i><b>4.1.1</b> Learn with isolated &amp; digestable examples</a></li>
+<li class="chapter" data-level="4.1.2" data-path="learning-r.html"><a href="learning-r.html#look-for-a-steady-stream-of-data-or-exercises"><i class="fa fa-check"></i><b>4.1.2</b> Look for a steady stream of data or exercises</a></li>
+<li class="chapter" data-level="4.1.3" data-path="learning-r.html"><a href="learning-r.html#watch-recordings"><i class="fa fa-check"></i><b>4.1.3</b> Watch recordings</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="learning-r.html"><a href="learning-r.html#embrace-imperfection"><i class="fa fa-check"></i><b>4.2</b> Embrace imperfection</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="learning-r.html"><a href="learning-r.html#exploit-imperfection"><i class="fa fa-check"></i><b>4.2.1</b> Exploit imperfection</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="learning-r.html"><a href="learning-r.html#cheatsheets"><i class="fa fa-check"></i><b>4.3</b> Cheatsheets</a></li>
+<li class="chapter" data-level="4.4" data-path="learning-r.html"><a href="learning-r.html#how-to-ask-for-help"><i class="fa fa-check"></i><b>4.4</b> How to ask for help</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="learning-r.html"><a href="learning-r.html#look-online"><i class="fa fa-check"></i><b>4.4.1</b> 1. Look online</a></li>
+<li class="chapter" data-level="4.4.2" data-path="learning-r.html"><a href="learning-r.html#create-a-reproducible-example"><i class="fa fa-check"></i><b>4.4.2</b> 2. Create a reproducible example</a></li>
+<li class="chapter" data-level="4.4.3" data-path="learning-r.html"><a href="learning-r.html#ask-on-so-twitter-rstudio-help"><i class="fa fa-check"></i><b>4.4.3</b> 3. Ask on SO, twitter, RStudio help</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="learning-r.html"><a href="learning-r.html#become-part-of-the-community"><i class="fa fa-check"></i><b>4.5</b> Become part of the community</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="learning-r.html"><a href="learning-r.html#r-ladies"><i class="fa fa-check"></i><b>4.5.1</b> R-Ladies</a></li>
+<li class="chapter" data-level="4.5.2" data-path="learning-r.html"><a href="learning-r.html#join-an-online-community"><i class="fa fa-check"></i><b>4.5.2</b> Join an online community</a></li>
+<li class="chapter" data-level="4.5.3" data-path="learning-r.html"><a href="learning-r.html#ropensci"><i class="fa fa-check"></i><b>4.5.3</b> <span>rOpenSci</span></a></li>
+<li class="chapter" data-level="4.5.4" data-path="learning-r.html"><a href="learning-r.html#join-an-r-meetup"><i class="fa fa-check"></i><b>4.5.4</b> Join an R meetup</a></li>
+<li class="chapter" data-level="4.5.5" data-path="learning-r.html"><a href="learning-r.html#engage-on-twitter"><i class="fa fa-check"></i><b>4.5.5</b> Engage on Twitter</a></li>
+<li class="chapter" data-level="4.5.6" data-path="learning-r.html"><a href="learning-r.html#read-blogposts"><i class="fa fa-check"></i><b>4.5.6</b> Read blogposts</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a><ul>
+<li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html#more-r-learning-resources"><i class="fa fa-check"></i>More R learning resources</a><ul>
+<li class="chapter" data-level="4.5.7" data-path="appendix.html"><a href="appendix.html#blog-by-suzan-baert"><i class="fa fa-check"></i><b>4.5.7</b> Blog by <span>Suzan Baert</span></a></li>
+<li class="chapter" data-level="4.5.8" data-path="appendix.html"><a href="appendix.html#read-working-with-r-by-steph-locke"><i class="fa fa-check"></i><b>4.5.8</b> Read Working with R by <span>Steph Locke</span></a></li>
+<li class="chapter" data-level="4.5.9" data-path="appendix.html"><a href="appendix.html#online-tutorial-teacups-giraffes-statistics-by-hasse-walum-desiree-de-leon"><i class="fa fa-check"></i><b>4.5.9</b> Online Tutorial <em>Teacups, Giraffes, &amp; Statistics</em> by Hasse Walum &amp; Desirée De Leon</a></li>
+<li class="chapter" data-level="4.5.10" data-path="appendix.html"><a href="appendix.html#read-the-r-for-data-science-book-by-garrett-grolemund-and-hadley-wickham"><i class="fa fa-check"></i><b>4.5.10</b> Read the <span>R for Data Science book</span> by <span>Garrett Grolemund</span> and <span>Hadley Wickham</span></a></li>
+<li class="chapter" data-level="4.5.11" data-path="appendix.html"><a href="appendix.html#learning-statistics-with-r"><i class="fa fa-check"></i><b>4.5.11</b> Learning Statistics with R</a></li>
+<li class="chapter" data-level="4.5.12" data-path="appendix.html"><a href="appendix.html#excel-to-r"><i class="fa fa-check"></i><b>4.5.12</b> Excel to R</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Robust data analysis: an introduction to R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-analysis" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Data Analysis</h1>
+<p><em>Data analysis</em> is a term that turns raw data into knowledge. This involves data import, data wrangling, statistical data analysis, and turning the results into something that is readable by a human.</p>
+<p><a href="https://r4ds.had.co.nz/workflow-basics.html">Grolemund &amp; Wickham, 2017</a> presented this as a diagram.</p>
+<div class="figure">
+<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" width="669" alt="R 4 DS image" />
+<p class="caption">
+From <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science by Grolemund &amp; Wickham, 2017.</a>
+</p>
+</div>
+<p>The diagram makes clear, that the data analysis workflow consists of different modules that depend on the previous one, and that there is directionality in the flow: an entrance, iteration and en exit. That only <em>tidy data</em> is useful for the analysis, that <em>wrangling is linear</em>, but that <em>understanding</em> is an iterative process, that the analysis is a portable &amp; isolated box. Lastly, sharing of results is key.</p>
+<div id="data-analysis-in-reality" class="section level2">
+<h2><span class="header-section-number">1.1</span> Data analysis in reality</h2>
+<p>In reality, data wrangling is rarely linear, instead a forth and back. Therefore, <em>flexibility</em> in moving through these modules with software + <em>automation</em> is key.</p>
+<div class="figure">
+<p><img src="img/dailyworkflow/dailyworkflow.002.jpeg" width="669" alt="R 4 DS image" /></p>
+</div>
+</div>
+<div id="requirements-to-data-analysis-software" class="section level2">
+<h2><span class="header-section-number">1.2</span> Requirements to data analysis software</h2>
+<p>What else is important for software?</p>
+<p>Software should should be used by others (otherwise, sharing code is difficult), be continuously developed &amp; improved (new data formats, new communication formats), easy to use (high-level language), Translation of modules to Code, make it easy to exchange results with others.</p>
+</div>
+<div id="more" class="section level2">
+<h2><span class="header-section-number">1.3</span> More</h2>
+<p>If you are interested in the data analysis workflow, read the <a href="https://r4ds.had.co.nz/">R for Data Science</a> book.</p>
+<p>And if you are interested in another formalisation of <em>data analysis</em> have a look at recent work by <a href="https://arxiv.org/abs/1903.07639">Hicks &amp; Peng, 2019</a>. <em>Elements &amp; Principles</em> lays out the elements that build a data analysis, and the principles in assembling them.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction-to-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
