@@ -6,8 +6,9 @@
 - mention home directory
 
 
-
+## Open RStudio Cloud
 - How is RStudio organised
+- Environment
 - How to open a file
 - Run a code
 - look something up
@@ -28,23 +29,25 @@ library(fivethirtyeight)
 kable(drug_use[1:3, 1:5])
 ```
 
-- Make prediction
-- Execute first bit
-- As a user, what would you like to change? 
-
-- computer likes things long
-- human like things wide
-- let them estimate which drug is most frequent
-
-
-- add two other drugs to the plot
-- limit age range
-- add the variable n into the plot
-- add a smoother spline
-- add color to points
-- add a title
-- have drug on the x axis and age as a facetting
-- change pdf > png
+0. Load libraries
+1. look at the data
+2. let them estimate which drug is most frequently used
+3. make a first plot (points > abline > color)
+4. realise that data needs to be reshaped (like color)
+  - computer likes things long
+  - human like things wide
+  - concept of tidy data: each variable its own column, each observation its own row
+5. Reshape: Make predictions
+6. First facet plot: what would you like to change? 
+7. Extra stuff
+  - limit to a selection of drugs
+  - limit age range
+  - add the variable n into the plot
+  - add a smoother spline
+  - add color to points
+  - add a title
+  - have drug on the x axis and age as a facetting
+  - change pdf > png
 
 
 ### Glimpse
@@ -78,9 +81,16 @@ kable(drug_use[1:3, 1:5])
 - Aim: Import an Excel and a text-delimited file.
 - Important: import button
 
+1. Start with csv file, csv = comma separated
+2. look at it in the "environment"
+3. Read in xlsx file
+4. Clean names
+5. Write cleaned dataset into `.xlsx` file
+6. Download to computer, look at it. 
+7. Other `read_*` functions, other xlsx libraries
+8. Look at other datsets
 - import `tmp/otherfile.xlsx` table
 - import `tmp/otherfile.txt` data
-- write `.xlsx` file
 
 
 
@@ -108,11 +118,20 @@ dat_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/ti
 kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 ```
 
-
-- add a column with `mutate()`
-- rename a column with `rename()`
-- filter rows with `filter()`
-- summarise ... with `group_by` + `summarise`
+1. Import data
+2. Summarise data, usual + dataexplorer
+3. Look at each variable
+4. Data cleaning with transformation variables
+  - Remove rows that have year as NA
+  - remove name_type Relict cases
+  - remove mass == 0
+  - remove years with more than 2019
+5. Mention that no mutate here, but often needed
+6. Extra: 
+  - add a column with `mutate()`
+  - rename a column with `rename()`
+  - filter rows with `filter()`
+  - summarise ... with `group_by` + `summarise`
 
 
 | *Functions*  |  *Purpose* |
@@ -135,13 +154,20 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 
 - Open `src/4-report.Rmd`
 - Aim: Create a report for the meteorite fall data.
-- Chunks vs inline text
-- What is Rmarkdown
+
+- Explain markdown
+- Explain Rmarkdown: Chunks vs inline text
 
 
-- add your name as the author
-- change the title into something you like
-- export as pdf/word/markdown
+1. knit the report
+2. go through each chunk
+3. label chunks
+4. comments
+5. 
+7. Extra
+  - add your name as the author
+  - change the title into something you like
+  - export as pdf/word/markdown
 
 
 

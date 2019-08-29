@@ -1,42 +1,39 @@
 ## Aim: Import data into R. 
-##      Text files and Excel files.
-
-library(readr)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
+##      Types of datasets: Text files and Excel files.
 
 
-## go to "import dataset"
+## !!! Use "import dataset" on the top-right panel !!!
+
 
 ## Text file ------------------------------------------
 ## e.g. csv, txt, tsv, anything you can open in a text editor
-
+library(readr)
 meteorites <- readr::read_csv("data/meteorites.csv")
-
 head(meteorites)
 
-## or go to import dataset in the banner
 
 
-## xlsx -----------------------------------------------
+## xlsx file -------------------------------------------
 
 library(readxl)
-## or use library(xlsx), but this can be cumbersome to install
-
 dat_raw <- read_excel("data/Wagner-et-al-JGR-Biogeosciences-Data.xlsx", sheet = 2)
 
-## clean the names ------------------------------------
-dat <- dat_raw %>% janitor::clean_names()
 
+## clean the names ------------------------------------
+library(janitor)
+dat <- dat_raw %>% clean_names()
+
+## compare names
 names(dat_raw)
 names(dat)
 
 
-## write xlsx file -----------------------------------------------
+## write xlsx file -------------------------------------
 
-library( writexl)
+library(writexl)
 ?write_xlsx
-tmp <- write_xlsx(list(mysheet = iris))
-readxl::read_xlsx(tmp)
+write_xlsx(list(mysheet = dat), path = "data/Wagner-et-al-JGR-Biogeosciences-Data-Sheet2-CLEANED.xlsx")
 
+
+## different xlsx read/write libraries -----------------
+## library(xlsx) is cumbersome to install, hence we are using readxl and writexl here

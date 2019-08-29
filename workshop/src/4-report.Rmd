@@ -18,12 +18,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(ggplot2)
 library(dplyr)
+# library(readr)
 
-library(maps) ## to plot a map
-require(viridis) ## fo
-library(gganimate) ## to animate the map
+library(maps) ## to visualise spatial data
 
-library(writexl) ## store out xls
+library(writexl) ## to write out xlsx
 
 ```
 
@@ -35,23 +34,22 @@ If you want to read more about the classification of meteorites, see [this Wikip
 
 # Import data
 
-The `meteorites` dataset was downloaded from `https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv` and stored as `meteorites.csv`. 
-
-```{r}
-
+```{r import-data}
 dat_raw <- readr::read_csv("../data/meteorites.csv")
-
 ```
+
+The `meteorites` dataset contains `r nrow(dat_raw)` observations and `r ncol(dat_raw)` variables. The csv file was downloaded from `https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-11/meteorites.csv` and stored as `meteorites.csv`. 
+
+
 
 # Tidy data
 
-There is no data tidying needed (see [R4DS tidy data](https://r4ds.had.co.nz/tidy-data.html)), because each variable having its own column, each observation its own row, and each value its own cell. 
-
+There is no data tidying needed (see [R4DS tidy data](https://r4ds.had.co.nz/tidy-data.html)).
 
 
 # Transform data
 
-```{r}
+```{r transform-data}
 dat <- dat_raw %>% 
 ## 1) Remove rows that have year as NA
   filter(!is.na(year)) %>%
@@ -70,7 +68,7 @@ dat <- dat_raw %>%
 
 # Descriptive analysis
 
-```{r}
+```{r desc-analysis}
 skimr::skim(dat) %>% 
   skimr::kable(format = 'html') 
 
@@ -79,42 +77,42 @@ skimr::skim(dat) %>%
 
 ## Histogram
 
-```{r}
+```{r dataviz-hist}
 ggplot(data = dat) + geom_histogram(aes(year)) + xlim(1800, NA)
 ```
 
 ## Scatterplot
 
-```{r}
+```{r dataviz-point}
 ggplot(data = dat) + geom_line(aes(year, mass)) + xlim(1800, NA)
 ```
 
 
 ## Map
 
-```{r fig.height=7, fig.width=7}
+```{r dataviz-map-like, fig.height=7, fig.width=7}
 ggplot(data = dat) + geom_point(aes(long, lat))
 ggplot(data = dat) + geom_point(aes(long, lat)) + facet_wrap(~ century)
 ```
 
 
 
-```{r fig.height=7, fig.width=7, message=FALSE, warning=FALSE}
+```{r dataviz-map, fig.height=7, fig.width=7, message=FALSE, warning=FALSE}
 
-theme_set(
-  theme_void()
-  )
-
-## basic
 world_map <- map_data("world")
 ggplot() +
   geom_polygon(data = world_map, aes(x = long, y = lat, group = group), fill="lightgray", colour = "white") + 
-  geom_point(data = dat, aes(long, lat), color="red", alpha=0.5)
+  geom_point(data = dat, aes(long, lat), color="red", alpha=0.5) + 
+  theme_void()
+
 ```
 
 
-Animation
-```{r eval=FALSE, fig.height=7, fig.width=7, include=FALSE}
+<!------------
+## Animation
+
+```{r dataviz-animation, eval=FALSE, fig.height=7, fig.width=7, include=FALSE}
+library(gganimate) ## to animate the map
 
 world_map <- map_data("world")
 ggplot(data = dat) +
@@ -125,19 +123,13 @@ ggplot(data = dat) +
   NULL
 
 ```
+---------->
 
-
-
-
-# Model
-
-Fit a prediction model that takes year, location and mass into account
-
-# Export
+# Export data
 
 Store transformed data
 
-```{r}
+```{r write-data}
 
 ## as text file
 readr::write_delim(dat, path = "../out/meteorites_transformed.csv", delim = " " )
@@ -153,8 +145,9 @@ write_xlsx(dat, path = "../out/meteorites_transformed.xlsx")
 
 # More infos about RMarkdown
 
-If you want to learn more about RMarkdown, see 
+If you want to learn more about RMarkdown, see:
+
 - [this cheatsheet](https://resources.rstudio.com/rstudio-cheatsheets/rmarkdown-2-0-cheat-sheet).
-- https://rmd4sci.njtierney.com/
 - https://holtzy.github.io/Pimp-my-rmd/
+- https://rmd4sci.njtierney.com/
 
