@@ -1,3 +1,7 @@
 # Workshop
 
-1. Run `utils.R` first. This will create a data and a out folder and download a bunch of datasets. 
+Before running any R script in `src/`, run `utils.R` first. This will create two new directories and download some datasets. 
+
+The same scripts are available on [RStudio Cloud](http://bit.ly/rds-rstudio).
+
+

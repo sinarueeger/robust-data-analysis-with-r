@@ -727,6 +727,7 @@ class: left, middle
 
 ## 3. Watch recordings
 
+- Screencasts
 - New York R conference [recordings](https://www.rstats.nyc/2019/nyr/)
 - R conference [recordings](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg)
 - RStudio conference [recordings](https://resources.rstudio.com/rstudio-conf-2019)

@@ -81,6 +81,7 @@ kable(drug_use[1:3, 1:5])
 - Aim: Import an Excel and a text-delimited file.
 - Important: import button
 
+0. restart R
 1. Start with csv file, csv = comma separated
 2. look at it in the "environment"
 3. Read in xlsx file
@@ -89,8 +90,8 @@ kable(drug_use[1:3, 1:5])
 6. Download to computer, look at it. 
 7. Other `read_*` functions, other xlsx libraries
 8. Look at other datsets
-- import `tmp/otherfile.xlsx` table
-- import `tmp/otherfile.txt` data
+- import `tmp/nfl-salaries.xlsx` table
+- import `tmp/sample-info.txt` data
 
 
 
@@ -163,7 +164,10 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 2. go through each chunk
 3. label chunks
 4. comments
-5. 
+5. Download to computer, open in browser
+6. `rmarkdown::render("src/4-report.Rmd")`: html top level
+7. `rmarkdown::render(input = "src/4-report.Rmd", output_dir = "out", output_file = "report.html")`
+8. `rmarkdown::render("src/4-report.Rmd", output_format = "pdf_document")`: PDF (skimr: latex)
 7. Extra
   - add your name as the author
   - change the title into something you like

@@ -101,8 +101,8 @@ print(p2)
 
 p2 %>% ggsave(., 
               filename = "drug-use.pdf", 
-              width = 6, 
-              height = 6)
+              width = 12, 
+              height = 18)
 
 
 
