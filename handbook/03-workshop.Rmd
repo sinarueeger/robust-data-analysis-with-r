@@ -1,12 +1,6 @@
 # Workshop
 
-For the workshop are going to use [RStudio Cloud](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ). 
-
-First, click on the following link: http://bit.ly/rds-rstudio. Then log in with a google account, github account or any email address. 
-
-Loading RStudio Cloud might take a while. Once it appears, click on "Project" and then "Make a permanent copy".
-
-The goal of the workshop is to cover most of the data analysis workflow. 
+The goal of the workshop is to cover most of the data analysis workflow. This includes:
 
 - _Import_ data into R
 - Make data analysis-ready through _tidying & transformation_
@@ -19,6 +13,17 @@ We will use data describing drug use in the US and meteorite falls around the wo
 1. The meteorite data was provided by [TidyTuesday](). TidyTuesday will be discussed [later](), but in summary, it is a weekly release of a dataset that has already been treated. 
 
 We will guide you through the four R-scripts, but below are some extra tips and information. 
+
+## RStudio Cloud
+
+For the workshop we are going to use [RStudio Cloud](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ). 
+
+First, click on the following link: http://bit.ly/rds-rstudio. Then log in with a google account, github account or any email address. 
+
+Loading RStudio Cloud might take a while. Once it appears, click on "Project" and then "Make a permanent copy".
+
+## Goal
+
 
 <!-------------------------------->
 ## Data visualisation
@@ -34,6 +39,7 @@ The main data visualisation engine these days is the `ggplot2` package.
 The main advantage of `ggplot2` is the recipe-like structure, also called _grammar_. However, depending on your needs (e.g. interactivity) there are more suitable packages. 
 
 Here is a list of other R packages:
+
 - ['{esquisse}'](https://github.com/dreamRs/esquisse) is an interface to create a ggplot. 
 - Publication ready plots with [`{cowplot}`](https://github.com/wilkelab/cowplot) and [`{ggpubr}`](https://github.com/kassambara/ggpubr)
 - many other \#dataviz libraries in R: [`{gganimate}`](https://github.com/thomasp85/gganimate), [`{plotly}`](https://plot.ly/r/), [`{vegalite}`](https://github.com/hrbrmstr/vegalite)
@@ -59,7 +65,7 @@ read.table("dataset.csv",
 Instead of remembering this difficult command, RStudio helps us with this command on the top-right ("Environment"). 
 
 <div class="figure">
-<img src="img/import-data.png" height="500" alt="Import data" />
+<img src="img/import-data.png" width="500" alt="Import data" />
 </div>
 
 This allows us to import a file like in Excel, and then copy+paste the complicated command into the R-script for reproducibility. 
@@ -142,6 +148,9 @@ In the last script, we will bundle everything we learned into one R script. You 
 
 Rmarkdown files can be used to create documents, such as a presentation, a website (html) or a document (word or pdf). L
 
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Rmarkdown RStudio cheatsheet](https://resources.rstudio.com/rstudio-cheatsheets/rmarkdown-2-0-cheat-sheet).
+- https://holtzy.github.io/Pimp-my-rmd/
 - https://rmd4sci.njtierney.com/
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
 - Look into xaringan and CSS file
@@ -176,19 +185,19 @@ We will not get into the details of git. But - RStudio has a git plugin and the 
 <!-------------------------------->
 
 
-1. documentation (`lintr`)
-1. run all script (`usethis`)
-1. version control (`gitr`)
-1. unit tests and sanity checks (`testthat`, `assertr`)
-1. write functions, package them and tell everyone (`devtools`, `blogdown`)
-1. continuous integration (`devtools`, `blogdown`)
-1. makefile (caching) (`drake`)
-1. binder (`holepunch`)
+1. Code checking: (styler)[] and (`lintr`)[]
+1. unit tests and sanity checks ([`testthat`](), [`assertr`]())
+1. Write functions and package them ([`devtools`](), [`usethis`]())
+1. Makefile: [`drake`]()
+1. Binder: [`holepunch`]()
+1. Creating a website: [`blogdown`]()
 
 
 <!-------------------------------->
-## R in the wild
+## R in the wild: examples
 <!-------------------------------->
+
+Here are some examples of R applied by 
 
 - Fun stuff in R: [Thread on Twitter by Amelia McNamara](https://twitter.com/AmeliaMN/status/1126891572807729152?s=09)
 - Data Journalism: [Roger Federer @ SRF](https://www.srf.ch/static/srf-data/data/2018/federer/#/en)
@@ -201,7 +210,7 @@ We will not get into the details of git. But - RStudio has a git plugin and the 
 - Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
 - Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
 - Replication: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
-
+- API blogpost
 - video, animation, presentation, website, write to excel
 - ...
 

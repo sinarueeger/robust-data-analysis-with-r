@@ -24,7 +24,7 @@
 <meta name="author" content="Sina Rüeger &amp; Allie Burns" />
 
 
-<meta name="date" content="2019-08-26" />
+<meta name="date" content="2019-08-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -82,22 +82,13 @@
 <li class="chapter" data-level="2.5" data-path="introduction-to-r.html"><a href="introduction-to-r.html#more-1"><i class="fa fa-check"></i><b>2.5</b> More</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="workshop.html"><a href="workshop.html"><i class="fa fa-check"></i><b>3</b> Workshop</a><ul>
-<li class="chapter" data-level="3.1" data-path="workshop.html"><a href="workshop.html#data-visualisation"><i class="fa fa-check"></i><b>3.1</b> Data visualisation</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="workshop.html"><a href="workshop.html#good-to-know"><i class="fa fa-check"></i><b>3.1.1</b> Good to know</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="workshop.html"><a href="workshop.html#import-data"><i class="fa fa-check"></i><b>3.2</b> Import data</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="workshop.html"><a href="workshop.html#good-to-know-1"><i class="fa fa-check"></i><b>3.2.1</b> Good to know</a></li>
-</ul></li>
-<li class="chapter" data-level="3.3" data-path="workshop.html"><a href="workshop.html#tidy-transform-data"><i class="fa fa-check"></i><b>3.3</b> Tidy + Transform Data</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="workshop.html"><a href="workshop.html#what-is-tidy-data"><i class="fa fa-check"></i><b>3.3.1</b> What is tidy data?</a></li>
-<li class="chapter" data-level="3.3.2" data-path="workshop.html"><a href="workshop.html#good-to-know-2"><i class="fa fa-check"></i><b>3.3.2</b> Good to know</a></li>
-</ul></li>
-<li class="chapter" data-level="3.4" data-path="workshop.html"><a href="workshop.html#report-with-rmarkdown"><i class="fa fa-check"></i><b>3.4</b> Report with Rmarkdown</a><ul>
-<li class="chapter" data-level="3.4.1" data-path="workshop.html"><a href="workshop.html#good-to-know-3"><i class="fa fa-check"></i><b>3.4.1</b> Good to know</a></li>
-</ul></li>
+<li class="chapter" data-level="3.1" data-path="workshop.html"><a href="workshop.html#data-visualisation"><i class="fa fa-check"></i><b>3.1</b> Data visualisation</a></li>
+<li class="chapter" data-level="3.2" data-path="workshop.html"><a href="workshop.html#import-data"><i class="fa fa-check"></i><b>3.2</b> Import data</a></li>
+<li class="chapter" data-level="3.3" data-path="workshop.html"><a href="workshop.html#tidy-transform-data"><i class="fa fa-check"></i><b>3.3</b> Tidy + Transform Data</a></li>
+<li class="chapter" data-level="3.4" data-path="workshop.html"><a href="workshop.html#report-with-rmarkdown"><i class="fa fa-check"></i><b>3.4</b> Report with Rmarkdown</a></li>
 <li class="chapter" data-level="3.5" data-path="workshop.html"><a href="workshop.html#git-r"><i class="fa fa-check"></i><b>3.5</b> Git &amp; R</a></li>
 <li class="chapter" data-level="3.6" data-path="workshop.html"><a href="workshop.html#finding-neat-packages-functions"><i class="fa fa-check"></i><b>3.6</b> Finding neat packages &amp; functions</a></li>
-<li class="chapter" data-level="3.7" data-path="workshop.html"><a href="workshop.html#r-in-the-wild"><i class="fa fa-check"></i><b>3.7</b> R in the wild</a></li>
+<li class="chapter" data-level="3.7" data-path="workshop.html"><a href="workshop.html#r-in-the-wild-examples"><i class="fa fa-check"></i><b>3.7</b> R in the wild: examples</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="learning-r.html"><a href="learning-r.html"><i class="fa fa-check"></i><b>4</b> Learning R</a><ul>
 <li class="chapter" data-level="4.1" data-path="learning-r.html"><a href="learning-r.html#learning-strategies"><i class="fa fa-check"></i><b>4.1</b> Learning strategies</a><ul>
@@ -155,116 +146,157 @@
             <section class="normal" id="section-">
 <div id="workshop" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Workshop</h1>
-<p>We are going to use <a href="https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ">RStudio Cloud</a> and you will need either a google or a github account for this. Make sure that you can open the following link: <a href="http://bit.ly/rds-rstudio" class="uri">http://bit.ly/rds-rstudio</a>. Loading RStudio Cloud might take a while. Once it appears, click on “Project” and then “Save a permanent copy”.</p>
+<p>For the workshop are going to use <a href="https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ">RStudio Cloud</a>.</p>
+<p>First, click on the following link: <a href="http://bit.ly/rds-rstudio" class="uri">http://bit.ly/rds-rstudio</a>. Then log in with a google account, github account or any email address.</p>
+<p>Loading RStudio Cloud might take a while. Once it appears, click on “Project” and then “Make a permanent copy”.</p>
+<p>The goal of the workshop is to cover most of the data analysis workflow.</p>
+<ul>
+<li><em>Import</em> data into R</li>
+<li>Make data analysis-ready through <em>tidying &amp; transformation</em></li>
+<li><em>Visualise</em> data</li>
+<li>Create a short report about a dataset</li>
+</ul>
+<p>We will use data describing drug use in the US and meteorite falls around the world:</p>
+<ol style="list-style-type: decimal">
+<li><code>drug_use</code> is a dataset that is provided through a package by <a href="">fivethirtyeight</a>. If you type <code>data()</code> into the console, you will see a list of other “in-house” datasets, and if you type for example <code>?iris</code> you will see the description of the famous flower dataset. Using an R dataset can be useful when you do not want to bother with the data import.</li>
+<li>The meteorite data was provided by <a href="">TidyTuesday</a>. TidyTuesday will be discussed <a href="">later</a>, but in summary, it is a weekly release of a dataset that has already been treated.</li>
+</ol>
+<p>We will guide you through the four R-scripts, but below are some extra tips and information.</p>
 <!-------------------------------->
 <div id="data-visualisation" class="section level2">
 <h2><span class="header-section-number">3.1</span> Data visualisation</h2>
 <!-------------------------------->
+<p>The main data visualisation engine these days is the <code>ggplot2</code> package.</p>
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/ggplot2_exploratory.png" height="500" alt="Cover image" />
 <p class="caption">
 Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a>
 </p>
 </div>
-<div id="good-to-know" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Good to know</h3>
-<ul>
-<li><a href="https://github.com/dreamRs/esquisse">‘{esquisse}’</a> to interactively create a plot.</li>
-<li>many other #dataviz libraries in R: <a href="https://github.com/thomasp85/gganimate"><code>{gganimate}</code></a>, <a href="https://plot.ly/r/"><code>{plotly}</code></a>, <a href="https://github.com/hrbrmstr/vegalite"><code>{vegalite}</code></a></li>
-<li><a href="https://www.r-graph-gallery.com/">R Graph Gallery</a></li>
-<li>Publication ready plots with <a href="https://github.com/wilkelab/cowplot"><code>{cowplot}</code></a> and <a href="https://github.com/kassambara/ggpubr"><code>{ggpubr}</code></a></li>
-</ul>
+<p>The main advantage of <code>ggplot2</code> is the recipe-like structure, also called <em>grammar</em>. However, depending on your needs (e.g. interactivity) there are more suitable packages.</p>
+<p>Here is a list of other R packages:
+- <a href="https://github.com/dreamRs/esquisse">‘{esquisse}’</a> is an interface to create a ggplot.
+- Publication ready plots with <a href="https://github.com/wilkelab/cowplot"><code>{cowplot}</code></a> and <a href="https://github.com/kassambara/ggpubr"><code>{ggpubr}</code></a>
+- many other #dataviz libraries in R: <a href="https://github.com/thomasp85/gganimate"><code>{gganimate}</code></a>, <a href="https://plot.ly/r/"><code>{plotly}</code></a>, <a href="https://github.com/hrbrmstr/vegalite"><code>{vegalite}</code></a></p>
+<p>Pick a plot with the <a href="https://www.r-graph-gallery.com/">R Graph Gallery</a>.</p>
 <!-------------------------------->
-</div>
 </div>
 <div id="import-data" class="section level2">
 <h2><span class="header-section-number">3.2</span> Import data</h2>
 <!-------------------------------->
-<div id="good-to-know-1" class="section level3">
-<h3><span class="header-section-number">3.2.1</span> Good to know</h3>
+<p>Getting data into R can be cumbersome. This is mainly, because datasets need to be stored in a format that R understands. And typcially we get data from others<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, and we then need to tell R how the data looks like, which can result in a command like this:</p>
+<pre><code>read.table(&quot;dataset.csv&quot;, 
+           sep = &quot;,&quot;,
+           fill = TRUE, 
+           row.names = TRUE, 
+           header = FALSE,
+         col.names = paste0(&quot;V&quot;, seq_len(ncol)))</code></pre>
+<p>Instead of remembering this difficult command, RStudio helps us with this command on the top-right (“Environment”).</p>
+<div class="figure">
+<p><img src="img/import-data.png" height="500" alt="Import data" /></p>
+</div>
+<p>This allows us to import a file like in Excel, and then copy+paste the complicated command into the R-script for reproducibility.</p>
+<p>Relevant R packages:</p>
 <ul>
-<li>different r packages to import data: <a href=""><code>{readr}</code></a>, <a href=""><code>{data.table}</code></a></li>
-<li>datapasta: <a href="https://twitter.com/dataandme/status/1148548556850114561" class="uri">https://twitter.com/dataandme/status/1148548556850114561</a></li>
-<li>fabricatr: <a href="https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/" class="uri">https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/</a></li>
+<li>Modern data import packages are <a href=""><code>readr</code></a> and <a href=""><code>data.table</code></a></li>
+<li><a href="https://twitter.com/dataandme/status/1148548556850114561"><code>datapasta</code></a> allows you to get data into R by simply marking a table somewhere else, e.g. in a PDF.</li>
+<li><a href="https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/"><code>fabricatr</code></a></li>
 </ul>
 <!-------------------------------->
-</div>
 </div>
 <div id="tidy-transform-data" class="section level2">
 <h2><span class="header-section-number">3.3</span> Tidy + Transform Data</h2>
 <!-------------------------------->
+<p>Before doing any actual data analysis, we need to bring the data into a analysis-friendly format. Although we humans like datasets that offer a quick overview with several columns, R prefers to have what is called <a href="https://r4ds.had.co.nz/tidy-data.html"><em>tidy data</em></a>. A dataset is tidy when:</p>
+<ul>
+<li>Each variable has its own column.</li>
+<li>Each observation has its row.</li>
+<li>Each value has its own cell.</li>
+</ul>
+<p>Here is an example that is not tidy.</p>
+<pre><code> age       n alcohol_use cocaine_use marijuana_use
+ 12     2798         3.9         0.1           1.1
+ 13     2757         8.5         0.1           3.4
+ 14     2792        18.1         0.1           8.7</code></pre>
+<p>But this is a tidy version:</p>
+<pre><code> age       n drug            use
+ 12     2798 alcohol_use     3.9
+ 12     2798 cocaine_use     0.1
+ 12     2798 marijuana_use   1.1
+ 13     2757 alcohol_use     8.5
+ 13     2757 cocaine_use     0.1
+ 13     2757 marijuana_use   3.4
+ 14     2792 alcohol_use    18.1
+ 14     2792 cocaine_use     0.1
+ 14     2792 marijuana_use   8.7
+ 15     2956 alcohol_use    29.2
+...</code></pre>
+<p>To get to a tidy dataset, we use <em>reshaping</em> functions from the <code>tidyr</code>.</p>
+<p>Another step in the data preparation process is data transformation and data cleaning. This step of the data analysis workflow is highly interactive, and one often jumps from one to the other. For example, when doing a descriptive analysis of your dataset you might discover implausible values, which will need to be treated in the data transformation part.</p>
+<p>This is one reason why scripts are so important. If you forgot something in a step right after the data import you can simply add the command and re-run the script.</p>
+<p>Here is the list of handy R packages for data preparation:</p>
+<ul>
+<li><a href=""><code>tidyr</code></a> for reshaping the data</li>
+<li><a href=""><code>dplyr</code></a> for transforming the data</li>
+<li><a href=""><code>janitor</code></a> for data cleaning</li>
+</ul>
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_wrangling.png" height="500" alt="Cover image" />
 <p class="caption">
 Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a>
 </p>
 </div>
-<div id="what-is-tidy-data" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> What is tidy data?</h3>
-<p><a href="https://r4ds.had.co.nz/tidy-data.html" class="uri">https://r4ds.had.co.nz/tidy-data.html</a>
-There are three interrelated rules which make a dataset tidy:</p>
-<ul>
-<li>Each variable must have its own column.</li>
-<li>Each observation must have its own row.</li>
-<li>Each value must have its own cell.</li>
-</ul>
-</div>
-<div id="good-to-know-2" class="section level3">
-<h3><span class="header-section-number">3.3.2</span> Good to know</h3>
-<ul>
-<li><a href=""><code>{dplyr</code>}</a></li>
-<li><a href=""><code>{janitor</code>}</a> package</li>
-</ul>
 <!-------------------------------->
-</div>
 </div>
 <div id="report-with-rmarkdown" class="section level2">
 <h2><span class="header-section-number">3.4</span> Report with Rmarkdown</h2>
 <!-------------------------------->
+<p>In the last script, we will bundle everything we learned into one R script. You might notice that this has not the typical <code>.R</code> file extension, but instead <code>.Rmd</code>. <code>.Rmd</code> means RMarkdown and combines the power of <a href="">Markdown</a> and R. This form of writing is also called <em>literal programming</em>.</p>
+<p>Rmarkdown files can be used to create documents, such as a presentation, a website (html) or a document (word or pdf). L</p>
+<ul>
+<li><a href="https://rmd4sci.njtierney.com/" class="uri">https://rmd4sci.njtierney.com/</a></li>
+<li>rmarkdown: <a href="https://holtzy.github.io/Pimp-my-rmd/" class="uri">https://holtzy.github.io/Pimp-my-rmd/</a></li>
+<li>Look into xaringan and CSS file</li>
+</ul>
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png" height="500" alt="Cover image" />
 <p class="caption">
 Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a>
 </p>
 </div>
-<div id="good-to-know-3" class="section level3">
-<h3><span class="header-section-number">3.4.1</span> Good to know</h3>
-<ul>
-<li><a href="https://rmd4sci.njtierney.com/" class="uri">https://rmd4sci.njtierney.com/</a></li>
-<li>rmarkdown: <a href="https://holtzy.github.io/Pimp-my-rmd/" class="uri">https://holtzy.github.io/Pimp-my-rmd/</a></li>
-<li>Look into xaringan and CSS file</li>
-<li>code download button: <a href="https://twitter.com/apreshill/status/1108925218850893832" class="uri">https://twitter.com/apreshill/status/1108925218850893832</a></li>
-</ul>
 <!-------------------------------->
-</div>
 </div>
 <div id="git-r" class="section level2">
 <h2><span class="header-section-number">3.5</span> Git &amp; R</h2>
 <!-------------------------------->
-<p>You use git already: congratulations.</p>
-<p>You want to use git but you are scared:
-- use the interface
-- use gist.github.com (great for blogposts and small scripts)
-- start with sharing slides / gist.github (from julie lowndes keynote)
-- happygit with R
-- <a href="https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1" class="uri">https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1</a>
-- Playground: <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a></p>
+<p>We will not get into the details of git. But - RStudio has a git plugin and the book <a href="">Happy git with R</a> gets you all set.</p>
+<ul>
+<li><a href="https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1" class="uri">https://saghirb.github.io/shared/Getting-Started-with-Git-and-GitHub-for-R-Users.html#1</a></li>
+<li><p>Playground: <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a></p></li>
+<li>use the interface</li>
+<li>use gist.github.com (great for blogposts and small scripts)</li>
+<li>start with sharing slides / gist.github (from julie lowndes keynote)</li>
+<li><p>happygit with R</p></li>
+</ul>
+<!-------------------------------->
 </div>
 <div id="finding-neat-packages-functions" class="section level2">
 <h2><span class="header-section-number">3.6</span> Finding neat packages &amp; functions</h2>
+<!-------------------------------->
 <ol style="list-style-type: decimal">
-<li>documentation (<code>lintr</code>)</li>
-<li>run all script (<code>usethis</code>)</li>
-<li>version control (<code>gitr</code>)</li>
-<li>unit tests and sanity checks (<code>testthat</code>, <code>assertr</code>)</li>
-<li>write functions, package them and tell everyone (<code>devtools</code>, <code>blogdown</code>)</li>
-<li>continuous integration (<code>devtools</code>, <code>blogdown</code>)</li>
-<li>makefile (caching) (<code>drake</code>)</li>
-<li>binder (<code>holepunch</code>)</li>
+<li>Code checking: (styler)[] and (<code>lintr</code>)[]</li>
+<li>unit tests and sanity checks (<a href=""><code>testthat</code></a>, <a href=""><code>assertr</code></a>)</li>
+<li>Write functions and package them (<a href=""><code>devtools</code></a>, <a href=""><code>usethis</code></a>)</li>
+<li>Makefile: <a href=""><code>drake</code></a></li>
+<li>Binder: <a href=""><code>holepunch</code></a></li>
+<li>Creating a website: <a href=""><code>blogdown</code></a></li>
 </ol>
+<!-------------------------------->
 </div>
-<div id="r-in-the-wild" class="section level2">
-<h2><span class="header-section-number">3.7</span> R in the wild</h2>
+<div id="r-in-the-wild-examples" class="section level2">
+<h2><span class="header-section-number">3.7</span> R in the wild: examples</h2>
+<!-------------------------------->
+<p>Here are some examples of R applied by</p>
 <ul>
 <li>Fun stuff in R: <a href="https://twitter.com/AmeliaMN/status/1126891572807729152?s=09">Thread on Twitter by Amelia McNamara</a></li>
 <li>Data Journalism: <a href="https://www.srf.ch/static/srf-data/data/2018/federer/#/en">Roger Federer @ SRF</a></li>
@@ -277,12 +309,19 @@ Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allis
 </ul></li>
 <li>Animations: <a href="https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs" class="uri">https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs</a></li>
 <li>Fun stuff like Memes: <a href="https://djnavarro.net/post/memes-are-valid-social-commentary/" class="uri">https://djnavarro.net/post/memes-are-valid-social-commentary/</a></li>
-<li><p>Replication: <a href="https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/" class="uri">https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/</a></p></li>
+<li>Replication: <a href="https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/" class="uri">https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/</a></li>
+<li>API blogpost</li>
 <li>video, animation, presentation, website, write to excel</li>
-<li><p>…</p></li>
+<li>…</li>
 </ul>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>If you are the person supplying yourself with data, make sure that you always store the data consistently, e.g. space delimitted. This way, reading data into R becomes easier.<a href="workshop.html#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
             </section>
 

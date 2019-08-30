@@ -735,6 +735,13 @@ class: left, middle
 <!------- or attend a conference, screen casts --------->
 
 
+---
+class: left, middle
+
+## 4. Read blogposts
+
+Weekly supply of blogposts here: https://rweekly.org/.
+
 <!----------------------------------------------->
 ---
 class: left, middle
@@ -913,12 +920,6 @@ class: left, middle
 Full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://gqueiroz.shinyapps.io/rshinylady/).
 
 
----
-class: left, middle
-
-## Read blogposts
-
-Weekly supply of blogposts here: https://rweekly.org/.
 
 
 ---
@@ -926,7 +927,7 @@ class: left, middle
 
 ## Write blogposts
 
-Start with gist.github.com, then move to blogdown. 
+Start with gist.github.com, then move to blogdown + submit to https://rweekly.org/.
 
 
 ---

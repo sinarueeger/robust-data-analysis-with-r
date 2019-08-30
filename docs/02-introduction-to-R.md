@@ -2,112 +2,105 @@
 
 > As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) The idea is to get things out of your head and on to the computer as quickly as possible.
 
-https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/
+Hadley Wickham, in a recent [Quartz interview](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/). 
 
 
 
-[R](https://www.r-project.org/) was developed for statistical data analysis. Or more precisely: The R Project for Statistical Computing.
+The _The R Project for Statistical Computing_ - or simply [R](https://www.r-project.org/) - was developed for statistical data analysis [25 years ago](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x). 
 
-It is a free software and anyone can contribute to the software by creating a _package_. 
+It is a free software and anyone can contribute to the software by creating a _package_^[Function = blocks of pre-written code.]. 
 
-Just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x)
-
-While it was developed to do mainly statistical computations (e.g. regression models) and data visualisation, it has now a lot of additional features that are somehow related to statistics, but could stand on its own. 
-
-Comes with *basic*/*default* packages, but there are over 13'000 R-packages that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github.
+R comes with *basic*/*default* packages, but there are over 13'000 R-packages that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github.
 
 
-
-## Capabilities of R
-
-R is used for a lot of (but not all) data science, data analysis & stats stuff. 
-
-<div class="figure">
-<img src="img/heidibaya.png" width="300" alt="altruistic" />
-<p class="caption">Extract from presentation by <a href="https://docs.google.com/presentation/d/1VK1hngMZSY3FT2SrDd4_AHiB28CHrsuSsaFr7r3SAL8/edit#slide=id.p">Heidi Seibold</a></p>
-</div>
+While it was developed to do mainly statistical computations (e.g. regression models) and data visualisation, it has a lot of additional features that support the data analysis workflow, but could stand on its own too (e.g. [blogdown]() or [imagemagick]()). 
 
 
-Beyond being a calculator and being able to estimate statistical models, R can help us to organise the data analysis workflow better. 
+## Features of R
 
-- **Communication of results** 
-  - through literate programming: `RMarkdown` (blogdown, bookdown, this!)
-  - through a web application: `shiny`
-- **Data visualisation**: `gganimate`, `ggplot2`, `ggmap`
-- **APIs**
+At its core, R is a calculator and able to estimate statistical models. Because we can write scripts, R can help us to organise the data analysis workflow better. 
+
+R is used for a lot of (but not all) data science, data analysis & stats stuff. In academia + industry. 
+
+
+There are at least three [features](https://en.wikipedia.org/wiki/R_(programming_language)) that make R ideal for data analysis: 
+
+- **Communication** of results: 
+  - through literate programming: [`RMarkdown`]() (blogdown, bookdown, this!)
+  - through a web application: [`shiny`]()
+- **Data visualisation**: [`gganimate`](), [`ggplot2`](), [`ggmap`]()
+- Accessing other tools via **APIs** (application programming interface)
   - [access an API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) (_So the API is a layer of code that sits between the database and most database users._)
   - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
 
 
-
-
 ## Functions, libraries and scripts
 
-Some terminology: 
+There are three terms that will be often mentioned: functions, libraries and scripts. 
 
-- Programming typically works like this: you apply a function to an object. 
+A _function_ is a pre-written chunk of code that applies a defined recipe (command!), very similar to a mathematical function. For example, the _mean_ is a function in R that takes a sequence of numbers as input, like so: `mean(1:15)`. Typically, functions have an input and an output, but don't have to.
 
-- You could also say that you apply an **action** (a verb) to an **object** (a noun). 
+In R you can either use _functions_ written by others, or create you [own one](), if you want to recycle a code chunk. 
 
-- This is an important property, because a chain of such verbs can create a _programming script_. 
+How many functions can you spot in the following example?
+```
+set.seed(3)
+x <- rnorm(n = 10)
+mean(x)
+```
 
-- Library or package is a **collection of functions**. Anyone can contribute a package to R.
+`set.seed` is a function that takes a number as input and makes sure that the random number generation used for `rnorm` is reproducible. `rnorm` needs at least the number of normally distributed random numbers as input. `mean` takes what is called a vector. `n` is called an _argument_ of a function. Some arguments have default values and don't need to be provided necessarily. If you type `?rnorm` you will see that the default mean and standard deviation is set to `mean = 0` and `sd = 1`. But if no value for `n` is provided, e.g. `rnorm(mean = 20)`, R will return an error message. 
 
-- Script: function, arguments, pacakage, libraary, objects
+In this example, the 10 random numbers are stored as an _object_ `x`. The `mean` function applies an action to that object. Thus another way of thinking of _functions_ and _objects_ is, to think of them as **a verb** and a **noun**. In fact, many of a new generation of functions _are_ verbs; applying [_filter_]() to a dataset returns a subset of rows. In this case, _filter_ is the verb, and the dataset is the noun. 
 
+If such _functions_ and _nouns_ are chained, as in the random number generation above, this is called a _programming script_ when stored as a text file. _Scripts_ allow the repetition of a computation. If we think back about the [data analysis workflow](), then each of the steps - import, tidying, transform, model, dataviz & report - could be stored as a script and sequentially executed. 
+
+The last term is a _package_ or _library_^[There is a difference between the two, but for now, think of them [interchangeably](). A package is a collection of functions. Any function in R comes from a package and needs to be called. There is a handful of packages that don't need to be called explicitly, such as `mean` or `matrix`. But the rest needs to have a statement before executing the function. 
+
+The following example creates a histogram, but to tell R that qplot comes from the `ggplot2`, we first need to make the `library(ggplot2)` statement:
+
+```
+library(ggplot2)
+set.seed(3)
+x <- rnorm(n = 1000)
+qplot(x)
+```
+
+Anyone can contribute a package to R. That can be a new statistical method, or any repetitive bit that needs ??
 
 
 ## R vs. RStudio
 
-**R** is ...
+[R](https://www.r-project.org/) is the language and [RStudio]() an IDE (integrated development environment) for R. 
 
-- https://www.r-project.org/
-
-- core
-- anyone can contribute a package
-- Show print screen / website
-- Download here: https://stat.ethz.ch/CRAN/
-
-
-
+The default R program looks like this: 
 <div class="figure">
-<img src="img/r-project.png" width="500" alt="rproject" />
-<p class="caption">Website of <a href="https://www.r-project.org/">R Project</a></p>
-</div>
-
-<div class="figure">
-<img src="img/r-project-screenshot.png" width="500" alt="rproject" />
+<img src="img/r-project-screenshot.png" width="800" alt="rproject" />
 <p class="caption">Screenshot from <a href="https://www.r-project.org/">R Project Website</a></p>
 </div>
 
-**RStudio** is an IDE (integrated development environment) to R. Works on all three major platforms Windows, MacOS and Linux. It is free for individual users. 
-
-<div class="figure">
-<img src="img/rstudio.png" width="500" alt="rproject" />
-<p class="caption">Website of <a href="https://www.rstudio.com/">RStudio</a></p>
-</div>
-
-<div class="figure">
-<img src="img/rstudio-screenshot.png" width="500" alt="rproject" />
-<p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
-</div>
+R can be run without any IDE, but having one makes writing scripts easier (extra tools, visually appealing, customisable, interactive). RStudio is a company, but provides a free version for individual users. 
 
 - [Desktop version is free](https://www.rstudio.com/products/rstudio/#Desktop)) if you are an individual user
 - develop a lot of new packages, e.g. [shiny](https://www.rstudio.com/products/shiny/)
-- anything between teaching and solutions for production
-- Where are things in RStudio?: https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1
-- Download here: https://www.rstudio.com/products/rstudio/download/
 
+If you have used an IDE before, you might be familiar with the structure of the RStudio display, otherwise check out this tweet [Where are things in RStudio?](https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1). 
 
+<div class="figure">
+<img src="img/rstudio-screenshot.png" width="800" alt="rproject" />
+<p class="caption">Screenshot of <a href="https://www.rstudio.com/">RStudio</a></p>
+</div>
 
 ## Programming language vs. natural language
 
-Similar to a natural language, a programming langugage helps you to communicate with the computer, and even with colleagues. For example, a data analysis described in a manuscript can also be written as an R script. 
+You can think of R like a very precise natural language specialised in data analysis. In order that the computer understands what it should do, it needs precise commands. Once you are used to these commands, you can read R scripts like method sections of papers. Because of this, R scripts not only allow you to communicate with the computer, but also colleagues can understand your work.
 
 
 ## More
 
 - Some [history of R](https://statfr.blogspot.com/2018/08/r-generation-story-of-statistical.html)
+- [Download R]()
+- [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
 - [How to install R and RStudio](https://courses.edx.org/courses/UTAustinX/UT.7.01x/3T2014/56c5437b88fa43cf828bff5371c6a924/)
 - To use git, github and RStudio, checkout [Happy git with R](https://happygitwithr.com/).
 
