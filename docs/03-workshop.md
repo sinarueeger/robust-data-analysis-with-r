@@ -141,6 +141,9 @@ In the last script, we will bundle everything we learned into one R script. You 
 
 Rmarkdown files can be used to create documents, such as a presentation, a website (html) or a document (word or pdf). L
 
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Rmarkdown RStudio cheatsheet](https://resources.rstudio.com/rstudio-cheatsheets/rmarkdown-2-0-cheat-sheet).
+- https://holtzy.github.io/Pimp-my-rmd/
 - https://rmd4sci.njtierney.com/
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/
 - Look into xaringan and CSS file

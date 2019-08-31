@@ -1,6 +1,6 @@
 # Data Analysis
 
-_Data analysis_ is a term that turns raw data into knowledge. This involves data import, data wrangling, statistical data analysis, and turning the results into something that is readable by a human. 
+_Data analysis_ is a term that describes the process of turning raw data into knowledge. This involves data import, data wrangling, statistical data analysis, and turning the results into something that is readable by a human. 
 
 [Grolemund & Wickham, 2017](https://r4ds.had.co.nz/workflow-basics.html) presented this as a diagram. 
 

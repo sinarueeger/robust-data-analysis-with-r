@@ -9,7 +9,7 @@ biblio-style: apalike
 link-citations: yes
 github-repo: sinarueeger/robust-data-analysis-with-r
 url: 'https\://sinarueeger.github.io/robust-data-analysis-with-r/'
-description: "Just some infos"
+description: "Handbook that complements slides for osip.epfl.ch"
 ---
 
 # Preface {-}
