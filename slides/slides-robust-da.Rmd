@@ -9,6 +9,7 @@ output:
     css: ["xaringan-themer.css", "extra-theme.css"]
     lib_dir: libs
     nature:
+      beforeInit: "https://platform.twitter.com/widgets.js"
       slideNumberFormat: "%current%"                  # 12
       highlightStyle: github
       highlightLines: true
@@ -626,41 +627,45 @@ class: left, middle
 ---
 class: left, middle
 
-## 1. Data import
+## Data import
 
-- different r packages to import data: [`{readr}`](), [`{data.table}`]()
-- `{datapasta}`: https://twitter.com/dataandme/status/1148548556850114561
-- `{fabricatr}`: https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/
+- [`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html): (Fast) alternative to `readr`.
 
----
-class: left, middle
+- [`datapasta`](https://twitter.com/dataandme/status/1148548556850114561): 
 
-## 2. Data manipulation
-
-- [`{dplyr`}]()
-- [`{janitor`}]() package
-
+- [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it
 
 ---
 class: left, middle
 
-## 3. Dataviz
+## Data manipulation
 
-- ['{esquisse}'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
-- many other \#dataviz libraries in R: [`{gganimate}`](https://github.com/thomasp85/gganimate), [`{plotly}`](https://plot.ly/r/), [`{vegalite}`](https://github.com/hrbrmstr/vegalite)
-- [R Graph Gallery](https://www.r-graph-gallery.com/)
-- Publication ready plots with [`{cowplot}`](https://github.com/wilkelab/cowplot) and [`{ggpubr}`](https://github.com/kassambara/ggpubr)
+- [`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html): (Fast) alternative to `dplyr`. 
+
+- [`janitor`](): data cleaning
+
+
+---
+class: left, middle
+
+## Data visualisation
+
+- ['esquisse'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
+
+- many other \#dataviz libraries in R: [`gganimate`](https://github.com/thomasp85/gganimate), [`plotly`](https://plot.ly/r/), [`vegalite`](https://github.com/hrbrmstr/vegalite)
+
+- Publication ready plots with [`cowplot`](https://github.com/wilkelab/cowplot) and [`ggpubr`](https://github.com/kassambara/ggpubr)
+
+- Pick a chart type with [R Graph Gallery](https://www.r-graph-gallery.com/)
 
 
 ---
 class: left, bottom
 
 ## ggpubr
-Publication-ready plots
 
 <div class="figure">
 <img src="https://rpkgs.datanovia.com/ggpubr/tools/README-ggpubr-box-plot-dot-plots-strip-charts-2.png" width="350" alt="Cover image" />
-<p class="caption">Produced by <a href="https://github.com/kassambara/ggpubr">ggpubr package</a></p>
 </div>
 
 ---
@@ -668,7 +673,13 @@ class: left, middle
 
 ## holepunch
 
-binder 
+Make your package binder-ready with [holepunch](https://github.com/karthik/holepunch). 
+
+<div class="figure">
+<img src="https://camo.githubusercontent.com/fd4274e8efa5ef6e2e096176bf75465c4746c667/68747470733a2f2f692e696d6775722e636f6d2f6f71576c3531322e706e67" width="600" alt="Cover image" />
+<p class="caption">Source: <a href="https://github.com/karthik/holepunch">github/holepunch</a></p>
+</div>
+
 
 
 
@@ -740,7 +751,9 @@ class: left, middle
 
 ## 4. Read blogposts
 
-Weekly supply of blogposts here: https://rweekly.org/.
+![](https://camo.githubusercontent.com/42ba3f035a08ef82195b24b4f39452b63ecbb469/68747470733a2f2f727765656b6c792e6f72672f696d616765732f69636f6e732f69636f6e2d323536783235362e706e67)
+
+Weekly supply of blogposts by https://rweekly.org/.
 
 <!----------------------------------------------->
 ---
@@ -769,12 +782,6 @@ class: left, middle
 - Look at open source code
 
 
-<!----------------------------------------------->
-
----
-class: left, middle
-
-# Cheatsheets
 
 
 
@@ -788,7 +795,7 @@ class: left, middle
 ---
 class: left, middle
 
-## 1. Look online
+## 1. Check if question has been ask before
 
 - [Stack Overflow](https://stackoverflow.com/) (SO)
 - [RStudio Community](https://community.rstudio.com/)
@@ -818,14 +825,12 @@ class: left, middle
 ---
 class: left, middle
 
-## 3. Ask on SO, twitter, RStudio help
+## 3. Ask your question
 
-C+P r bit into one of the following streams:
-
-- Ask within a community (R-Ladies, R4DS)
-- https://community.rstudio.com/
-- https://stackoverflow.com/
-- Twitter using the `#rstats` hashtag: 
+- Ask within an online community
+- [RStudio community](https://community.rstudio.com/) 
+- [Stackoverflow](https://stackoverflow.com/)
+- Twitter using the `#rstats` hashtag
 
 <!-------
 More: https://masalmon.eu/2018/07/22/wheretogethelp/
@@ -870,12 +875,73 @@ class: left, middle
 
 ## R-Ladies 
 
+<div class="figure">
+<img src="img/rladies-logo.png" width="400" alt="Cover image" />
+</div>
+
+
+---
+class: left, middle
+
+### 47 countries, 167 chapters 
+
+
+<div class="figure">
+<img src="img/rladies-global.png" width="600" alt="Cover image" />
+</div>
 
 
 
-???
+---
+class: left, middle
 
-_mention code of conduct_.
+.pull-left[
+<div class="figure">
+<img src="https://secure.meetupstatic.com/photos/event/5/3/a/8/600_480981416.jpeg" width="600" alt="Cover image" />
+</div>
+
+]
+
+.pull-right[
+<div class="figure">
+<img src="https://pbs.twimg.com/media/DbUq6zqU0AE2_Ls.jpg" width="600" alt="Cover image" />
+</div>
+
+]
+
+---
+class: left, middle
+
+### R-Ladies at useR!2019 
+
+<div class="figure">
+<img src="https://pbs.twimg.com/media/D_HYayHWsAAWO7t?format=jpg&name=4096x4096" width="700" alt="Cover image" />
+</div>
+
+
+
+
+---
+class: left, middle
+
+### What does R-Ladies do?
+
+R-Ladies has a [Code of Conduct](https://rladies.org/code-of-conduct/).
+
+For women and gender minorities R-Ladies offers:
+
+- [Slack](https://rladies-community-slack.herokuapp.com/) 
+- [Abstract / Scholarship review process](tinyurl.com/rladiesabstracts)
+- [R-Ladies directory](http://rladies.org/directory/)
+
+
+---
+class: left, middle
+
+### Want to start a chapter?
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Interested in starting an <a href="https://twitter.com/hashtag/RLadies?src=hash&amp;ref_src=twsrc%5Etfw">#RLadies</a> meetup in your city? We&#39;d love to help! Send us an email at info@rladies.org to get in touch. <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a></p>&mdash; R-Ladies Global (@RLadiesGlobal) <a href="https://twitter.com/RLadiesGlobal/status/770662914365808640?ref_src=twsrc%5Etfw">August 30, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 
 
 ---
@@ -883,8 +949,8 @@ class: left, middle
 
 ## Online Communities
 
-- R for Data Science online learning community: https://www.rfordatasci.com/ (slack, tidytuesday)
-- R-ladies Slack: https://www.rfordatasci.com/
+- [R for Data Science](https://www.rfordatasci.com/) online learning community: https://www.rfordatasci.com/ ([Slack](https://rfordatascience.slack.com/join/shared_invite/enQtMzA1Nzk1MjIzNDczLTY0OTVlMzM3ZTU5ZjA3NWE5ZDkxOGVmNjRjODQ2YmRjMzg4NWQxMDAxZTcwNzViZTczOThiNzBhYWJhZDM2ZTU), [TidyTuesday](https://github.com/rfordatascience/tidytuesday))
+
 - French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online resources](https://github.com/frrrenchies/frrrenchies))
 
 
@@ -894,9 +960,17 @@ class: left, middle
 
 ## [rOpenSci](https://ropensci.org)
 
-- Attend a community call ([archive](https://ropensci.org/commcalls/)).
+> rOpenSci fosters a culture that values open and reproducible research using shared data and reusable software.
 
-- Contribute via the [shinyapp](https://ropensci.shinyapps.io/contributr/)
+- Non-profit initiative founded in 2011.
+
+- Builds software with a community of users and developers.
+
+- Educates scientists about transparent research practices.
+
+- Check their website: https://ropensci.org
+
+- Attend or re-watch a community call ([archive](https://ropensci.org/commcalls/)).
 
 
 ---
@@ -911,7 +985,7 @@ class: left, middle
 - [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/)
 - [Geneve RUG](https://www.meetup.com/Geneve-R-User-Group)
 - [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/)
-- [adminR]()
+- [adminR](https://ropensci.org)
 
 ### [R Ladies Remote](https://twitter.com/RLadiesRemote) 
 - Coffee chats
@@ -927,7 +1001,11 @@ class: left, middle
 
 ## Write blogposts
 
-Start with gist.github.com, then move to blogdown + submit to https://rweekly.org/.
+- Start with [gist.github.com](https://gist.github.com/)
+
+- move to [`blogdown`]()
+
+- submit to [rweekly](https://rweekly.org/]!
 
 
 ---
@@ -937,10 +1015,14 @@ class: left, middle
 
 Lots of cool #rstats folks on twitter. For example: 
 
+
 - [Mara Averick: @dataandme](https://twitter.com/dataandme)
+
 - [Maëlle Salmon: @ma_salmon](https://twitter.com/ma_salmon)
-- [R for the rest of us: @rfortherest](https://twitter.com/rfortherest)
+
 - [WeAreRLadies: @WeAreRLadies](https://twitter.com/WeAreRLadies)
+
+- [R for the rest of us: @rfortherest](https://twitter.com/rfortherest)
 
 
 

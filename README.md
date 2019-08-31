@@ -9,9 +9,9 @@ This repository contains the slides, handbook, and exercises for the workshop _R
 
 ## Goals
 
-- Steps of a data analysis
-- How do these steps relate to R
-- Understand the benefits of programming & R
+- Understand different steps of a data analysis
+- Translate these steps into R
+- Be aware of the benefits of programming & R
 - Execute an R script
 - Know to build an R script
 - How to learn R
