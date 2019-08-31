@@ -706,6 +706,15 @@ class: left, middle, inverse
 # Part 4
 # <a name="part-4-learning-r"></a>Learning R
 
+
+???
+
+_Any ideas?_.
+
+
+
+
+
 <!----------------------------------------------->
 
 ---

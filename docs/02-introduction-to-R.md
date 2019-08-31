@@ -1,6 +1,6 @@
 # Introduction to R
 
-> As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) The idea is to get things out of your head and on to the computer as quickly as possible.
+> As developers, “tidyevalutions” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) **The idea is to get things out of your head and on to the computer as quickly as possible**.
 
 Hadley Wickham, in a recent [Quartz interview](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/). 
 

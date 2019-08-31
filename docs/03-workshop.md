@@ -203,7 +203,7 @@ Here are some examples of R applied by
 - Animations: https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs
 - Fun stuff like Memes: https://djnavarro.net/post/memes-are-valid-social-commentary/
 - Replication: https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/
-- API blogpost
+- [API blogpost](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) by [Heather Nolis](https://twitter.com/heatherklus)
 - video, animation, presentation, website, write to excel
 - ...
 
