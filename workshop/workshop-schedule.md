@@ -18,6 +18,7 @@
 
 
 
+
 ## Data visualisation
 
 - Open `src/1-dataviz.R`
@@ -183,6 +184,14 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 
 
 
+## Reprex
+- bug
+- feature
+
+```
+library(ggplot2)
+ggplot(data = iris) + geom_histogram( aes(x = Sepal.Length))
+```
 
 ### Good to know
 - rmarkdown: https://holtzy.github.io/Pimp-my-rmd/

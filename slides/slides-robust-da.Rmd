@@ -994,7 +994,7 @@ class: left, middle
 - [R-Ladies](http://use-r-carlvogt.github.io/prochains-lunchs/)
 - [Geneve RUG](https://www.meetup.com/Geneve-R-User-Group)
 - [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/)
-- [adminR](https://ropensci.org)
+- [adminR](https://www.meetup.com/adminR/)
 
 ### [R Ladies Remote](https://twitter.com/RLadiesRemote) 
 - Coffee chats
