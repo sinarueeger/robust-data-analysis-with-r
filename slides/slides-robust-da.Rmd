@@ -617,7 +617,7 @@ class: left, middle
 
 ---
 
-## Fun things: Memes and GIFs
+## Fun things: Memes
 
 <div class="figure">
 <a href="http://djnavarro.net/post/2018-05-03-valid-social-commentary/">
