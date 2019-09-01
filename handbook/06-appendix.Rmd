@@ -7,6 +7,8 @@
 
 - [_Working with R_](https://itsalocke.com/company/books/) book by [Steph Locke](https://twitter.com/TheStephLocke)
 
+- [Nick Tierney's R Resources](https://www.njtierney.com/resources/).
+
 - Online Tutorial [_Teacups, Giraffes, & Statistics_](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) by Hasse Walum & [Desirée De Leon](https://twitter.com/dcossyle?lang=en).
 
 - [_R for Data Science_](https://r4ds.had.co.nz/) book by [Garrett Grolemund](https://twitter.com/StatGarrett) and [Hadley Wickham](https://twitter.com/hadleywickham).
