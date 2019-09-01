@@ -52,14 +52,3 @@ Here are some examples of R applied by
 
 
 
-
-Here is a list of other R packages:
-
-- ['esquisse'](https://github.com/dreamRs/esquisse) is an interface to create a ggplot. 
-- Publication ready plots with [`{cowplot}`](https://github.com/wilkelab/cowplot) and [`{ggpubr}`](https://github.com/kassambara/ggpubr)
-- many other \#dataviz libraries in R: [`{gganimate}`](https://github.com/thomasp85/gganimate), [`{plotly}`](https://plot.ly/r/), [`{vegalite}`](https://github.com/hrbrmstr/vegalite)
-
-Pick a plot with the [R Graph Gallery](https://www.r-graph-gallery.com/).
-
-
-[`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)

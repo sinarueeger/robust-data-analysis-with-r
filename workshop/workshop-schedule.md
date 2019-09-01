@@ -15,6 +15,7 @@
 - show reprex in R studio cloud
 - Starting file from scratch: 1) aim, 2) skeleton with place holders
 - cheatsheets
+- `data()`
 
 
 
