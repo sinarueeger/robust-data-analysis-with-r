@@ -64,8 +64,7 @@ class: left, middle
 ## Sina
 
 - **Background** in Data Science and Biostatistics
-- Works with genomic and clinical **data**
-- **Uses R** to ... 
+- Works with genomic & clinical **data**
 
 `r icon::fa_twitter()` <small>@sinarueeger</small><br />
 `r icon::fa_github()` <small>@sinarueeger</small><br />
@@ -77,8 +76,8 @@ class: left, middle
 ## Allie
 
 - **Background** in Biology and Bioinformatics
-- Works with genomic **data**
-- **Uses R** to run the statistics and visualize experimental data
+- Works with genomic & experimental **data**
+<!----- **Uses R** to run the statistics and visualize experimental data ----->
 
 `r icon::fa_twitter()` <small>@imallieburns</small><br />
 `r icon::fa_github()` <small>@allie-burns</small><br />
