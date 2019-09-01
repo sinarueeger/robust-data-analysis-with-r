@@ -335,26 +335,17 @@ class: left, middle
 ---
 class: left, middle
 
-.pull-left[
-# **1. **
-## [Data Analysis](#part-1-data-analysis)
+## 1. [Data Analysis](#part-1-data-analysis)
 &lt;!------- What makes a Data Analysis robust?------&gt;
-&lt;br&gt;
 
-# **3. ** 
-## [Workshop](#part-3-workshop) 
-
-]
-
-.pull-right[
-# **2. ** 
-## [Introducing R](#part-2-r)
+## 2. [Introducing R](#part-2-r)
 &lt;!--------How can R help with that?-----------&gt;
-&lt;br&gt;
 
-# **4.** 
-## [Learning R](#part-4-learning-r)
-]
+## 3. [Workshop](#part-3-workshop) 
+
+## 4. [Beyond the Basics](#part-4-beyond-the-basics)
+
+## 5. [Learning R](#part-5-learning-r)
 
 
 &lt;!-------------------------------------------------------&gt;
@@ -373,8 +364,8 @@ class: left, middle
 # Data Analysis Workflow
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
-&lt;caption&gt;From &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/caption&gt;
+&lt;img src=&quot;img/workflow/workflow.001.jpeg&quot; width=&quot;800&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;caption&gt;Adapted from &lt;a href=&quot;https://r4ds.had.co.nz/introduction.html&quot;&gt;R for Data Science by Grolemund &amp; Wickham, 2017.&lt;/a&gt;&lt;/caption&gt;
 &lt;/div&gt;
 
 ---
@@ -419,7 +410,7 @@ class: left, middle
 
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;img/dailyworkflow/dailyworkflow.002.jpeg&quot; width=&quot;669&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;img src=&quot;img/workflow/workflow.003.jpeg&quot; width=&quot;800&quot; alt=&quot;R 4 DS image&quot; /&gt;
 &lt;/div&gt;
 
 
@@ -429,7 +420,28 @@ class: left, middle
 
 _Revisiting modules many many times: robust DA when this works at easy_.
 
+_Draw figure on whiteboard_.
 
+---
+class: left, middle
+
+# Role of Excel
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;img/workflow/workflow.002.jpeg&quot; width=&quot;800&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;/div&gt;
+
+---
+class: left, middle
+
+# Role of Excel
+
+- Use Excel for _data entry &amp; storage_
+
+- Organise data for humans and computer programs
+
+- [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman &amp; Woo (2018) 
 
 
 ---
@@ -663,10 +675,9 @@ class: left, middle
 
 # Goal
 
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;img/dailyworkflow/dailyworkflow.001.jpeg&quot; width=&quot;300&quot; alt=&quot;R 4 DS image&quot; /&gt;
-&lt;/div&gt;
+ &lt;figure&gt;
+&lt;img src=&quot;img/workflow/workflow.001.jpeg&quot; width=&quot;300&quot; alt=&quot;R 4 DS image&quot; /&gt;
+&lt;/figure&gt; 
 
 1. Make a data visualisation
 2. Import data into R
@@ -697,13 +708,13 @@ class: left, middle, inverse
 
 
 &lt;!-------------------------------------------------------&gt;
-&lt;!---------------------- PART 3 -------------------------&gt;
+&lt;!---------------------- PART 4 -------------------------&gt;
 &lt;!-------------------------------------------------------&gt;
 ---
 class: left, middle, inverse
 
-# Part 3
-# &lt;a name=&quot;part-3-workshop&quot;&gt;&lt;/a&gt;Workshop Dessert
+# Part 4 
+# &lt;a name=&quot;part-4-beyond-the-basics&quot;&gt;&lt;/a&gt;Beyond the Basics
 
 ---
 class: left, middle
@@ -731,7 +742,7 @@ class: left, middle
 3. Use the handy *git interface* in RStudio. 
 --
 
-4. 🎉
+4. 🎂
 --
 
 5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
@@ -852,6 +863,9 @@ class: left, middle
 
 - [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it
 
+- Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman &amp; Woo (2018).
+
+
 ---
 class: left, middle
 
@@ -859,7 +873,7 @@ class: left, middle
 
 - [`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html): (Fast) alternative to `dplyr`. 
 
-- [`janitor`](): data cleaning
+- [`janitor`](http://sfirke.github.io/janitor/): data cleaning.
 
 
 ---
@@ -914,14 +928,14 @@ class: left, middle, inverse
 
 
 &lt;!-------------------------------------------------------&gt;
-&lt;!---------------------- PART 4 -------------------------&gt;
+&lt;!---------------------- PART 5 -------------------------&gt;
 &lt;!-------------------------------------------------------&gt;
 ---
 class: left, middle, inverse
 
 
-# Part 4
-# &lt;a name=&quot;part-4-learning-r&quot;&gt;&lt;/a&gt;Learning R
+# Part 5
+# &lt;a name=&quot;part-5-learning-r&quot;&gt;&lt;/a&gt;Learning R
 
 
 ???
@@ -1229,9 +1243,9 @@ class: left, middle
 
 - Start with [gist.github.com](https://gist.github.com/)
 
-- move to [`blogdown`]()
+- Move to [`blogdown`](https://bookdown.org/yihui/blogdown/)
 
-- submit to [rweekly](https://rweekly.org/]!
+- Submit to [rweekly](https://rweekly.org/)!
 
 
 ---
