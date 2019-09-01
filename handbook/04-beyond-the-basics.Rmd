@@ -34,7 +34,7 @@ Here are some examples of R applied by
 
 - Fun stuff like [creating memes](https://djnavarro.net/post/memes-are-valid-social-commentary/) by [Danielle Navarro](https://twitter.com/djnavarro).
 
-- Blogpost on replication: [_Analysing the mouse microbiome autism data_](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/]() by [Thomas Lumley](https://twitter.com/tslumley).
+- Blogpost on replication: [_Analysing the mouse microbiome autism data_](https://notstatschat.rbind.io/2019/06/16/analysing-the-mouse-autism-data/) by [Thomas Lumley](https://twitter.com/tslumley).
 
 - [API blogpost](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) by [Heather Nolis](https://twitter.com/heatherklus) and [Jacqueline Nolis](https://twitter.com/skyetetra).
 
