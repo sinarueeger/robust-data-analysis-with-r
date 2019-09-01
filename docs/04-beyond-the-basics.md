@@ -60,7 +60,7 @@ Here are some examples of R applied by
 
 ### Data visualisation {-}
 
-- ['esquisse'](https://github.com/dreamRs/esquisse) to interactively create a plot. 
+- [`esquisse`](https://github.com/dreamRs/esquisse) to interactively create a plot. 
 
 - many other \#dataviz libraries in R: [`gganimate`](https://github.com/thomasp85/gganimate), [`plotly`](https://plot.ly/r/), [`vegalite`](https://github.com/hrbrmstr/vegalite)
 
