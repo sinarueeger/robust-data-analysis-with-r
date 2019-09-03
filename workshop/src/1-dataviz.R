@@ -31,6 +31,9 @@ skimr::skim(drug_use)
 ## (because this is a dataset from the package fivethirtyeight)
 ?drug_use
 
+## Option 5
+vtable::vtable(drug_use)
+
 
 ## Scatterplot ------------------------------------------
 
