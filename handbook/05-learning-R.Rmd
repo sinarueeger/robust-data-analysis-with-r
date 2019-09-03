@@ -1,29 +1,29 @@
 # Learning R
 
-What is the best way of learning R without loosing motivation or feeling discouraged? This chapter covers four [learning strategies](#learning-strategies), a [mindset](#embrace-imperfection), how you can ask others for help](#how-to-ask-for-help) and [where to find other R users](#become-part-of-the-community). 
+What is the best way of learning R without losing motivation or feeling discouraged? This chapter covers four [learning strategies](#learning-strategies), a [mindset](#embrace-imperfection), how you can ask others for help](#how-to-ask-for-help) and [where to find other R users](#become-part-of-the-community). 
 
 ## Learning strategies
 
 Here is a selection of different learning strategies, that can be combined or applied on their own. The basic idea is, to have exposure to the language, similarly as you do, when you learn a natural language. 
 
 <!-------
-- Learn with isolated & digestable examples
+- Learn with isolated & digestible examples
 - Sources of examples: tidytuesday, advent of code / tidies of march (irene steves)
 - Listen to podcasts or watch videos: https://www.rstats.nyc/2019/nyr/ / community calls: https://ropensci.org/commcalls/
 - Make use of pen + paper
 -------->
 
-### Learn with isolated & digestable examples {-}
-First, make sure to not overwhelm yourself with trying to learn everything at once. Better is, to stick to isolated examples. For example, instead of trying to tackle the whole data analysis workflow all at once, try to become better at data reshaping first. And instead of using your own data, with which you might first struggle to import into R, use the dataset that R already provides^[Type `data()` into the console to see "in-house" data in R.]. 
+### Learn with isolated & digestible examples {-}
+First, make sure to not overwhelm yourself by trying to learn everything at once. Better is, to stick to isolated examples. For example, instead of trying to tackle the whole data analysis workflow all at once, try to become better at data reshaping first. And instead of using your own data, with which you might first struggle to import into R, use the dataset that R already provides^[Type `data()` into the console to see "in-house" data in R.]. 
 
 
 ### Look for a steady stream of data or exercises {-}
 
 Such a weekly data stream is [TidyTuesday](https://github.com/rfordatascience/tidytuesday) run by the [R for Data Science online learning community](https://www.rfordatasci.com/). TidyTuesday data supply was created to have "toy" data to practice data visualization and basic data wrangling in R. 
 
-Since their start in 2018 they have now over 70 datasets. These datasets are "tamed", but not always tidy.
+Since their start in 2018 they have now over 70 datasets^[See also [this](https://nsgrantham.shinyapps.io/tidytuesdayrocks/) Shinyapp and [this podcast](https://tidytuesday.fireside.fm/1).]. These datasets are "tamed", but not always tidy.
 
-Watch out for an upcominig code puzzle initiative similar to [advent of code](https://adventofcode.com/) by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/).
+Watch out for an upcoming code puzzle initiative similar to [advent of code](https://adventofcode.com/) by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/).
 
 ### Watch recordings {-}
 
@@ -44,18 +44,18 @@ Some R users record their R usage with _screencasts_, for example:
 
 <!------- or attend a conference, screen casts --------->
 
-### Read blogposts {-}
+### Read blog posts {-}
 
-The best resource for new blogposts or any other R news is [Rweekly](https://rweekly.org/), a community-driven initiative that provides a curated weekly newsletter. 
+The best resource for new blog posts or any other R news is [Rweekly](https://rweekly.org/), a community-driven initiative that provides a curated weekly newsletter. 
 
 
 ## Embrace imperfection
 
 Learning a programming language can be discouraging. Things might not work from start, and it will constantly feel like everyone else is more proficient and ahead of you. 
 
-Keep in mind that there is no such thing as a perfect R-script. Of course, there are best-practices, but writing an R-script will always be a interative process, where you start and after some weeks you might have learned something, and you want to replace your old code with an improved version. 
+Keep in mind that there is no such thing as a perfect R-script. Of course, there are best-practices, but writing an R-script will always be an iterative process, where you start and after some weeks you might have learned something, and you want to replace your old code with an improved version. 
 
-Another reason to not strive for perfection, is that R offers a variety of solutions for one problem. For example, there are many different ways how to import data into R, or how to subset your data. Therefore it is likely that your R-scripts will look different from any of your colleagues. 
+Another reason to not strive for perfection is that R offers a variety of solutions for one problem. For example, there are many different ways how to import data into R, or how to subset your data. Therefore it is likely that your R-scripts will look different from any of your colleagues. 
 
 Instead of feeling discouraged, you should embrace imperfection and take it as a driving force to learn more. 
 
@@ -64,7 +64,7 @@ Instead of feeling discouraged, you should embrace imperfection and take it as a
 
 You can even exploit imperfection with three tips:
 
-- **Look & review each others code**: Ask your colleagues at work if they would like to spend 30 minutes looking at your code. In return, you can do the same for them. This will not only give you (and them) insight into how other people write R code, but also force you to produce reproducible R-script (otherwise your colleague will not be able to run your code).
+- **Look & review each others code**: Ask your colleagues at work if they would like to spend 30 minutes looking at your code. In return, you can do the same for them. This will not only give you (and them) insight into how other people write R code but also force you to produce reproducible R-script (otherwise your colleague will not be able to run your code).
 
 - **Rewrite your code**: You will constantly improve your R skills. Do not hesitate to rewrite your own R code (while keeping the output the same). This ideally goes hand in hand with [unit tests](https://testthat.r-lib.org/). 
 
@@ -85,7 +85,7 @@ There are three steps you should keep in mind^[[Maëlle Salmon](https://twitter.
 
 ### Look online {-}
 
-First, scan the web by simply copy and pasting the error message. This will most likely direct you to the following two websites:
+First, scan the web by simply copy and paste the error message. This will most likely direct you to the following two websites:
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [RStudio Community](https://community.rstudio.com/)
@@ -112,9 +112,9 @@ If not, install the `reprex` package. Then highlight the code of your reproducib
 
 ### Ask on your question online {-}
 
-Once you have your reproducible example, post it in one of the follwing places:
+Once you have your reproducible example, post it in one of the following places:
 
-- Ask within an [online community](#become-part-of-the-community). This is a good place to start because protected through a Code of Conduct and because there people part of the community are learners too (hence, can put themselves into your shoes).
+- Ask within an [online community](#become-part-of-the-community). This is a good place to start because the space is protected through a Code of Conduct and because community are learners too (hence, can put themselves into your shoes).
 
 - Ask the [RStudio community](https://community.rstudio.com/).
 
@@ -138,7 +138,7 @@ Sometimes it feels as if the R community is one big family with different, overl
 
 ### R-Ladies {-}
 
-[R-Ladies](Leading the R community forwards in widening the participation of women and other under-represented groups.) is a world-wide organisation to promote gender diversity in the R community. 
+[R-Ladies](Leading the R community forwards in widening the participation of women and other under-represented groups.) is a worldwide organisation to promote gender diversity in the R community. 
 
 As a diversity initiative^[[RForwards](https://forwards.github.io/) is another initiative to increase participation of women and other under-represented groups in the R community.], the mission of R-Ladies is to achieve proportionate representation by encouraging, inspiring, and empowering people of genders currently underrepresented in the R community. 
 
@@ -174,7 +174,7 @@ For women and gender minorities R-Ladies offers:
 
 > rOpenSci fosters a culture that values open and reproducible research using shared data and reusable software.
 
-The non-profit initiative founded in 2011 builds software with a community of users and developers, and educates scientists about transparent research practices.
+The non-profit initiative founded in 2011 builds software with a community of users and developers and educates scientists about transparent research practices.
 
 A good place to get familiar with rOpenSci is, to attend or re-watch a community call ([archive](https://ropensci.org/commcalls/)). You can also contribute via the [shinyapp](https://ropensci.shinyapps.io/contributr/).
 
@@ -190,15 +190,15 @@ There are several R meetups in the lemanic region:
 - [R lunches](http://use-r-carlvogt.github.io/prochains-lunchs/) in Geneva
 - [adminR](https://www.meetup.com/adminR/) 
 
-If you are a women or gender minority and work remotely or are in another sense "remote", there is [R-Ladies Remote](https://twitter.com/RLadiesRemote) (coffee chats, journal club). 
+If you are a woman or gender minority and work remotely or are in another sense "remote", there is [R-Ladies Remote](https://twitter.com/RLadiesRemote) (coffee chats, journal club). 
 
 You can find the full list of RUG's [here](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and for R-Ladies [here](https://www.meetup.com/pro/rladies/).
 
 
  
-### Write blogposts {-}
+### Write blog posts {-}
 
-Writing blogposts can be a fun way of learning R. For example, to start, you could document your journey of learning R. 
+Writing blog posts can be a fun way of learning R. For example, to start, you could document your journey of learning R. 
 
 Even if you do not have a blog, you can start with [gist.github.com](https://gist.github.com/) and later move to [`blogdown`](https://bookdown.org/yihui/blogdown/). 
 

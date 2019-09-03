@@ -51,6 +51,9 @@ Here are some examples of R applied by
 - [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it
 - Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).
 
+### Data overview {-}
+
+- [`vtable`](https://twitter.com/nickchk/status/1109917303947223040?s=09)
 
 ### Data manipulation {-}
 

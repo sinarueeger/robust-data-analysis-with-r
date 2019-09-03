@@ -16,11 +16,11 @@ We will guide you through the four R-scripts and below are some extra tips and i
 
 ## RStudio Cloud
 
-For the workshop we are going to use [RStudio Cloud](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ). 
+For the workshop, we are going to use [RStudio Cloud](https://rstudio.cloud/spaces/24655/join?access_code=nN9TW6co5lZRS5yKGO4Xp1ZChDUXoyCGVzamIzXQ). 
 
-First, click on the following link: http://bit.ly/rds-rstudio. Then log in with a google account, github account or any email address. 
+First, click on the following link: http://bit.ly/rds-rstudio. Then log in with a Google account, Github account or any email address. 
 
-Loading RStudio Cloud might take a while. Once it appears, click on `sProject` and then `Make a permanent copy`.
+Loading RStudio Cloud might take a while. Once it appears, click on the tab `Project`, choose `Workshop` and then `Make a permanent copy`.
 
 
 <!-------------------------------->
@@ -41,7 +41,7 @@ The main advantage of `ggplot2` is the recipe-like structure, also called _gramm
 ## Import data
 <!-------------------------------->
 
-Getting data into R can be cumbersome. This is mainly, because datasets need to be stored in a format that R understands^[Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).]. When we want to import data from others^[If you are the person supplying yourself with data, make sure that you always store the data consistently, e.g. space delimitted. This way, reading data into R becomes easier.], and we then need to tell R how the data looks like, which can result in a command like this: 
+Getting data into R can be cumbersome. This is mainly because datasets need to be stored in a format that R understands^[Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).]. When we want to import data from others^[If you are the person supplying yourself with data, make sure that you always store the data consistently, e.g. space delimited. This way, reading data into R becomes easier.], and we then need to tell R how the data looks like, which can result in a command like this: 
 
 ```
 read.table("dataset.csv", 
@@ -65,7 +65,7 @@ This allows us to import Excel or rectangular text files, and then copy+paste th
 ## Tidy + Transform Data
 <!-------------------------------->
 
-Before doing any actual data analysis, we need to bring the data into a analysis-friendly format. Although we humans like datasets that offer a quick overview with several columns, R prefers to have what is called [_tidy data_](https://r4ds.had.co.nz/tidy-data.html). A dataset is tidy when: 
+Before doing any actual data analysis, we need to bring the data into an analysis-friendly format. Although we humans like datasets that offer a quick overview with several columns, R prefers to have what is called [_tidy data_](https://r4ds.had.co.nz/tidy-data.html). A dataset is tidy when: 
 
   - Each variable has its own column.
   - Each observation has its row.
