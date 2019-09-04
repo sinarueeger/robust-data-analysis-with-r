@@ -94,7 +94,7 @@
 <li class="chapter" data-level="4.2" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#examples-of-r-in-the-wild"><i class="fa fa-check"></i><b>4.2</b> Examples of R in the wild</a></li>
 <li class="chapter" data-level="4.3" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#finding-neat-packages-functions"><i class="fa fa-check"></i><b>4.3</b> Finding neat packages &amp; functions</a><ul>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-import"><i class="fa fa-check"></i>Data import</a></li>
-<li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-overview"><i class="fa fa-check"></i>Data overview</a></li>
+<li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-exploration"><i class="fa fa-check"></i>Data exploration</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-manipulation"><i class="fa fa-check"></i>Data manipulation</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-visualisation-1"><i class="fa fa-check"></i>Data visualisation</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#ggpubr"><i class="fa fa-check"></i>ggpubr</a></li>
@@ -187,7 +187,7 @@ Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allis
 <div id="import-data" class="section level2">
 <h2><span class="header-section-number">3.3</span> Import data</h2>
 <!-------------------------------->
-<p>Getting data into R can be cumbersome. This is mainly because datasets need to be stored in a format that R understands<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. When we want to import data from others<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, and we then need to tell R how the data looks like, which can result in a command like this:</p>
+<p>Getting data into R can be cumbersome. This is mainly because datasets need to be stored in a format that R understands<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. When we want to import data from others<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, we need to tell R how the data looks, which can result in a command like this:</p>
 <pre><code>read.table(&quot;dataset.csv&quot;, 
            sep = &quot;,&quot;,
            fill = TRUE, 
@@ -229,7 +229,7 @@ Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allis
  15     2956 alcohol_use    29.2
 ...</code></pre>
 <p>To get to a tidy dataset, we use <em>reshaping</em> functions from the <code>tidyr</code>.</p>
-<p>Another step in the data preparation process are <em>data transformation</em> and <em>data cleaning</em>. This step of the data analysis workflow is highly interactive, and one often jumps from one to the other. For example, when doing a descriptive analysis of your dataset you might discover implausible values, which will need to be treated in the data transformation part.</p>
+<p>Other steps in the data preparation process are <em>data transformation</em> and <em>data cleaning</em>. This step of the data analysis workflow is highly interactive, and one often jumps from one to the other. For example, when doing a descriptive analysis of your dataset you might discover implausible values, which will need to be treated in the data transformation part.</p>
 <p>This is one reason why scripts are so important. If you forgot something in a step right after the data import you can simply add the command and re-run the script.</p>
 <p>Here is the list of handy R packages for data preparation:</p>
 <ul>
@@ -248,7 +248,7 @@ Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allis
 <div id="report-with-rmarkdown" class="section level2">
 <h2><span class="header-section-number">3.5</span> Report with RMarkdown</h2>
 <!-------------------------------->
-<p>In the last script, we will bundle everything we learned into one R script. You might notice that this has not the typical <code>.R</code> file extension, but instead <code>.Rmd</code>. <code>.Rmd</code> means RMarkdown and combines the power of <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and R. This form of mixing programming and writing is also called <em>literal programming</em>.</p>
+<p>In the last script, we will bundle everything we learned into one R script. You might notice that this does not have the typical <code>.R</code> file extension, but instead <code>.Rmd</code>. <code>.Rmd</code> means RMarkdown and combines the power of <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and R. This form of mixing programming and writing is also called <em>literal programming</em>.</p>
 <p><a href="https://rmarkdown.rstudio.com/">RMarkdown</a> files can be used to create documents, such as a presentation, a website (html) or a document (word or pdf).</p>
 <p>Here are some links to dive into RMarkdown</p>
 <ul>

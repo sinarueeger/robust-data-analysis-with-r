@@ -94,7 +94,7 @@
 <li class="chapter" data-level="4.2" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#examples-of-r-in-the-wild"><i class="fa fa-check"></i><b>4.2</b> Examples of R in the wild</a></li>
 <li class="chapter" data-level="4.3" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#finding-neat-packages-functions"><i class="fa fa-check"></i><b>4.3</b> Finding neat packages &amp; functions</a><ul>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-import"><i class="fa fa-check"></i>Data import</a></li>
-<li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-overview"><i class="fa fa-check"></i>Data overview</a></li>
+<li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-exploration"><i class="fa fa-check"></i>Data exploration</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-manipulation"><i class="fa fa-check"></i>Data manipulation</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#data-visualisation-1"><i class="fa fa-check"></i>Data visualisation</a></li>
 <li class="chapter" data-level="" data-path="beyond-the-basics.html"><a href="beyond-the-basics.html#ggpubr"><i class="fa fa-check"></i>ggpubr</a></li>
@@ -152,7 +152,7 @@
 <div id="introduction-to-r" class="section level1">
 <h1><span class="header-section-number">Chapter 2</span> Introduction to R</h1>
 <blockquote>
-<p>As developers, “tidyevaluations” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) <strong>The idea is to get things out of your head and on to the computer as quickly as possible</strong>.</p>
+<p>As developers, “tidyevaluations” help us make sure the users do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) <strong>The idea is to get things out of your head and on to the computer as quickly as possible</strong>.</p>
 </blockquote>
 <p>Hadley Wickham, in a recent <a href="https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/">Quartz interview</a>.</p>
 <p><em>The R Project for Statistical Computing</em> - or simply <a href="https://www.r-project.org/">R</a> - was developed for statistical data analysis <a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x">25 years ago</a>.</p>
@@ -189,7 +189,7 @@ x &lt;- rnorm(n = 10)
 mean(x)</code></pre>
 <p><code>set.seed</code> is a function that takes a number as input and makes sure that the random number generation used for <code>rnorm()</code> is reproducible<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. <code>rnorm()</code> needs at least the number of normally distributed random numbers as input. <code>mean()</code> takes what is called a vector. <code>n</code> is called an <em>argument</em> of a function. Some arguments have default values and don’t need to be provided necessarily. If you type <code>?rnorm</code> you will see that the default mean and standard deviation are set to <code>mean = 0</code> and <code>sd = 1</code>. But if no value for <code>n</code> is provided, e.g. <code>rnorm(mean = 20)</code>, R will return an error message.</p>
 <p>In this example, the 10 random numbers are stored as an <strong>object</strong> <code>x</code>. The <code>mean</code> function applies an action to that object. Thus another way of thinking of <strong>functions</strong> and <strong>objects</strong> is, to think of them as <strong>a verb</strong> and a <strong>noun</strong>. Many of a new generation of functions <em>are</em> verbs; applying the function <code>filter()</code> to a dataset returns a subset of rows. In this case, <em>filter</em> is the verb, and the dataset is the noun.</p>
-<p>If such <em>functions</em> and <em>objects</em> are chained, as in the random number generation above, this is called a <em>programming script</em> when stored as a text file. <strong>Scripts</strong> allow the repetition of a computation. If we think back about the <a href="data-analysis.html#data-analysis">data analysis workflow</a>, then each of the steps - import, tidying, transform, model, dataviz &amp; communication - could be stored as a script and executed sequentially.</p>
+<p>If such <em>functions</em> and <em>objects</em> are chained, as in the random number generation above, this is called a <em>programming script</em> when stored as a text file. <strong>Scripts</strong> allow the repetition of a computation. If we think back to the <a href="data-analysis.html#data-analysis">data analysis workflow</a>, then each of the steps - import, tidying, transform, model, dataviz &amp; communication - could be stored as a script and executed sequentially.</p>
 <p>The last term is a <strong>package</strong> or <em>library</em><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. A package is a collection of functions. Any function in R comes from a package and needs to be called. There is a handful of default packages whose functions do not need to be called explicitly, such as <code>mean()</code> or <code>matrix()</code>. But the rest needs to have a statement before executing the function.</p>
 <p>The following example creates a histogram, but to tell R that <code>qplot</code> comes from the <code>ggplot2</code>, we first need to make the <code>library(ggplot2)</code> statement:</p>
 <pre><code>library(ggplot2)
@@ -209,7 +209,7 @@ Screenshot of default <a href="https://www.r-project.org/">R</a>
 </p>
 </div>
 <p>R can be run without any IDE, but having one makes writing scripts easier (extra tools, visually appealing, customisable, interactive). RStudio is a company but provides a <a href="https://www.rstudio.com/products/rstudio/#Desktop">free version</a> for individual users.</p>
-<p>If you have used an IDE before, you might be familiar with the structure of the RStudio display, otherwise, check out this tweet <a href="https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1">Where are things in RStudio?</a>.</p>
+<p>If you have used an IDE before, you might be familiar with the structure of the RStudio display, otherwise, check out this tweet: <a href="https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1">Where are things in RStudio?</a>.</p>
 <div class="figure">
 <img src="img/rstudio-screenshot.png" width="800" alt="rproject" />
 <p class="caption">
