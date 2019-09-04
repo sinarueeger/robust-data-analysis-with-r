@@ -1,6 +1,6 @@
 # Introduction to R
 
-> As developers, “tidyevaluations” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) **The idea is to get things out of your head and on to the computer as quickly as possible**.
+> As developers, “tidyevaluations” help us make sure the users do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.) **The idea is to get things out of your head and on to the computer as quickly as possible**.
 
 Hadley Wickham, in a recent [Quartz interview](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/). 
 
@@ -53,7 +53,7 @@ mean(x)
 
 In this example, the 10 random numbers are stored as an **object** `x`. The `mean` function applies an action to that object. Thus another way of thinking of **functions** and **objects** is, to think of them as **a verb** and a **noun**. Many of a new generation of functions _are_ verbs; applying the function `filter()` to a dataset returns a subset of rows. In this case, _filter_ is the verb, and the dataset is the noun. 
 
-If such _functions_ and _objects_ are chained, as in the random number generation above, this is called a _programming script_ when stored as a text file. **Scripts** allow the repetition of a computation. If we think back about the [data analysis workflow](#data-analysis), then each of the steps - import, tidying, transform, model, dataviz & communication - could be stored as a script and executed sequentially. 
+If such _functions_ and _objects_ are chained, as in the random number generation above, this is called a _programming script_ when stored as a text file. **Scripts** allow the repetition of a computation. If we think back to the [data analysis workflow](#data-analysis), then each of the steps - import, tidying, transform, model, dataviz & communication - could be stored as a script and executed sequentially. 
 
 The last term is a **package** or _library_^[There is a difference between the two, but for now, think of them as interchangeable.]. A package is a collection of functions. Any function in R comes from a package and needs to be called. There is a handful of default packages whose functions do not need to be called explicitly, such as `mean()` or `matrix()`. But the rest needs to have a statement before executing the function. 
 
@@ -81,7 +81,7 @@ The default R program looks like this:
 
 R can be run without any IDE, but having one makes writing scripts easier (extra tools, visually appealing, customisable, interactive). RStudio is a company but provides a [free version](https://www.rstudio.com/products/rstudio/#Desktop) for individual users. 
 
-If you have used an IDE before, you might be familiar with the structure of the RStudio display, otherwise, check out this tweet [Where are things in RStudio?](https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1). 
+If you have used an IDE before, you might be familiar with the structure of the RStudio display, otherwise, check out this tweet: [Where are things in RStudio?](https://twitter.com/RLadiesNCL/status/1138812826917724160/photo/1). 
 
 <div class="figure">
 <img src="img/rstudio-screenshot.png" width="800" alt="rproject" />

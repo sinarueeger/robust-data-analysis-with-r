@@ -41,7 +41,7 @@ The main advantage of `ggplot2` is the recipe-like structure, also called _gramm
 ## Import data
 <!-------------------------------->
 
-Getting data into R can be cumbersome. This is mainly because datasets need to be stored in a format that R understands^[Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).]. When we want to import data from others^[If you are the person supplying yourself with data, make sure that you always store the data consistently, e.g. space delimited. This way, reading data into R becomes easier.], and we then need to tell R how the data looks like, which can result in a command like this: 
+Getting data into R can be cumbersome. This is mainly because datasets need to be stored in a format that R understands^[Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).]. When we want to import data from others^[If you are the person supplying yourself with data, make sure that you always store the data consistently, e.g. space delimited. This way, reading data into R becomes easier.], we need to tell R how the data looks, which can result in a command like this: 
 
 ```
 read.table("dataset.csv", 
@@ -107,7 +107,7 @@ But this is a tidy version:
 
 To get to a tidy dataset, we use _reshaping_ functions from the `tidyr`. 
 
-Another step in the data preparation process are _data transformation_ and _data cleaning_. This step of the data analysis workflow is highly interactive, and one often jumps from one to the other. For example, when doing a descriptive analysis of your dataset you might discover implausible values, which will need to be treated in the data transformation part. 
+Other steps in the data preparation process are _data transformation_ and _data cleaning_. This step of the data analysis workflow is highly interactive, and one often jumps from one to the other. For example, when doing a descriptive analysis of your dataset you might discover implausible values, which will need to be treated in the data transformation part. 
 
 This is one reason why scripts are so important. If you forgot something in a step right after the data import you can simply add the command and re-run the script. 
 
@@ -129,7 +129,7 @@ Here is the list of handy R packages for data preparation:
 ## Report with RMarkdown
 <!-------------------------------->
 
-In the last script, we will bundle everything we learned into one R script. You might notice that this has not the typical `.R` file extension, but instead `.Rmd`. `.Rmd` means RMarkdown and combines the power of [Markdown](https://en.wikipedia.org/wiki/Markdown) and R. This form of mixing programming and writing is also called _literal programming_. 
+In the last script, we will bundle everything we learned into one R script. You might notice that this does not have the typical `.R` file extension, but instead `.Rmd`. `.Rmd` means RMarkdown and combines the power of [Markdown](https://en.wikipedia.org/wiki/Markdown) and R. This form of mixing programming and writing is also called _literal programming_. 
 
 [RMarkdown](https://rmarkdown.rstudio.com/) files can be used to create documents, such as a presentation, a website (html) or a document (word or pdf).
 
