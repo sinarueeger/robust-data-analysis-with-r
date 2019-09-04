@@ -1,10 +1,10 @@
 # Learning R
 
-What is the best way of learning R without losing motivation or feeling discouraged? This chapter covers four [learning strategies](#learning-strategies), a [mindset](#embrace-imperfection), how you can ask others for help](#how-to-ask-for-help) and [where to find other R users](#become-part-of-the-community). 
+What is the best way of learning R without losing motivation or feeling discouraged? This chapter covers four [learning strategies](#learning-strategies), a [mindset](#embrace-imperfection), and [how you can ask others for help](#how-to-ask-for-help) and [where to find other R users](#become-part-of-the-community). 
 
 ## Learning strategies
 
-Here is a selection of different learning strategies, that can be combined or applied on their own. The basic idea is, to have exposure to the language, similarly as you do, when you learn a natural language. 
+Here is a selection of different learning strategies, that can be combined or applied on their own. The basic idea is to have exposure to the language, similarly as you do when you learn a natural language. 
 
 <!-------
 - Learn with isolated & digestible examples
@@ -14,14 +14,14 @@ Here is a selection of different learning strategies, that can be combined or ap
 -------->
 
 ### Learn with isolated & digestible examples {-}
-First, make sure to not overwhelm yourself by trying to learn everything at once. Better is, to stick to isolated examples. For example, instead of trying to tackle the whole data analysis workflow all at once, try to become better at data reshaping first. And instead of using your own data, with which you might first struggle to import into R, use the dataset that R already provides^[Type `data()` into the console to see "in-house" data in R.]. 
+First, make sure to not overwhelm yourself by trying to learn everything at once. It is better to stick to isolated examples. For example, instead of trying to tackle the whole data analysis workflow all at once, try to become better at data reshaping first. And instead of using your own data, with which you might first struggle to import into R, use the dataset that R already provides^[Type `data()` into the console to see "in-house" data in R.]. 
 
 
 ### Look for a steady stream of data or exercises {-}
 
 Such a weekly data stream is [TidyTuesday](https://github.com/rfordatascience/tidytuesday) run by the [R for Data Science online learning community](https://www.rfordatasci.com/). TidyTuesday data supply was created to have "toy" data to practice data visualization and basic data wrangling in R. 
 
-Since their start in 2018 they have now over 70 datasets^[See also [this](https://nsgrantham.shinyapps.io/tidytuesdayrocks/) Shinyapp and [this podcast](https://tidytuesday.fireside.fm/1).]. These datasets are "tamed", but not always tidy.
+Since their start in 2018 they now have over 70 datasets^[See also [this](https://nsgrantham.shinyapps.io/tidytuesdayrocks/) Shinyapp and [this podcast](https://tidytuesday.fireside.fm/1).]. These datasets are "tamed", but not always tidy.
 
 Watch out for an upcoming code puzzle initiative similar to [advent of code](https://adventofcode.com/) by [Irene Steves](https://irene.rbind.io/post/summer-rstudio/).
 
@@ -55,7 +55,7 @@ Learning a programming language can be discouraging. Things might not work from 
 
 Keep in mind that there is no such thing as a perfect R-script. Of course, there are best-practices, but writing an R-script will always be an iterative process, where you start and after some weeks you might have learned something, and you want to replace your old code with an improved version. 
 
-Another reason to not strive for perfection is that R offers a variety of solutions for one problem. For example, there are many different ways how to import data into R, or how to subset your data. Therefore it is likely that your R-scripts will look different from any of your colleagues. 
+Another reason to not strive for perfection is that R offers a variety of solutions for one problem. For example, there are many different ways to import data into R, or to subset your data. Therefore it is likely that your R-scripts will look different from any of your colleagues. 
 
 Instead of feeling discouraged, you should embrace imperfection and take it as a driving force to learn more. 
 
@@ -114,7 +114,7 @@ If not, install the `reprex` package. Then highlight the code of your reproducib
 
 Once you have your reproducible example, post it in one of the following places:
 
-- Ask within an [online community](#become-part-of-the-community). This is a good place to start because the space is protected through a Code of Conduct and because community are learners too (hence, can put themselves into your shoes).
+- Ask within an [online community](#become-part-of-the-community). This is a good place to start because the space is protected through a Code of Conduct and because others in the community are learners too (hence, can put themselves into your shoes).
 
 - Ask the [RStudio community](https://community.rstudio.com/).
 

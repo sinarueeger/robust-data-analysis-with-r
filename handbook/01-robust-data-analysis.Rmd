@@ -9,14 +9,14 @@ _Data analysis_ is a term that describes the process of turning raw data into kn
 <p class="caption">Adapted from <a href="https://r4ds.had.co.nz/introduction.html">R for Data Science by Grolemund & Wickham, 2017.</a></p>
 </div>
 
-The diagram makes clear, that the data analysis workflow consists of different modules that depend on the previous one, and that the flow is directional: an entrance, iteration and an exit. It also emphasises that _tidy data_ is important for the analysis, that _understanding_ is an iterative process, that the analysis is a portable & isolated box. Lastly, communicating/sharing of results is key. 
+The diagram makes clear, that the data analysis workflow consists of different modules that depend on the previous one, and that the flow is directional: an entrance, iteration and an exit. It also emphasises that _tidy data_ is important for the analysis, that _understanding_ is an iterative process, and that the analysis is a portable & isolated box. Lastly, communicating/sharing of results is key. 
 
 If you would like to further read about the different modules, have a look at the [R for Data Science](https://r4ds.had.co.nz/) book.
 
 
 ## Data analysis in reality
 
-In reality, data wrangling is rarely a linear process, but instead a forth and back between modules. Therefore, _flexibility_ in moving between these modules with software, along with _automation_ is important. This can be achieved with written programs that can be re-executed at any time. 
+In reality, data wrangling is rarely a linear process, but instead a back and forth between modules. Therefore, _flexibility_ in moving between these modules with software, along with _automation_ is important. This can be achieved with written programs that can be re-executed at any time. 
 
 <div class="figure">
 <img src="img/workflow/workflow.003.jpeg" width="669" alt="R 4 DS image" />
