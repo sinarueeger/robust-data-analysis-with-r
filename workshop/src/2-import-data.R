@@ -7,8 +7,9 @@
 
 ## Text file ------------------------------------------
 ## e.g. csv, txt, tsv, anything you can open in a text editor
+
 library(readr)
-meteorites <- readr::read_csv("data/meteorites.csv")
+meteorites <- read_csv("data/meteorites.csv")
 head(meteorites)
 
 

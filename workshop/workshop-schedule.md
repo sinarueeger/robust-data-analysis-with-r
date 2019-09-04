@@ -1,9 +1,22 @@
+
+
 # Workshop
 
 - Use live coding
 - Have students make predictions
 - Use worked examples with labelled subgoals
 - mention home directory
+
+## Functions, objects, packages, scripts
+
+```
+set.seed(3)
+x <- rnorm(n = 10)
+mean(x)
+
+library(ggplot2)
+qplot()
+```
 
 
 ## Open RStudio Cloud
@@ -34,6 +47,7 @@ kable(drug_use[1:3, 1:5])
 0. Load libraries
 1. look at the data
 2. let them estimate which drug is most frequently used
+2. sketch a plot
 3. make a first plot (points > abline > color)
 4. realise that data needs to be reshaped (like color)
   - computer likes things long
@@ -51,31 +65,6 @@ kable(drug_use[1:3, 1:5])
   - have drug on the x axis and age as a facetting
   - change pdf > png
 
-
-### Glimpse
-
-| *Function*      |  `   ` | *Purpose*   |
-| :-----        |    :----:   |          :------ |
-| 1. `skim()`      |         | A. Show the first 6 lines   |
-| 2. `head()`   |          | B. Summarize data with mean, etc.      |
-| 3. `summary()`   |          | C. Displaying summary statistics     |
-
-
-### Plotting
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a plot   | A. `ylim()` |
-| 2. Create a scatterplot |  B. `theme_set()` |
-| 3. Create panels | C. `ggsave()` |
-| 4. Adjust the y-axis limits |  D.  `geom_point()`  |
-| 5. Change the y-axis labels  |  E. `ggplot()` |
-| 6. Set a theme  |  F. `facet_wrap()` |
-| 7. Save a plot | G.  `ylab()` |
-
-
-
----
 
 ## Import data
 
@@ -97,17 +86,6 @@ kable(drug_use[1:3, 1:5])
 
 
 
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. `read_excel()`   | A. Turn the column names into nice names |
-| 2. `read_delim()` | B. Import a delimited text file  |
-| 3. `clean_names()` |  C. Write a delimited text file |
-| 4. `read_csv()`  |  D.  Import an Excel file |
-| 5. `write_delim()`  |  E. Import a comma delimited text file|
-
-
-
----
 
 ## Tidy + Transform Data
 
@@ -121,6 +99,8 @@ dat_raw <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/ti
 kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 ```
 
+0. look at tidytuesday
+0. what variables do we need - sketch a plot
 1. Import data
 2. Summarise data, usual + dataexplorer
 3. Look at each variable
@@ -150,9 +130,6 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 | 9. Calculate the mean of `x` for each level in `var` | I. `select(var)` |
 
 
-
----
-
 ## Report with RMarkdown
 
 - Open `src/4-report.Rmd`
@@ -160,6 +137,7 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
 
 - Explain markdown
 - Explain Rmarkdown: Chunks vs inline text
+- show how to make a new script
 
 
 1. knit the report
@@ -176,12 +154,6 @@ kable(dat_raw[1:3, c("name", "class", "mass", "year", "lat", "long")])
   - export as pdf/word/markdown
 
 
-
-| *Functions*  |  *Purpose* |
-|---|---|
-| 1. Create a table  | A. `geom_line()` |
-| 2. Make a histogram |  B. `kable()`|
-| 3. Make a line plot | C. `geom_histogram()` |
 
 
 

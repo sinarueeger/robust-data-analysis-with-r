@@ -1,6 +1,8 @@
 ## Aim: Clean meteorites data
 
-## Data source: https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11
+## Data download: https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-06-11
+## Source: https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh/data
+## Published: https://www.theguardian.com/news/datablog/interactive/2013/feb/15/meteorite-fall-map
 
 ## Meteorites dataset:
 
