@@ -62,7 +62,7 @@ Instead of feeling discouraged, you should embrace imperfection and take it as a
 
 ### Exploit imperfection {-}
 
-You can even exploit imperfection with three tips:
+You can exploit imperfection in three ways:
 
 - **Look & review each others code**: Ask your colleagues at work if they would like to spend 30 minutes looking at your code. In return, you can do the same for them. This will not only give you (and them) insight into how other people write R code but also force you to produce reproducible R-script (otherwise your colleague will not be able to run your code).
 
@@ -104,7 +104,7 @@ If not, install the `reprex` package. Then highlight the code of your reproducib
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" width="500" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@allison_horst</a></p>
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
 
 <!---- this will often already guide you to the solution -------> 
@@ -166,7 +166,7 @@ For women and gender minorities R-Ladies offers:
 
 ### Join an online community {-}
 
-- [R for Data Science online learning community](https://www.rfordatasci.com/) has a [Slack](https://rfordatascience.slack.com/), is on [Twitter: @r4dscommunity](https://twitter.com/r4dscommunity) and provides the weekly [TidyTuesday](https://github.com/rfordatascience/tidytuesday) datasets.  
+- [R for Data Science online learning community](https://www.rfordatasci.com/) has a [Slack](https://rfordatascience.slack.com/), is on [Twitter: @ r4dscommunity](https://twitter.com/r4dscommunity) and provides the weekly [TidyTuesday](https://github.com/rfordatascience/tidytuesday) datasets.  
 
 - French-speaking [r-grrr Slack](https://r-grrr.slack.com/join/shared_invite/enQtMzI4MzgwNTc4OTAxLWZlOGZiZTBiMWU0NDQ3OTYzOGE1YThiODgwZWNhNWEyYjI4ZDJiNmNhY2YyYWI5YzFiOTFkNDYxYzkwODUwNWM) (+ [online ressources](https://github.com/frrrenchies/frrrenchies))
 
