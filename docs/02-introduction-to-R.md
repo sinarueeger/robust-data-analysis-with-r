@@ -36,7 +36,7 @@ There are at least three [features](https://en.wikipedia.org/wiki/R_(programming
 
 ## Functions, objects, packages and scripts
 
-Three terms will often be mentioned: functions, libraries and scripts. 
+Four terms will often be mentioned: functions, objects, packages and scripts. 
 
 A **function** is a pre-written chunk of code that contains a list of commands to be executed, similar to a mathematical function. For example, the _mean_ is a function in R that takes a sequence of numbers as input, like so: `mean(1:15)`. Typically, functions have an input and an output, but they do not have to.
 

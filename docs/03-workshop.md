@@ -34,7 +34,7 @@ The main data visualisation engine these days is the `ggplot2` package.
 <p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
 </div>
 
-The main advantage of `ggplot2` is the recipe-like structure, also called _grammar_. However, depending on your needs (e.g. interactivity) there are [more suitable packages](#finding-neat-packages-functions). 
+The main advantage of `ggplot2` is the recipe-like structure, also called _grammar_. However, depending on your needs (e.g. interactivity) there are [more suitable packages](#neat-packages-functions). 
 
 
 <!-------------------------------->

@@ -507,7 +507,7 @@ class: left, middle, inverse
 ---
 class: left, middle
 
-&gt; &lt;p&gt;&lt;small&gt;As developers, “tidyevaluations” helps us make sure the user do as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries (Editor’s note: ggplot2 is a popular data visualization library.)&lt;/p&gt;&lt;/small&gt; The idea is to get things out of your head and on to the computer as quickly as possible.
+&gt; &lt;p&gt;&lt;small&gt;As developers, “tidyevaluations” help us make sure the user does as little typing as possible and can express really rich ideas [for analysis]. This is what underlies ggplot2 and some of our other libraries.&lt;/p&gt;&lt;/small&gt; The idea is to get things out of your head and on to the computer as quickly as possible.
 
 [_Interview with Hadley Wickham, Quartz, 2019_](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/)
 
@@ -522,7 +522,7 @@ class: left, middle
 - is free
 - has a webpage: https://www.r-project.org/
 - just celebrated its [25 year anniversary](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2018.01169.x)
-- comes with *basic*/*default* packages, but there are over 13&#39;000 R-packages 😮 that can be installed through [CRAN](https://cran.r-project.org/web/packages/) or repositories like github
+- comes with *basic*/*default* packages, but there are over 13&#39;000 R-packages that can be by users. 
 
 
 
@@ -536,7 +536,7 @@ class: middle
 
 # Quite a few things
 
-Lots of (but not all) data science, data analysis &amp; stats stuff
+Data science, data analysis &amp; stats stuff
 
 
 
@@ -561,7 +561,8 @@ class: left, middle
 ## Data visualisation
 
 
-## Accessing APIs
+## Accessing other tools or data sources
+through APIs
 
 
 
@@ -589,7 +590,9 @@ class: left, middle
 
 - Function
 
-- Library
+- Object
+
+- Package
 
 - Script
 
@@ -597,30 +600,42 @@ class: left, middle
 ---
 class: left, middle
 
-## Function
+## Object
 
-- Programming typically works like this: you apply a function to an object. 
+- A &quot;physical&quot; object.
 
-- You could also say that you apply an **action** (a verb) to an **object** (a noun). 
-
-- This is an important property because a chain of such verbs can create a _programming script_. 
-
+- For example, a dataset or a number.
 
 ---
 class: left, middle
 
-## Library
+## Function
 
-- Library or package is a **collection of functions**. 
+- A pre-written [recipe](https://twitter.com/IsabellaGhement/status/1070691303485128704).
 
-- Anyone can contribute a package.  
+- Functions can be applied to objects.
+
+- For example, `mean()` is a function in R. 
+
+- Function = action = verb, applied to object = noun. 
+
 
 ---
 class: left, middle
 
 ## Script
 
-- Example with plot: function, arguments, package/library, objects
+- Chain of functions + objects create a _programming script_. 
+
+
+---
+class: left, middle
+
+## Package
+
+- Aackage is a **collection of functions**. 
+
+- Anyone can contribute a package.  
 
 
 ---
@@ -697,11 +712,17 @@ class: left, middle
 
 # Get started
 
-1. Go to RStudio Cloud: http://bit.ly/rds-workshop
+1. Go to RStudio Cloud: http://bit.ly/rds-rstudio. 
 
-2. Click **Make permanent copy**
+2. Log in (this might take a while).
 
+3. Once logged in, RStudio Cloud will tell you that you have been added to a workspace. 
 
+4. Click on `Project`. 
+
+5. Choose `Workshop`
+
+6. Click `Make a permanent copy`.
 
 ---
 class: left, middle, inverse
@@ -717,13 +738,24 @@ class: left, middle, inverse
 # Part 4 
 # &lt;a name=&quot;part-4-beyond-the-basics&quot;&gt;&lt;/a&gt;Beyond the Basics
 
+
+
+---
+class: center, middle
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
+&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
 ---
 class: left, middle
 
 &lt;div class=&quot;figure&quot;&gt;
 &lt;img src=&quot;https://happygitwithr.com/img/watch-me-diff-watch-me-rebase-smaller.png
 &quot; width=&quot;700&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Source &lt;a href=&quot;https://happygitwithr.com/&quot;&gt;Happy Git with R by Jenny Bryan&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;caption&quot;&gt;Source: &lt;a href=&quot;https://happygitwithr.com/&quot;&gt;Happy Git with R by Jenny Bryan&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -746,7 +778,7 @@ class: left, middle
 4. 🎉
 --
 
-5. Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
+Tipp: Use [gist.github.com](https://gist.github.com/) to share &amp; store code snippets, notes, thoughts and blogposts. 
 
 
 
@@ -764,7 +796,7 @@ class: left, middle
 &lt;a href=&quot;https://github.com/seabbs/DirectEffBCGPolicyChange&quot;&gt;
 &lt;img border=&quot;0&quot; alt=&quot;mouse&quot; src=&quot;img/bcg.png&quot; width=&quot;600&quot;&gt;
 &lt;/a&gt;
-&lt;p class=&quot;caption&quot;&gt;Source: &lt;a href=&quot;https://github.com/seabbs/DirectEffBCGPolicyChange&quot;&gt;DirectEffBCGPolicyChange by Sam Abbott&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;caption&quot;&gt;Source: &lt;a href=&quot;https://github.com/seabbs/DirectEffBCGPolicyChange&quot;&gt;Estimating BCG policy change in England.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -829,7 +861,7 @@ class: left, middle
 &lt;a href=&quot;https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif&quot;&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/gadenbuie/tidy-animated-verbs/master/images/anti-join.gif&quot; width=&quot;400&quot;&gt;
 &lt;/a&gt;
-&lt;p class=&quot;caption&quot;&gt;Source: &lt;a href=&quot;https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs&quot;&gt;Github @gadenbuie&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;caption&quot;&gt;Source: &lt;a href=&quot;https://github.com/gadenbuie/tidy-animated-verbs#tidy-animated-verbs&quot;&gt;Animated verbs by @gadenbuie&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -851,7 +883,7 @@ class: left, middle
 ---
 class: left, middle
 
-# Finding neat packages &amp; functions
+# Neat packages &amp; functions
 
 ---
 class: left, middle
@@ -860,9 +892,9 @@ class: left, middle
 
 - [`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html): (Fast) alternative to `readr`.
 
-- [`datapasta`](https://twitter.com/dataandme/status/1148548556850114561): 
+- [`datapasta`](https://twitter.com/dataandme/status/1148548556850114561): Copy + paste unconventional tables. 
 
-- [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it
+- [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it.
 
 - Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman &amp; Woo (2018).
 
@@ -884,11 +916,11 @@ class: left, middle
 
 - [`esquisse`](https://github.com/dreamRs/esquisse) to interactively create a plot. 
 
-- many other \#dataviz libraries in R: [`gganimate`](https://github.com/thomasp85/gganimate), [`plotly`](https://plot.ly/r/), [`vegalite`](https://github.com/hrbrmstr/vegalite)
+- Publication ready plots with [`cowplot`](https://github.com/wilkelab/cowplot) and [`ggpubr`](https://github.com/kassambara/ggpubr).
 
-- Publication ready plots with [`cowplot`](https://github.com/wilkelab/cowplot) and [`ggpubr`](https://github.com/kassambara/ggpubr)
+- Pick a chart type with [R Graph Gallery](https://www.r-graph-gallery.com/).
 
-- Pick a chart type with [R Graph Gallery](https://www.r-graph-gallery.com/)
+
 
 
 ---
@@ -913,16 +945,6 @@ Make your package binder-ready with [holepunch](https://github.com/karthik/holep
 &lt;/div&gt;
 
 
-
-
----
-class: center, middle
-
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;img src=&quot;https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png&quot; height=&quot;500&quot; alt=&quot;Cover image&quot; /&gt;
-&lt;p class=&quot;caption&quot;&gt;Artwork by &lt;a href=&quot;https://github.com/allisonhorst/stats-illustrations&quot;&gt;@allison_horst&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
 
 ---
 class: left, middle, inverse
@@ -972,7 +994,7 @@ class: left, middle
 
 ## 2. Look for a steady stream of data or exercises
 
-[tidytuesday](https://github.com/rfordatascience/tidytuesday)s
+[TidyTuesday](https://github.com/rfordatascience/tidytuesday)!
 
 ---
 class: left, middle
@@ -1070,7 +1092,7 @@ class: left, middle
 
 - Ask within an online community
 - [RStudio community](https://community.rstudio.com/) 
-- [Stackoverflow](https://stackoverflow.com/)
+- [Stack O/verflow](https://stackoverflow.com/)
 - Twitter using the `#rstats` hashtag
 
 &lt;!-------
@@ -1246,7 +1268,7 @@ class: left, middle
 
 - Move to [`blogdown`](https://bookdown.org/yihui/blogdown/)
 
-- Submit to [rweekly](https://rweekly.org/)!
+- Submit your post to [rweekly](https://rweekly.org/)!
 
 
 ---

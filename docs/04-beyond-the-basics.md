@@ -19,7 +19,7 @@ Alternatively, you can use [gist.github.com](https://gist.github.com/) to share 
 ## Examples of R in the wild
 <!-------------------------------->
 
-Here are some examples of R applied by 
+Here are some examples of R. 
 
 - Research compendium: 
     - [_Estimating the effect of the 2005 change in BCG policy in England: A retrospective cohort study_ ](https://github.com/seabbs/DirectEffBCGPolicyChange) by [Sam Abbott](https://twitter.com/seabbs).
@@ -38,20 +38,22 @@ Here are some examples of R applied by
 
 - [API blogpost](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) by [Heather Nolis](https://twitter.com/heatherklus) and [Jacqueline Nolis](https://twitter.com/skyetetra).
 
-- Web applicaiton with Shiny: [iSEE](https://kevinrue.shinyapps.io/isee-shiny-contest/) by [Kevin Rue](https://community.rstudio.com/u/kevinrue), [Charlotte Soneson](https://community.rstudio.com/u/csoneson), [Federico Marini](https://community.rstudio.com/u/federicomarini) and [Aaron Lun](https://github.com/LTLA) ([Winner of the Shiny Contest 2019](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/)).
+- Web application with Shiny: [iSEE](https://kevinrue.shinyapps.io/isee-shiny-contest/) by [Kevin Rue](https://community.rstudio.com/u/kevinrue), [Charlotte Soneson](https://community.rstudio.com/u/csoneson), [Federico Marini](https://community.rstudio.com/u/federicomarini) and [Aaron Lun](https://github.com/LTLA) ([Winner of the Shiny Contest 2019](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/)).
 
 <!-------------------------------->
-## Finding neat packages & functions
+## Neat packages & functions
 <!-------------------------------->
 
 ### Data import {-}
 
 - [`data.table`](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html): (Fast) alternative to `readr`.
-- [`datapasta`](https://twitter.com/dataandme/status/1148548556850114561): 
+- [`datapasta`](https://twitter.com/dataandme/status/1148548556850114561): Copy + paste unconventional tables.
 - [`fabricatr`](https://rviews.rstudio.com/2019/07/01/imagine-your-data-before-you-collect-it/): Imagine your data before you collect it
 - Practical recommendations for organizing spreadsheet data in a way that both humans and computer programs can read: [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989) by Broman & Woo (2018).
 
 ### Data exploration {-}
+
+Summarising data with: 
 
 - [`vtable`](https://twitter.com/nickchk/status/1109917303947223040?s=09)
 - [`skimr`](https://github.com/ropensci/skimr)
@@ -66,11 +68,8 @@ Here are some examples of R applied by
 ### Data visualisation {-}
 
 - [`esquisse`](https://github.com/dreamRs/esquisse) to interactively create a plot. 
-
 - many other \#dataviz libraries in R: [`gganimate`](https://github.com/thomasp85/gganimate), [`plotly`](https://plot.ly/r/), [`vegalite`](https://github.com/hrbrmstr/vegalite)
-
 - Publication ready plots with [`cowplot`](https://github.com/wilkelab/cowplot) and [`ggpubr`](https://github.com/kassambara/ggpubr)
-
 - Pick a chart type with [R Graph Gallery](https://www.r-graph-gallery.com/)
 
 ### ggpubr {-}
