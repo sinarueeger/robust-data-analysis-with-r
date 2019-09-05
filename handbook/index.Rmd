@@ -24,7 +24,7 @@ knitr::include_url('https://sinarueeger.github.io/robust-data-analysis-with-r/sl
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">&#64;allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 
 ## License {-}

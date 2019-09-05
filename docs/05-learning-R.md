@@ -100,11 +100,11 @@ First, you try to reproduce the error message with a dataset within R, e.g. the 
 
 Very often, working out a small example will already solve your problem. Solely, by thinking about the problem, you will find the solution yourself. 
 
-If not, install the `reprex` package. Then highlight the code of your reproducible example, choose in the `Addins` _Reprex selection_ (see video [here](https://resources.rstudio.com/webinars/help-me-help-you-creating-reproducible-examples-jenny-bryan)).
+If not, install the [`reprex`](https://reprex.tidyverse.org/) package. Then highlight the code of your reproducible example, choose in the `Addins` _Reprex selection_ (see video [here](https://resources.rstudio.com/webinars/help-me-help-you-creating-reproducible-examples-jenny-bryan)).
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/reprex.png" width="500" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a></p>
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">&#64;allison_horst</a></p>
 </div>
 
 <!---- this will often already guide you to the solution -------> 

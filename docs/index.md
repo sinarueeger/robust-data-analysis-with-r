@@ -1,7 +1,7 @@
 --- 
 title: "Robust data analysis: an introduction to R"
 author: "[Sina Rüeger](https://twitter.com/sinarueeger) & [Allie Burns](https://twitter.com/imallieburns)"
-date: "2019-09-04"
+date: "2019-09-05"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -22,7 +22,7 @@ You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-wi
 
 <div class="figure">
 <img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/openscapes/starwars-rey-rstats.png" width="669" alt="Cover image" />
-<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">@ allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
+<p class="caption">Artwork by <a href="https://github.com/allisonhorst/stats-illustrations">&#64;allison_horst</a> for <a href="https://www.openscapes.org/">openscapes</a></p>
 </div>
 
 ## License {-}

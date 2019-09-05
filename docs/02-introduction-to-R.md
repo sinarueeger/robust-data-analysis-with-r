@@ -31,14 +31,14 @@ There are at least three [features](https://en.wikipedia.org/wiki/R_(programming
 
 - **Accessing tools outside R** (via APIs, application programming interface)
   - [access an API](https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9) 
-  - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3) (also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679))
+  - [produce an API](https://medium.com/tmobile-tech/r-can-api-c184951a24a3)^[See also [these resouces (h/t Sharla Gelfand)](https://twitter.com/sharlagelfand/status/1157794847438364679)].
 
 
 ## Functions, objects, packages and scripts
 
 Four terms will often be mentioned: functions, objects, packages and scripts. 
 
-A **function** is a pre-written chunk of code that contains a list of commands to be executed, similar to a mathematical function. For example, the _mean_ is a function in R that takes a sequence of numbers as input, like so: `mean(1:15)`. Typically, functions have an input and an output, but they do not have to.
+A **function** is a pre-written chunk of code that contains a list of commands to be executed, similar to a mathematical function^[Check out [this](https://twitter.com/IsabellaGhement/status/1070691303485128704) recipe analogy too.]. For example, the _mean_ is a function in R that takes a sequence of numbers as input, like so: `mean(1:15)`. Typically, functions have an input and an output, but they do not have to.
 
 In R you can either use _functions_ written by others, or create you [own one](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/), if you want to recycle a code chunk. 
 

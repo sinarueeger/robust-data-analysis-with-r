@@ -15,7 +15,8 @@ x <- rnorm(n = 10)
 mean(x)
 
 library(ggplot2)
-qplot()
+qplot(x)
+
 ```
 
 

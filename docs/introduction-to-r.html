@@ -24,7 +24,7 @@
 <meta name="author" content="Sina Rüeger &amp; Allie Burns" />
 
 
-<meta name="date" content="2019-09-04" />
+<meta name="date" content="2019-09-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -174,23 +174,23 @@
 <li><strong>Accessing tools outside R</strong> (via APIs, application programming interface)
 <ul>
 <li><a href="https://medium.com/epfl-extension-school/an-illustrated-introduction-to-apis-10f8000313b9">access an API</a></li>
-<li><a href="https://medium.com/tmobile-tech/r-can-api-c184951a24a3">produce an API</a> (also <a href="https://twitter.com/sharlagelfand/status/1157794847438364679">these resouces (h/t Sharla Gelfand)</a>)</li>
+<li><a href="https://medium.com/tmobile-tech/r-can-api-c184951a24a3">produce an API</a><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</li>
 </ul></li>
 </ul>
 </div>
 <div id="functions-objects-packages-and-scripts" class="section level2">
 <h2><span class="header-section-number">2.2</span> Functions, objects, packages and scripts</h2>
 <p>Four terms will often be mentioned: functions, objects, packages and scripts.</p>
-<p>A <strong>function</strong> is a pre-written chunk of code that contains a list of commands to be executed, similar to a mathematical function. For example, the <em>mean</em> is a function in R that takes a sequence of numbers as input, like so: <code>mean(1:15)</code>. Typically, functions have an input and an output, but they do not have to.</p>
+<p>A <strong>function</strong> is a pre-written chunk of code that contains a list of commands to be executed, similar to a mathematical function<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. For example, the <em>mean</em> is a function in R that takes a sequence of numbers as input, like so: <code>mean(1:15)</code>. Typically, functions have an input and an output, but they do not have to.</p>
 <p>In R you can either use <em>functions</em> written by others, or create you <a href="https://swcarpentry.github.io/r-novice-inflammation/02-func-R/">own one</a>, if you want to recycle a code chunk.</p>
 <p>How many functions can you spot in the following example?</p>
 <pre><code>set.seed(3)
 x &lt;- rnorm(n = 10)
 mean(x)</code></pre>
-<p><code>set.seed</code> is a function that takes a number as input and makes sure that the random number generation used for <code>rnorm()</code> is reproducible<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. <code>rnorm()</code> needs at least the number of normally distributed random numbers as input. <code>mean()</code> takes what is called a vector. <code>n</code> is called an <em>argument</em> of a function. Some arguments have default values and don’t need to be provided necessarily. If you type <code>?rnorm</code> you will see that the default mean and standard deviation are set to <code>mean = 0</code> and <code>sd = 1</code>. But if no value for <code>n</code> is provided, e.g. <code>rnorm(mean = 20)</code>, R will return an error message.</p>
+<p><code>set.seed</code> is a function that takes a number as input and makes sure that the random number generation used for <code>rnorm()</code> is reproducible<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. <code>rnorm()</code> needs at least the number of normally distributed random numbers as input. <code>mean()</code> takes what is called a vector. <code>n</code> is called an <em>argument</em> of a function. Some arguments have default values and don’t need to be provided necessarily. If you type <code>?rnorm</code> you will see that the default mean and standard deviation are set to <code>mean = 0</code> and <code>sd = 1</code>. But if no value for <code>n</code> is provided, e.g. <code>rnorm(mean = 20)</code>, R will return an error message.</p>
 <p>In this example, the 10 random numbers are stored as an <strong>object</strong> <code>x</code>. The <code>mean</code> function applies an action to that object. Thus another way of thinking of <strong>functions</strong> and <strong>objects</strong> is, to think of them as <strong>a verb</strong> and a <strong>noun</strong>. Many of a new generation of functions <em>are</em> verbs; applying the function <code>filter()</code> to a dataset returns a subset of rows. In this case, <em>filter</em> is the verb, and the dataset is the noun.</p>
 <p>If such <em>functions</em> and <em>objects</em> are chained, as in the random number generation above, this is called a <em>programming script</em> when stored as a text file. <strong>Scripts</strong> allow the repetition of a computation. If we think back to the <a href="data-analysis.html#data-analysis">data analysis workflow</a>, then each of the steps - import, tidying, transform, model, dataviz &amp; communication - could be stored as a script and executed sequentially.</p>
-<p>The last term is a <strong>package</strong> or <em>library</em><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. A package is a collection of functions. Any function in R comes from a package and needs to be called. There is a handful of default packages whose functions do not need to be called explicitly, such as <code>mean()</code> or <code>matrix()</code>. But the rest needs to have a statement before executing the function.</p>
+<p>The last term is a <strong>package</strong> or <em>library</em><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>. A package is a collection of functions. Any function in R comes from a package and needs to be called. There is a handful of default packages whose functions do not need to be called explicitly, such as <code>mean()</code> or <code>matrix()</code>. But the rest needs to have a statement before executing the function.</p>
 <p>The following example creates a histogram, but to tell R that <code>qplot</code> comes from the <code>ggplot2</code>, we first need to make the <code>library(ggplot2)</code> statement:</p>
 <pre><code>library(ggplot2)
 set.seed(3)
@@ -236,8 +236,10 @@ Screenshot of <a href="https://www.rstudio.com/">RStudio</a>
 <hr />
 <ol start="1">
 <li id="fn1"><p>Function = blocks of pre-written code.<a href="introduction-to-r.html#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>If you execute lines 1 to 3 several times, the result stays the same. If you execute only lines 2 and 3 several times, the result will change with each execution.<a href="introduction-to-r.html#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>There is a difference between the two, but for now, think of them as interchangeable.<a href="introduction-to-r.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>See also <a href="https://twitter.com/sharlagelfand/status/1157794847438364679">these resouces (h/t Sharla Gelfand)</a><a href="introduction-to-r.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Check out <a href="https://twitter.com/IsabellaGhement/status/1070691303485128704">this</a> recipe analogy too.<a href="introduction-to-r.html#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>If you execute lines 1 to 3 several times, the result stays the same. If you execute only lines 2 and 3 several times, the result will change with each execution.<a href="introduction-to-r.html#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>There is a difference between the two, but for now, think of them as interchangeable.<a href="introduction-to-r.html#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
