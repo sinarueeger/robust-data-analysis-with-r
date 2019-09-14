@@ -1,5 +1,9 @@
 # Robust data analysis: an introduction to R
 
+
+[![DOI](https://zenodo.org/badge/184914967.svg)](https://zenodo.org/badge/latestdoi/184914967)
+
+
 This repository contains the slides, handbook, and exercises for the workshop _Robust data analysis: an introduction to R_ at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School at [EPFL](https://www.epfl.ch/en/), Switzerland. The workshop aims at people that have rarely/not used R in the past, and that do the majority of their analyses in spreadsheet-like tools like Excel.
 
 - [Slides](https://sinarueeger.github.io/robust-data-analysis-with-r/slides-robust-da.html#1) 
