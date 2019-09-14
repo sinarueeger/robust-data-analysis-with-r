@@ -12,6 +12,7 @@ url: 'https\://sinarueeger.github.io/robust-data-analysis-with-r/'
 description: "Handbook that complements slides for osip.epfl.ch"
 ---
 
+
 # Preface {-}
 
 This is the course material to the workshop _Robust data analysis: an introduction to R_ held at the [_Open Science in Practice_](http://osip2019.epfl.ch/) Summer School 2019 at [EPFL](https://www.epfl.ch/en/), Switzerland. 
@@ -29,4 +30,8 @@ knitr::include_url('https://sinarueeger.github.io/robust-data-analysis-with-r/sl
 
 ## License {-}
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+
+## Citation {-}
+[![DOI](https://zenodo.org/badge/184914967.svg)](https://zenodo.org/badge/latestdoi/184914967)
+
 

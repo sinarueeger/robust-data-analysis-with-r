@@ -1,7 +1,7 @@
 --- 
 title: "Robust data analysis: an introduction to R"
 author: "[Sina Rüeger](https://twitter.com/sinarueeger) & [Allie Burns](https://twitter.com/imallieburns)"
-date: "2019-09-05"
+date: "2019-09-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -11,6 +11,7 @@ github-repo: sinarueeger/robust-data-analysis-with-r
 url: 'https\://sinarueeger.github.io/robust-data-analysis-with-r/'
 description: "Handbook that complements slides for osip.epfl.ch"
 ---
+
 
 # Preface {-}
 
@@ -27,4 +28,8 @@ You find the slides [here](https://sinarueeger.github.io/robust-data-analysis-wi
 
 ## License {-}
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+
+## Citation {-}
+[![DOI](https://zenodo.org/badge/184914967.svg)](https://zenodo.org/badge/latestdoi/184914967)
+
 
